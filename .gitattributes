@@ -1,0 +1,5 @@
+*.md !text !filter !merge !diff
+*.yml !text !filter !merge !diff
+*.lock !text !filter !merge !diff
+*.markdown !text !filter !merge !diff
+*.html !text !filter !merge !diff
