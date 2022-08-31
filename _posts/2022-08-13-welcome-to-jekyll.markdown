@@ -1,12 +1,15 @@
 ---
 layout: single 
-title:  "First blog post"
+title:  "First Blog Post"
 date:   2022-08-13 18:36:50 +0530
 categories: jekyll update
 usemathjax: true
 ---
 
-Here is my first thing on my own blog. Here is a C++ code snippet:
+Here is my first thing on my own blog.
+
+
+Here is a C++ code snippet:
 ```cpp
 #include <iostream>
 
@@ -37,7 +40,13 @@ int main() {
 
 Here is a $$\LaTeX$$ math snippet:
 
-$$\displaystyle \int_\Omega X\mathrm{d}\mu$$
+$$
+\int_\Omega X\mathrm{d}\mu
+$$
+
+$$
+I_n = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix}
+$$
 
 Some inline $$\mathrm{M}\mathcal{A}\mathfrak{T}\mathsf{H}$$ for fun, and a Rust code snippet:
 ```rust
