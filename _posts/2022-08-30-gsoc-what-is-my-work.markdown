@@ -21,7 +21,7 @@ The project, as described on the CERN-HSF webpage, can be found [here](https://h
 
 ## Alternate Project Description
 
-The above description might be a little terse for some people. The way I like to explain it to people is as follows:
+The above description might be a little terse for some people. This is the way I like to explain it to people:
 
 CERN generates a lot of data from its LHC experiments. For this reason, they have a lot of software projects that do data analysis and simulation. The ACTS project is one such software package which does track reconstruction.
 
