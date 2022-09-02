@@ -18,7 +18,9 @@ For more information, check out their [webpage](https://summerofcode.withgoogle.
 
 ## My Organization
 
-In GSoC, there are Contributors and Organizations. The Contributors are individuals like myself who will work on some project, and the Organizations are the people who want these projects to be done. This year, I was selected to work with [CERN-HSF](https://summerofcode.withgoogle.com/programs/2022/organizations/cern-hsf), and my project falls under the purview of the [ACTS Project](https://github.com/acts-project/acts).
+In GSoC, there are Contributors and Organizations. The Contributors are individuals like myself who will work on some project, and the Organizations are the people who want these projects to be done.
+
+This year, I was selected to work with [CERN-HSF](https://summerofcode.withgoogle.com/programs/2022/organizations/cern-hsf), and my project falls under the purview of the [ACTS Project](https://github.com/acts-project/acts).
 
 ## What is the ACTS Project?
 
