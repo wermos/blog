@@ -113,9 +113,9 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       # url: "mailto:mztirthankar@gmail.com"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url: https://www.facebook.com/tirthankar.mazumder.908
+    # - label: "Facebook"
+    #   icon: "fab fa-fw fa-facebook-square"
+    #   url: https://www.facebook.com/tirthankar.mazumder.908
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: https://github.com/wermos
