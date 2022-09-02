@@ -123,9 +123,9 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url: https://www.facebook.com/tirthankar.mazumder.908
+    # - label: "Facebook"
+    #   icon: "fab fa-fw fa-facebook-square"
+    #   url: https://www.facebook.com/tirthankar.mazumder.908
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: https://github.com/wermos
