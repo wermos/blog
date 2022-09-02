@@ -29,7 +29,7 @@ Once again, if we take a look at the [README.md](https://github.com/acts-project
 
 When CERN conducts experiments at the [Large Hadron Collider](https://home.cern/science/accelerators/large-hadron-collider) (LHC), the 8 detectors present record certain types of data. The ACTS project is only concerned with the data gathered by the [ATLAS detector](https://atlas.cern/).
 
-{% figure  [caption:"A diagram of the LHC and the 8 detectors. Picture Credits: [Wikipedia](https://en.wikipedia.org/wiki/Large_Hadron_Collider)"] %}
+{% figure  [caption:"A diagram of the LHC and the 8 detectors. Picture Credits: [Wikipedia](https://en.wikipedia.org/wiki/Large_Hadron_Collider#/media/File:LHC.svg)"] %}
 ![diagram of the LHC and the 8 detectors]({{ "/assets/images/LHC.svg" | relative_url }})
 {% endfigure %}
 
