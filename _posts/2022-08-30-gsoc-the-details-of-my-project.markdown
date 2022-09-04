@@ -21,21 +21,21 @@ The project, as described on the CERN-HSF webpage, can be found [here](https://h
 
 ## Alternate Project Description
 
-The above description might be a little terse for some people. This is the way I like to explain it to people:
+The above description might be a little terse for some. This is the way I like to explain it to others:
 
-CERN generates a lot of data from its LHC experiments. For this reason, they have a lot of software projects that do data analysis and simulation. The ACTS project is one such software package which does track reconstruction.
+CERN generates a lot of data from its LHC experiments. For this reason, they have a lot of software projects which are data analysis oriented. The ACTS project is one such software package which does track reconstruction.
 
-However, the people who work on the ACTS project noticed that the matrix libraries they were using were quite slow for small dimensions (like 4×4, 6×6, 6×8, and 8×8). Upon further investigation, it turned out that popular matrix libraries like Eigen and SMatrix are not well-optimized for these dimensions.
+However, the people who work on the ACTS project noticed that the matrix libraries they were using were quite slow for small dimensions (like 4×4, 6×6, 6×8, and 8×8). Upon further investigation, it turned out that popular matrix libraries like `Eigen` and `SMatrix` are not well-optimized for these dimensions.
 
-Some time ago, an alternate implementation of 4×4 matrices and the related operations were written using a library called [Vc](https://github.com/VcDevel/Vc), and it performed quite well in benchmarks at the time.
+Some time ago, an alternate implementation of 4×4 matrices and the related operations were written using a library called [`Vc`](https://github.com/VcDevel/Vc), and it performed quite well in benchmarks at the time.
 
-For this reason, my work is to continue this work and write implemenations for all these desired dimensions, so that the ACTS project's routines run faster.
+My work is to continue this work and write implemenations for all these desired dimensions, so that the ACTS project's routines run faster.
 
 I will go more into the details of the work and what we have accomplished so far in the next blog post. For now, I will discuss a bit about our weekly meeting schedule, and what it is like to work with my mentors.
 
 ### My Project Proposal
 
-My proposal can be found [here](https://docs.google.com/document/d/1Ick3iDF_2bGbLiR-ZDGWnk06rrP64JBQG8Et4TccxRs/edit?usp=sharing). The only change I proposed, was to use xsimd instead of Vc, because the latter is not in active development.
+My proposal can be found [here](https://docs.google.com/document/d/1Ick3iDF_2bGbLiR-ZDGWnk06rrP64JBQG8Et4TccxRs/edit?usp=sharing). The only change I suggested was to use `xsimd` instead of `Vc`, because the latter is not in active development anymore.
 
 # Weekly Meeting Schedule
 
