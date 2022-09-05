@@ -37,6 +37,14 @@ I will go more into the details of the work and what we have accomplished so far
 
 My proposal can be found [here](https://docs.google.com/document/d/1Ick3iDF_2bGbLiR-ZDGWnk06rrP64JBQG8Et4TccxRs/edit?usp=sharing). The only change I suggested was to use `xsimd` instead of `Vc`, because the latter is not in active development anymore.
 
+## Where Would The Work Go?
+
+The math code in the [ACTS Project](https://github.com/acts-project/acts) proper is inextricably linked with the track-fitting code, so it would be a lot of work to change that.
+
+However, in the [ACTS project family](https://github.com/acts-project), there are two research repositories: [detray](https://github.com/acts-project/detray) and [traccc](https://github.com/acts-project/traccc). These two repositories were started a couple of years after the original ACT Project, so their approach to the math code is also slightly different. Both of these projects use another ACTS family project called [`algebra-plugins`](https://github.com/acts-project/algebra-plugins) as a layer of abstraction over the different functions that matrix libraries like `Eigen` and `SMatrix` provide. This allows the developers of these research repositories to easily switch between math backends and test them out.
+
+My work involves fleshing out the [`Vc` portion](https://github.com/acts-project/algebra-plugins/tree/71ea1e814fae3020feedf6389c89a4ffac591bae/math/vc) of `algebra-plugins`, and adding all the functions which are present in the other math backends but not in the `Vc` stuff yet.
+
 # Weekly Meeting Schedule
 
 We usually meet on Mondays at 10:00 am CEST (1:30 pm IST). Sometimes, we meet on other days, if the day is a holiday in some country, or one of us has other commitments.
