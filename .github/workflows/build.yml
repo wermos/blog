@@ -26,4 +26,3 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }} # It's your Personal Access Token(PAT)
           branch: 'gh-pages'         # Default is gh-pages for github provider
           bundler_ver: '>=2.3.17'    # Default is latest bundler version
-          pre_build_commands: 'bundle update'

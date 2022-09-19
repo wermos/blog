@@ -21,9 +21,9 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Tirthankar Mazumder"
 description              : "My own little place on the internet."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/blog" # the subpath of your site, e.g. "/blog"
-repository               : wermos/blog # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+url                      : "https://wermos.github.io" # the base hostname & protocol
+baseurl                  : "/blog" # the subpath of the site, e.g. "/blog"
+repository               : wermos/blog # GitHub username/repo-name
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -174,7 +174,6 @@ markdown: kramdown
 kramdown:
     syntax_highlighter_opts:
         disable: true
-#highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
