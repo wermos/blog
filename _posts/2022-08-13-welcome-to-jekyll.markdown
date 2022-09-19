@@ -51,7 +51,7 @@ $$
 Some inline $$\mathrm{M}\mathcal{A}\mathfrak{T}\mathsf{H}$$ for fun, and a Rust code snippet:
 ```rust
 fn main() {
-	println!("Hello world!);
+	println!("Hello world!");
 }
 ```
 
