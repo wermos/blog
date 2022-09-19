@@ -21,7 +21,7 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Tirthankar Mazumder"
 description              : "My own little place on the internet."
-url                      : "https://wermos.github.io" # the base hostname & protocol
+url                      : "https://wermos.github.io/" # the base hostname & protocol
 baseurl                  : "/blog" # the subpath of the site, e.g. "/blog"
 repository               : wermos/blog # GitHub username/repo-name
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
