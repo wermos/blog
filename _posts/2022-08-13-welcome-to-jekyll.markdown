@@ -10,33 +10,33 @@ Here is my first thing on my own blog.
 
 
 Here is a C++ code snippet:
-```cpp
+{% highlight cpp %}
 #include <iostream>
 
 int main() {
-	std::cout << "Hello world\n";
+    std::cout << "Hello world\n";
 }
-```
+{% endhighlight %}
 
 Here is a slightly more complicated C++ snippet, using C++20 keywords:
-```cpp
+{% highlight cpp %}
 #include <iostream>
 
 template <typename T>
 concept Addable = requires (T a, T b) {
-	a + b;
+    a + b;
 };
 
 template <typename T>
 T add(T a, T b) requires Addable<T> {
-	return a + b;
+    return a + b;
 }
 
 int main() {
-	int result = add(4, 5);
-	std::cout << result << '\n';
+    int result = add(4, 5);
+    std::cout << result << '\n';
 }
-```
+{% endhighlight %}
 
 Here is a $$\LaTeX$$ math snippet:
 
@@ -49,18 +49,18 @@ I_n = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix}
 $$
 
 Some inline $$\mathrm{M}\mathcal{A}\mathfrak{T}\mathsf{H}$$ for fun, and a Rust code snippet:
-```rust
+{% highlight rust %}
 fn main() {
-	println!("Hello world!");
+    println!("Hello world!");
 }
-```
+{% endhighlight %}
 
 Some Python:
-{% highlight python %}
+{% highlight py %}
 import math
 
 def fun():
-	pass
+    pass
 {% endhighlight %}
 
 Now, it's time for an image:
