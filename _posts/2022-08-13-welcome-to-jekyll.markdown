@@ -38,15 +38,11 @@ int main() {
 }
 {% endhighlight %}
 
-Here is a $$\LaTeX$$ math snippet:
+Here is a $\LaTeX$ math snippet:
 
-$$
-\int_\Omega X\mathrm{d}\mu
-$$
+$$\int_\Omega X\mathrm{d}\mu$$
 
-$$
-I_n = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix}
-$$
+$$I_n = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix}$$
 
 Some inline $$\mathrm{M}\mathcal{A}\mathfrak{T}\mathsf{H}$$ for fun, and a Rust code snippet:
 {% highlight rust %}
