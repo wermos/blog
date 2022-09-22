@@ -14,7 +14,7 @@ Here is a C++ code snippet:
 #include <iostream>
 
 int main() {
-    std::cout << "Hello world\n";
+	std::cout << "Hello world\n";
 }
 {% endhighlight %}
 
@@ -24,17 +24,17 @@ Here is a slightly more complicated C++ snippet, using C++20 keywords:
 
 template <typename T>
 concept Addable = requires (T a, T b) {
-    a + b;
+	a + b;
 };
 
 template <typename T>
 T add(T a, T b) requires Addable<T> {
-    return a + b;
+	return a + b;
 }
 
 int main() {
-    int result = add(4, 5);
-    std::cout << result << '\n';
+	int result = add(4, 5);
+	std::cout << result << '\n';
 }
 {% endhighlight %}
 
@@ -51,7 +51,7 @@ $$
 Some inline $$\mathrm{M}\mathcal{A}\mathfrak{T}\mathsf{H}$$ for fun, and a Rust code snippet:
 {% highlight rust %}
 fn main() {
-    println!("Hello world!");
+	println!("Hello world!");
 }
 {% endhighlight %}
 
@@ -60,7 +60,7 @@ Some Python:
 import math
 
 def fun():
-    pass
+	pass
 {% endhighlight %}
 
 Now, it's time for an image:
