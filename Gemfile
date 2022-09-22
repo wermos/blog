@@ -20,7 +20,7 @@ gem "minimal-mistakes-jekyll"
 
 # The plugins required for the blog
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.12"
+  gem "jekyll-feed", "~> 0.16"
   gem "jekyll-seo-tag"
   gem "jekyll-figure"
   gem "jekyll-target-blank"
