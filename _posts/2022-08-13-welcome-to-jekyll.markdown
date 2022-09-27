@@ -44,7 +44,7 @@ $$\int_\Omega X\mathrm{d}\mu$$
 
 $$I_n = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix}$$
 
-Some inline $$\mathrm{M}\mathcal{A}\mathfrak{T}\mathsf{H}$$ for fun, and a Rust code snippet:
+Some inline $\mathrm{M}\mathcal{A}\mathfrak{T}\mathsf{H}$ for fun, and a Rust code snippet:
 {% highlight rust %}
 fn main() {
 	println!("Hello world!");
@@ -52,7 +52,7 @@ fn main() {
 {% endhighlight %}
 
 Some Python:
-{% highlight py %}
+{% highlight python %}
 import math
 
 def fun():
