@@ -134,11 +134,6 @@ footer:
 # Reading Files
 include:
   - .htaccess
-  - favicon.ico
-  - favicon-16x16.png
-  - favicon-32x32.png
-  - browserconfig.xml
-  - mstile-150x150.png
   - _pages
 exclude:
   - "*.sublime-project"
