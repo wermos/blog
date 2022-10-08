@@ -22,8 +22,11 @@ gem "minimal-mistakes-jekyll"
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.16"
   gem "jekyll-seo-tag"
+  gem "jekyll-sitemap"
   gem "jekyll-figure"
   gem "jekyll-target-blank"
+  gem "mini_racer" # Needed for the minifier
+  gem "jekyll-minifier"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

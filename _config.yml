@@ -180,6 +180,21 @@ excerpt_separator: "\n\n"
 incremental: false
 
 
+# Jekyll Sitemap Settings
+defaults:
+  - scope:
+      path: "assets/**/*.png"
+    values:
+      sitemap: false
+  - scope:
+      path: "assets/**/*.svg"
+    values:
+      sitemap: false
+
+# Minifier Settings
+jekyll-minifier:
+  exclude: "./**/*.xml"
+
 # Markdown Processing
 kramdown:
   input: GFM
