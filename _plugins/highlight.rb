@@ -23,7 +23,7 @@ module Jekyll
 
             #{markup}
 
-            Valid syntax: highlight <lang> [linenos]
+            Valid syntax: highlight <lang> [start=<val>]
           MSG
         end
       end
@@ -69,9 +69,15 @@ module Jekyll
       end
 
       def add_code_tag(code)
-        code_attributes = [
+        options_array = [
           "class=\"language-#{@lang.to_s.tr("+", "-")}\"",
-        ].join(" ")
+        ]
+
+        if not @highlight_options.empty?
+          options_array.append("data-ln-start-from=\"#{@highlight_options[:start]}\"")
+        end
+
+        code_attributes = options_array.join(" ")
         "<figure class=\"highlight\"><pre><code #{code_attributes}>"\
         "#{code.chomp}</code></pre></figure>"
       end
