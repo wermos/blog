@@ -63,3 +63,29 @@ def fun():
 Now, it's time for an image:
 ![ray-traced image]({{ "/assets/images/test.png" | relative_url }})
 
+Testing no line numbers:
+{% noln cpp %}
+#include <iostream>
+
+int main() {
+	std::cout << "Never gonna give you up,\n";
+	std::cout << "Never gonna let you down.\n";
+}
+{% endnoln %}
+
+{% noln python %}
+import math
+
+def fun():
+	pass
+{% endnoln %}
+
+Testing starting line numbers from an arbitrary number:
+{% highlight cpp start=5 %}
+#include <iostream>
+
+void print() {
+	std::cout << "And this, is to go,\n";
+	std::cout << "even further, beyond!\n";
+}
+{% endhighlight %}
