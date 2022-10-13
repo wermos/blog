@@ -2,6 +2,8 @@
 layout: single 
 title:  "GSoC --- First Blog Post"
 date:   2022-08-29 02:54:55 +0530
+toc: true
+toc_sticky: true
 categories: gsoc
 ---
 
