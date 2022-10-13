@@ -2,6 +2,8 @@
 layout: single 
 title:  "GSoC --- The Details of My Project"
 date:   2022-08-30 16:49:29 +0530
+toc: true
+toc_sticky: true
 categories: gsoc
 ---
 
