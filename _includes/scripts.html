@@ -27,6 +27,7 @@
   {% endfor %}
 {% endif %}
 
+<!-- MathJax stuff -->
 {% if page.usemathjax %}
 <script>
 window.MathJax = {
@@ -41,6 +42,7 @@ window.MathJax = {
 </script>
 {% endif %}
 
+<!-- Code highlighter stuff, along with line numbering stuff -->
 {% if page.usecodehl %}
 {% comment %}
 It would be better to have some automatic way to decide whether to include the code highlighter code or not. But it's fine as it is.
@@ -57,3 +59,13 @@ Here is an explanation of the short form: usecodehl = use code hl = use code hig
        hljs.initLineNumbersOnLoad();
 </script>
 {% endif %}
+
+<!-- Scroll to Top Button -->
+<script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  backgroundColor: 'rgb(255, 133, 0)',
+  //backgroundColor: 'rgb(191, 191, 191)',
+  textColor: '#fff',
+  scrollDuration: 150
+})</script>
