@@ -36,7 +36,7 @@ the benchmarking script used `/usr/bin/time` to time the code. However, since th
 
 ### Matrix Generation
 
-A key part of the benchmarking code is the random matrix generation. Doing this properly is essential because otherwise, the compiler might figure out the fact that we have pre-computed matrices. Once it does so, it is free to calculate the results ahead of time, which would defeat the point of the benchmark. The original Fast 5×5 code was using index based operations to fill up the matrix, like so:
+A key part of the benchmarking code is the random matrix generation. Doing this properly is essential because otherwise, the compiler might figure out the fact that we have pre-computed matrices. Once it does so, it is free to calculate the results ahead of time, which would defeat the point of the benchmark. The original Fast 5×5 code was using index-based operations to fill up the matrix, like so:
 {% highlight cpp %}
 float a[SIZE * SIZE];
 float b[SIZE * SIZE];
