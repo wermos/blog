@@ -34,10 +34,10 @@ If we take a look at the [README.md](https://github.com/acts-project/acts/blob/m
 When CERN conducts experiments at the [Large Hadron Collider](https://home.cern/science/accelerators/large-hadron-collider) (LHC), the 8 detectors present record certain types of data. The ACTS project is only concerned with the data gathered by the [ATLAS detector](https://atlas.cern/).
 
 {% figure  [caption:"A diagram of the LHC and the 8 detectors. Picture Credits: [Wikipedia](https://en.wikipedia.org/wiki/Large_Hadron_Collider#/media/File:LHC.svg)"] %}
-![diagram of the LHC and the 8 detectors]({{ "/assets/images/LHC.svg" | relative_url }})
+![diagram of the LHC and the 8 detectors](https://upload.wikimedia.org/wikipedia/commons/7/74/LHC.svg)
 {% endfigure %}
 
-### What is Track Fitting?
+### What is Track Reconstruction?
 
 One of things mentioned in the ACTS project's README is [track reconstruction](https://en.wikipedia.org/wiki/Tracking_(particle_physics)). This consists of two parts: First, when a particle interacts with a certain detector geometry, the detector records it for further analysis. Then, the software takes all the gathered points where the particle was known to be at, and recreates the path that the particle must have taken.
 
