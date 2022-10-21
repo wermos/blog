@@ -88,3 +88,10 @@ void print() {
 	std::cout << "even further, beyond!\n";
 }
 {% endhighlight %}
+
+This is a picture of Zhongli (from Genshin Impact) picture:
+![Zhongli](https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Character_Zhongli_Full_Wish.png/)
+
+A Naruto (Shippuuden) GIF (for testing if GIFs work, and figuring out how to include GIFs in blog posts):
+<div style='position:relative; padding-bottom:calc(56.25% + 44px)'><iframe src='https://gfycat.com/ifr/search/EarnestMeanKingbird?controls=0&hd=1' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen title="Naruto vs. Sasuke v2"></iframe></div>
+
