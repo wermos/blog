@@ -1,0 +1,73 @@
+---
+layout: single
+title:  "A Small Detail in Naruto Shippuuden: Sealing Jutsus"
+date:   2022-09-15 16:00:35 +0530
+categories: anime naruto
+---
+
+This is a small detail I noticed while telling someone about an amazing scene in the show.
+
+> **Warning:**
+> Spoilers ahead. If you are still watching Naruto Shippuuden, and are at an episode before **episode 250**, skip this blog post.
+
+# Naruto's Parents
+
+We know that Naruto's parents are Minato Namikaze, of the Namikaze clan, and Kushina Uzumaki, of the Uzumaki clan. When Naruto is trying to tame the nine-tailed fox and he meets his mother, we get to see the whole backstory about the infamous attack on the Hidden Leaf Village 16 years ago.
+
+One of the things Kushina mentions is that the Uzumaki clan was known for their deep knowledge of Sealing Jutsus. She goes on mention to that Minato spent time with her mother and learned many things about Sealing Jutsus.
+
+# Summoning Jutsus
+
+An important class of jutsus in the show are the _Summoning Jutsus_. As you may recall, these are jutsus used to summon animals, usually for fighting purposes.
+
+## An Aside: Uses of Summoned Animals
+
+Not everyone uses the summoned animals for fighting. Jiraiya and Naruto both use their signature summons, toads, for fighting purposes. However, Tsunade and Sakura use their signature summons, the slug (Katsuyu), for healing purposes. Moreover, Kakashi's summon brings out dogs, which have zero fighting power (against the enemies in the Naruto-verse), and are used for tracking purposes.
+
+## So What About These Summons?
+
+One thing you will notice is that whenever people use a summoning jutsu, the summon results in some seal marks being written on the ground:
+<div style='position:relative; padding-bottom:calc(76.67% + 44px)'><iframe src='https://gfycat.com/ifr/search/AnimatedFewAnhinga?controls=0&hd=1' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div><br/>
+This little detail stays constant throughout: the marks show up when the Legendary Sannin do a Summoning Jutsu, they show up Tobi summons the nine tails, and they also show up when Pain does his (their?) summons.
+
+That is to say, the marks are not a result of a "skill issue". They show up regardless of who is performing the summon.
+
+## Minato vs. Nine-Tailed Fox
+
+Think back to when Minato fought the nine tails, and it unleashed a Tailed Beast Bomb at him. What did he do? Since a picture is worth a thousand words, I won't describe it, but rather show it:
+<div style='position:relative; padding-bottom:calc(56.25% + 44px)'><iframe src='https://gfycat.com/ifr/search/SpryWeightyGoosefish?controls=0&hd=1' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div><br/>
+The key thing to note is that the seal marks are being written and drawn in the air itself. _In the air_. No other ninja in the show ever achieves a similar feat.
+
+## How Does Minato Know How To Do It?
+
+Well, it was established before that Minato spent time around his wife's clan, the Uzumakis, and learned their craft. It would appear that he used the knowledge he learned extensively.
+
+### Where Else?
+
+It would be natural to wonder where else he is shown to be using his Sealing Jutsu skills in the show. Here is a small list of the other places where he used them, or his skill with Sealing Jutsus are indirectly demonstrated:
+
+1. He put his teleporation mark into Kushina's Jinchuriki seal so that he could teleport to her directly if she was ever in danger.
+
+2. He unsealed the nine tails from Tobi, freeing it from the Sharingan's hynoptic gaze, and making it free to be sealed inside a Jinchuriki again.
+
+3. When he seals the nine tails into Naruto, he makes sure to mix a bit of his and Kushina's chakra into the seal so that they can appear in his mind at crucial moments and guide him away from the dark path he was going down.
+
+4. When Naruto meets Kushina, she explains to him that the Tetragram Seal on his abdomen is a seal modeled after jutsu from Uzushiogakure, which is the village where the Uzumaki clan lived.
+
+5. The seal written on Gerotora is Naruto's Jinchuriki Seal. The visual we are shown in the anime (and the manga too!) is testament to the sheer complexity of the seal that Minato used. None other than a person highly skilled in the art of Sealing Jutsus could have created such a seal.
+
+6. Apart from the sheer complexity of Naruto's seal, we also have to remember that Minato came up with the seal under duress (the village was being attacked). This little detail also indirectly shows Minato's skill with Sealing Jutsus.
+
+## But Wait!
+
+An astute reader/viewer of the series might object to this post by saying that this theory does not hold up against the first time that Naruto summons Gamabunta.
+
+There are two aspects to this objection: First of all, this is a very good point. Naruto was falling into the canyon, so if he succeeded in performing the summoning (which he did), the seal marks would have to have been drawn in the air. One other possibility is that the seal marks were drawn on the ground and Gamabunta ended up being summoned on the ground. After that, he jumped up and caught Naruto in mid-air.
+
+If one watches that episode again, they will notice that there is no evidence that supports either theory over the other. _However_, the manga has a very interesting visual, wherein no seal marks are drawn at all.
+
+![Naruto performing the Summoning Jutsu for the first time]({{ "/assets/images/naruto-summoning.png" | relative_url }})
+
+Hence, both the anime adaptation as well as the source material are inconclusive on this topic. That is, it doesn't prove nor disprove my theory. However, my explanation for this is that because he tapped into his nine-tails chakra in order to summon Gamabunta, so the normal rules don't apply.
+
+As a final note, recall that Naruto was inside the sand coffin when he summoned Gamabunta in the fight against Gaara. So that instance does nothing to help or hurt this theory either.
