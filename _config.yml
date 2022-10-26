@@ -106,16 +106,13 @@ analytics:
 author:
   name             : "Tirthankar Mazumder"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I don't know what to write so I'll keep it blank for now."
-  location         : "Mumbai, Maharasthra, India"
+  bio              : "I don't know what to write here so I'll keep it blank for now."
+  location         : "Maharasthra, India"
   email            : mztirthankar@gmail.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:mztirthankar@gmail.com"
-    # - label: "Facebook"
-    #   icon: "fab fa-fw fa-facebook-square"
-    #   url: https://www.facebook.com/tirthankar.mazumder.908
+      url: "mailto:mztirthankar@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: https://github.com/wermos
@@ -123,13 +120,9 @@ author:
 # Site Footer
 footer:
   links:
-    # - label: "Facebook"
-    #   icon: "fab fa-fw fa-facebook-square"
-    #   url: https://www.facebook.com/tirthankar.mazumder.908
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: https://github.com/wermos
-
 
 # Reading Files
 include:
