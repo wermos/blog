@@ -178,7 +178,7 @@ defaults:
       type: single 
     values:
       comments: true
-	  search: true
+      search: true
 
 # Minifier Settings
 jekyll-minifier:
