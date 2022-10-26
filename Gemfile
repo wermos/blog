@@ -22,6 +22,7 @@ group :jekyll_plugins do
   gem "jekyll-target-blank"
   gem "mini_racer" # Needed for the minifier
   gem "jekyll-minifier"
+  gem "jekyll-algolia" # search plugin
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
