@@ -173,6 +173,12 @@ defaults:
       type: posts
     values:
       comments: true
+  - scope:
+      path: ""
+      type: single 
+    values:
+      comments: true
+	  search: true
 
 # Minifier Settings
 jekyll-minifier:
