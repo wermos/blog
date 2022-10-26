@@ -1,24 +1,30 @@
 ---
 layout: single
-title:  "A Small Detail in Naruto Shippuuden: Sealing Jutsus"
+title:  "A Small Detail in Naruto Shippuuden: Sealing Jutsu"
 date:   2022-09-15 16:00:35 +0530
 categories: anime naruto
 ---
 
-This is a small detail I noticed while telling someone about an amazing scene in the show.
+This post is about a small detail I noticed while telling someone about an amazing scene in the show.
 
 > **Warning:**
 > Spoilers ahead. If you are still watching Naruto Shippuuden, and are at an episode before **episode 250**, skip this blog post.
+
+# The Detail
+
+Whenever anyone in the show performs a Jutsu that results in seal marks being created, they always do it on the ground, and the marks always show up on the ground, or somewhere with a hard surface. The one exception to this rule is Minato Namikaze. His extensive knowledge of Sealing Jutsu allows him to use Jutsu that result in seal marks anywhere (including doing them in the air), and the resultant marks show up in the air.
+
+If you're wondering where I got this theory from, or why I think it's true, keep reading!
 
 # Naruto's Parents
 
 We know that Naruto's parents are Minato Namikaze, of the Namikaze clan, and Kushina Uzumaki, of the Uzumaki clan. When Naruto is trying to tame the nine-tailed fox and he meets his mother, we get to see the whole backstory about the infamous attack on the Hidden Leaf Village 16 years ago.
 
-One of the things Kushina mentions is that the Uzumaki clan was known for their deep knowledge of Sealing Jutsus. She goes on mention to that Minato spent time with her mother and learned many things about Sealing Jutsus.
+One of the things Kushina mentions is that the Uzumaki clan was known for their deep knowledge of Sealing Jutsu. She goes on say that Minato spent time with her mother and learned many things about Sealing Jutsu.
 
-# Summoning Jutsus
+# Summoning Jutsu
 
-An important class of jutsus in the show are the _Summoning Jutsus_. As you may recall, these are jutsus used to summon animals, usually for fighting purposes.
+An important class of jutsus in the show are the _Summoning Jutsu_. As you may recall, these are jutsus used to summon animals, usually for fighting purposes.
 
 ## An Aside: Uses of Summoned Animals
 
@@ -28,7 +34,7 @@ Not everyone uses the summoned animals for fighting. Jiraiya and Naruto both use
 
 One thing you will notice is that whenever people use a summoning jutsu, the summon results in some seal marks being written on the ground:
 <div style='position:relative; padding-bottom:calc(76.67% + 44px)'><iframe src='https://gfycat.com/ifr/search/AnimatedFewAnhinga?controls=0&hd=1' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div><br/>
-This little detail stays constant throughout: the marks show up when the Legendary Sannin do a Summoning Jutsu, they show up Tobi summons the nine tails, and they also show up when Pain does his (their?) summons.
+This little detail stays constant throughout: the marks show up when the Legendary Sannin do a Summoning Jutsu, when Tobi summons the nine tails, and also when Pain does his (their?) summons.
 
 That is to say, the marks are not a result of a "skill issue". They show up regardless of who is performing the summon.
 
@@ -44,7 +50,7 @@ Well, it was established before that Minato spent time around his wife's clan, t
 
 ### Where Else?
 
-It would be natural to wonder where else he is shown to be using his Sealing Jutsu skills in the show. Here is a small list of the other places where he used them, or his skill with Sealing Jutsus are indirectly demonstrated:
+It would be natural to wonder where else he is shown to be using his Sealing Jutsu skills in the show. Here is a small list of the other places where he used them, or his skill with Sealing Jutsu are indirectly demonstrated:
 
 1. He put his teleporation mark into Kushina's Jinchuriki seal so that he could teleport to her directly if she was ever in danger.
 
@@ -54,9 +60,9 @@ It would be natural to wonder where else he is shown to be using his Sealing Jut
 
 4. When Naruto meets Kushina, she explains to him that the Tetragram Seal on his abdomen is a seal modeled after jutsu from Uzushiogakure, which is the village where the Uzumaki clan lived.
 
-5. The seal written on Gerotora is Naruto's Jinchuriki Seal. The visual we are shown in the anime (and the manga too!) is testament to the sheer complexity of the seal that Minato used. None other than a person highly skilled in the art of Sealing Jutsus could have created such a seal.
+5. The seal written on Gerotora is Naruto's Jinchuriki Seal. The visual we are shown in the anime (and the manga too!) is testament to the sheer complexity of the seal that Minato used. None other than a person highly skilled in the art of Sealing Jutsu could have created such a seal.
 
-6. Apart from the sheer complexity of Naruto's seal, we also have to remember that Minato came up with the seal under duress (the village was being attacked). This little detail also indirectly shows Minato's skill with Sealing Jutsus.
+6. Apart from the sheer complexity of Naruto's seal, we also have to remember that Minato came up with the seal under duress (the village was being attacked). This little detail also indirectly shows Minato's skill with Sealing Jutsu.
 
 ## But Wait!
 
@@ -70,4 +76,4 @@ If one watches that episode again, they will notice that there is no evidence th
 
 Hence, both the anime adaptation as well as the source material are inconclusive on this topic. That is, it doesn't prove nor disprove my theory. However, my explanation for this is that because he tapped into his nine-tails chakra in order to summon Gamabunta, so the normal rules don't apply.
 
-As a final note, recall that Naruto was inside the sand coffin when he summoned Gamabunta in the fight against Gaara. So that instance does nothing to help or hurt this theory either.
+As a final note, recall that Naruto was inside the sand coffin when he summoned Gamabunta in the fight against Gaara, so that instance does nothing to help or hurt this theory either.
