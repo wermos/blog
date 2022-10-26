@@ -12,7 +12,7 @@ In this blog post, I will discuss the work I have done so far, and what our futu
 
 # Fast 5×5
 
-In 2019, Hadrien worked with a PhD student to create [Fast 5×5](https://gitlab.in2p3.fr/CodeursIntensifs/Fast5x5), which was supposed to be a proof-of-concept demonstrating that the existing matrix routines in `Eigen` could be better optimized for small dimensions like 5×5.
+In 2019, Hadrien worked with a Masters student to create [Fast 5×5](https://gitlab.in2p3.fr/CodeursIntensifs/Fast5x5), which was supposed to be a proof-of-concept demonstrating that the existing matrix routines in `Eigen` could be better optimized for small dimensions like 5×5.
 
 ## My Changes to Fast 5×5
 
