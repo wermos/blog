@@ -20,8 +20,7 @@ group :jekyll_plugins do
   gem "jekyll-sitemap"
   gem "jekyll-figure"
   gem "jekyll-target-blank"
-  gem "mini_racer" # Needed for the minifier
-  gem "jekyll-minifier"
+  gem "jekyll-assets"
   gem "jekyll-algolia" # search plugin
   gem "jekyll-paginate-v2"
 end
