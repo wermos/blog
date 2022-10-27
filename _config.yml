@@ -44,19 +44,14 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : # true, false (default)
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
+search                   : true # true, false (default)
+search_full_content      : true # true, false (default)
 search_provider          : algolia # lunr (default), algolia, google
-lunr:
-  search_within_pages    : # true, false (default)
 algolia:
   application_id         : IAFKFFWNO2 # YOUR_APPLICATION_ID
   index_name             : blog # YOUR_INDEX_NAME
   search_only_api_key    : 1822efaff6c7c7bcdacef47f8411167b # YOUR_SEARCH_ONLY_API_KEY
   powered_by             : # true (default), false
-google:
-  search_engine_id       : # YOUR_SEARCH_ENGINE_ID
-  instant_search         : # false (default), true
 # SEO Related
 google_site_verification :
 bing_site_verification   :
@@ -95,9 +90,6 @@ author:
   location         : "Maharasthra, India"
   email            : mztirthankar@gmail.com
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:mztirthankar@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: https://github.com/wermos
@@ -172,13 +164,10 @@ defaults:
       path: ""
       type: posts
     values:
-      comments: true
-  - scope:
-      path: ""
-      type: single 
-    values:
-      comments: true
-      search: true
+      author_profile: true
+      read_time: true
+      share: true
+      related: true
 
 # Minifier Settings
 jekyll-minifier:
@@ -204,7 +193,14 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+pagination:
+
+  # Site-wide kill switch, disabled here it doesn't run at all
+  enabled: true
+  # The default document collection to paginate if nothing is specified ('posts' is default)
+  collection: 'single'
+  # How many objects per paginated page, used to be `paginate` (default: 0, means all)
+  per_page: 5
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
@@ -220,6 +216,7 @@ plugins:
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
+  - jekyll-sitemap
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
@@ -262,17 +259,3 @@ compress_html:
   ignore:
     envs: development
 
-
-# Defaults
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: # true
-      share: true
-      related: true
