@@ -169,15 +169,6 @@ defaults:
       share: true
       related: true
 
-# Minifier Settings
-jekyll-minifier:
-  exclude: "./**/*.xml"
-
-assets:
-  external:
-    uglifier:
-      harmony: true
-
 # Markdown Processing
 kramdown:
   input: GFM
