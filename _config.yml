@@ -173,6 +173,11 @@ defaults:
 jekyll-minifier:
   exclude: "./**/*.xml"
 
+assets:
+  external:
+    uglifier:
+      harmony: true
+
 # Markdown Processing
 kramdown:
   input: GFM
