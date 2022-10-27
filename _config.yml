@@ -46,11 +46,11 @@ atom_feed:
   hide                   : # true, false (default)
 search                   : true # true, false (default)
 search_full_content      : true # true, false (default)
-search_provider          : algolia # lunr (default), algolia, google
+search_provider          : algolia
 algolia:
-  application_id         : IAFKFFWNO2 # YOUR_APPLICATION_ID
-  index_name             : blog # YOUR_INDEX_NAME
-  search_only_api_key    : 1822efaff6c7c7bcdacef47f8411167b # YOUR_SEARCH_ONLY_API_KEY
+  application_id         : IAFKFFWNO2
+  index_name             : blog
+  search_only_api_key    : 1822efaff6c7c7bcdacef47f8411167b
   powered_by             : # true (default), false
 # SEO Related
 google_site_verification :
@@ -168,6 +168,7 @@ defaults:
       read_time: true
       share: true
       related: true
+      comments: true
 
 # Markdown Processing
 kramdown:
