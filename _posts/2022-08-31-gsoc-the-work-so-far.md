@@ -18,7 +18,7 @@ In 2019, Hadrien worked with a Masters student to create [Fast 5×5](https://git
 
 The first thing my mentors recommended doing was to take a closer look at the repository and understand where we stand with respect to the work to be done.
 
-After looking at `fast5x5.hpp` for a while, I decided that I should make some changes to make the benchmarking program faster and more reliable. So, I started making changes to the repository. I started off by removing the Docker stuff because I am not too familiar with it, and because it would not be necessary for the project.
+After looking at `fast5x5.hpp` for a while, I decided that I should make some changes to make the benchmarking program faster and more reliable. So, I started making changes to the repository. I started off by removing the Docker stuff because it would not be necessary for the project.
 
 After making a few changes, it became apparent that I needed somewhere to push my changes to, so that it was available for everyone to see and use. However, because the original project was on Gitlab, I could not fork it the way projects on GitHub can be forked. Instead, I pushed my copy of the Gitlab repository onto GitHub, and made sure to point to the original URL in my repository description. The original repository can be found [here](https://gitlab.in2p3.fr/CodeursIntensifs/Fast5x5), and my fork can be found [here](https://github.com/wermos/Fast5x5/).
 
