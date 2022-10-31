@@ -68,7 +68,7 @@ It would be natural to wonder where else he is shown to be using his Sealing Jut
 
 An astute reader/viewer of the series might object to this post by saying that this theory does not hold up against the first time that Naruto summons Gamabunta.
 
-There are two aspects to this objection: First of all, this is a very good point. Naruto was falling into the canyon, so if he succeeded in performing the summoning (which he did), the seal marks would have to have been drawn in the air. One other possibility is that the seal marks were drawn on the ground and Gamabunta ended up being summoned on the ground. After that, he jumped up and caught Naruto in mid-air.
+There are two aspects to this objection: First of all, this is a very good point. Naruto _was_ falling into the canyon, so if he succeeded in performing the summoning (which he did), the seal marks would have to have been drawn in the air. One other possibility is that the seal marks were drawn on the ground and Gamabunta ended up being summoned on the ground. After that, he jumped up and caught Naruto in mid-air.
 
 If one watches that episode again, they will notice that there is no evidence that supports either theory over the other. _However_, the manga has a very interesting visual, wherein no seal marks are drawn at all.
 
