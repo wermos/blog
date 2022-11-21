@@ -7,7 +7,7 @@ toc_sticky: true
 categories: gsoc
 ---
 
-In this post, I will discuss what exactly my work is, and how it ties in to the ACTS project. I will also talk about my mentors and what it was like to work with them.
+In this post, I will discuss what exactly my work is and its relation to the ACTS project.
 
 # Project Description
 
@@ -21,13 +21,35 @@ The original project description was:
 
 The project, as described on the CERN-HSF webpage, can be found [here](https://hepsoftwarefoundation.org/gsoc/2022/proposal_Acts-vectorized-LA-backend.html).
 
+## What is Vectorization?
+
+All matrix math libraries use something called [SIMD](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data) (short for Single Instruction, Multiple Data) to achieve a speed-up compared to a naïve implementation.
+
+Let’s take the example of adding two 4-dimensional vectors together. The naïve way of doing it is to take one element from each vector, add it, and then store the result in the result vector. This takes 4 add instructions to complete. However, with a SIMD ISA (Instruction Set Architecture) all one needs to do is load the 4 elements of each vector into a SIMD register, add them, and store the result in a result vector. This takes just 1 add instruction to complete.
+
+In this simple example, using SIMD instructions gave us an approximately 4× speed-up.
+
+{% figure [caption:"Representation of a SIMD register (Picture Credits: Wikipedia, courtesy of [Vadikus](https://commons.wikimedia.org/w/index.php?title=User:Vadikus))"] %}
+![representation of a SIMD register](https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/SIMD2.svg/400px-SIMD2.svg.png)
+{% endfigure %}
+
+However, it is not as simple as that. There are many SIMD ISAs, for example [SSE](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions), [SSE2](https://en.wikipedia.org/wiki/SSE2), [SSE3](https://en.wikipedia.org/wiki/SSE3), [SSSE3](https://en.wikipedia.org/wiki/SSSE3) (note the one extra "S"!), [SSE4](https://en.wikipedia.org/wiki/SSE4), [AVX](https://en.wikipedia.org/wiki/Advanced_Vector_Extensions), AVX2, [AVX512](https://en.wikipedia.org/wiki/AVX-512), and more.
+
+A given CPU may not support all of these ISAs. (For example, the processor I have at the time of writing, an [i7-12700H](https://ark.intel.com/content/www/us/en/ark/products/132228/intel-core-i712700h-processor-24m-cache-up-to-4-70-ghz.html) does not support AVX512.)
+
+Code that is optimized for one ISA may not necessarily be optimized for other ISAs. For this reason, most people prefer to outsource their SIMD code to an external library dedicated to figuring out these headaches. Many such libraries exist, and they broadly fall into two categories:
+
+The first type simply exposes SIMD intrinsics to the user in an uniform way: The add instruction in SSE2 is called `_mm_add_ps`, whereas it is called `_mm256_add_ps` in AVX. (The `add_ps` here stands for "add packed scalars.) Writing code which behaves well with multiple SIMD ISAs would involve a ridiculous amount of code repetition, which is what these types of libraries aim to minimize. [`xsimd`](https://github.com/xtensor-stack/xsimd) is a great example of such a library.
+
+The second type goes one step further and offers fully vectorized types such as a 4-element `float`/`double` array which will use a vectorized add instruction to add all the elements at once. A good example of such a library is [`Vc`](https://github.com/VcDevel/Vc).
+
 ## Alternate Project Description
 
-The above description might be a little terse for some. This is the way I like to explain it to others:
+The aforementioned project description might be a little terse for some. This is the way I like to explain it to others:
 
 CERN generates a lot of data from its LHC experiments. For this reason, they have a lot of software projects which are data analysis oriented. The ACTS project is one such software package which does track reconstruction.
 
-However, the people who work on the ACTS project noticed that the matrix libraries they were using were quite slow for small dimensions (like 4×4, 6×6, 6×8, and 8×8). Upon further investigation, it turned out that popular matrix libraries like `Eigen` and `SMatrix` are not well-optimized for these dimensions.
+ACTS uses matrix operations in many places, such as for doing track reconstruction and [covariance transport](https://acts.readthedocs.io/en/latest/tracking.html#covariance-transport). However, the people who work on the ACTS project noticed that the matrix libraries they were using were quite slow for small dimensions (like 4×4, 6×6, 6×8, and 8×8). Upon further investigation, it turned out that popular matrix libraries like `Eigen` and `SMatrix` are not well-optimized for these dimensions. For example, I found during my benchmarking investigations that Eigen is about 6.5 times slower at inverting a `double` 8×8 matrix than a better optimized library like [Fastor](https://github.com/romeric/Fastor).
 
 Some time ago, an alternate implementation of 4×4 matrices and the related operations were written using a library called [`Vc`](https://github.com/VcDevel/Vc), and it performed quite well in benchmarks at the time.
 
@@ -46,6 +68,8 @@ The math code in the [ACTS Project](https://github.com/acts-project/acts) proper
 However, in the [ACTS project family](https://github.com/acts-project), there are two research repositories: [detray](https://github.com/acts-project/detray) and [traccc](https://github.com/acts-project/traccc). These two repositories were started a couple of years after the original ACTS Project, so their approach to the math code is also slightly different. Both of these projects use another ACTS family project called [`algebra-plugins`](https://github.com/acts-project/algebra-plugins) as a layer of abstraction over the different functions that matrix libraries like `Eigen` and `SMatrix` provide. This allows the developers of these research repositories to easily switch between math backends and test them out.
 
 My work involves fleshing out the [`Vc` portion](https://github.com/acts-project/algebra-plugins/tree/71ea1e814fae3020feedf6389c89a4ffac591bae/math/vc) of `algebra-plugins`, and adding all the functions which are present in the other math backends but not in the `Vc` stuff yet.
+My work involves out the [`Vc` portion](https://github.com/acts-project/algebra-plugins/tree/71ea1e814fae3020feedf6389c89a4ffac591bae/math/vc) of `algebra-plugins`, and adding all the functions which are present in the other math backends but not in the `Vc` stuff yet.
+
 
 # Weekly Meeting Schedule
 
@@ -55,11 +79,11 @@ We usually meet on Mondays at 10:00 am CEST (1:30 pm IST). Sometimes, we meet on
 
 I have the pleasure of working with 3 highly qualified mentors. I will write a bit about each person:
 
-## Joana Nierman
+## Joana Niermann
 
 She is currently a PhD student in the [University of Göttingen](https://www.uni-goettingen.de/en/1.html).
 
-She was the first person I contacted, about my interest in working on this project for GSoC, so we have been corresponding since late March of this year. She is quite helpful in general. In our weekly meets, she regularly helps us set the direction for the week, and also helps with gathering more data by running the benchmarks I have written on other machines.
+She was the first person I contacted, about my interest in working on this project for GSoC, so we have been corresponding since late March of this year. She is a developer in the [detray R&D project](https://github.com/acts-project/detray). In our weekly meets, she regularly helps us set the direction for the week, and also helps with gathering more data by running the benchmarks I have written on other machines.
 
 ## Hadrien Grasland
 
