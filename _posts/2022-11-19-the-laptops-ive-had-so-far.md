@@ -31,13 +31,13 @@ The only bad thing is that the screen stopped working, and the repair shops I to
 
 ## My Technical Knowledge
 
-While I was using the laptop, I barely knew anything about programming and GPUs. I never installed Visual Studio or the like. The idea that you could use the GPU for your own purposes was something that never occurred to me. As such, I barely used the full compute capabilites of the laptop whenever I was doing programming.
+While I was using the laptop, I barely knew anything about programming and GPUs. I never installed Visual Studio or the like. The idea that you could use the GPU for your own purposes was something that never occurred to me. As such, I barely used the full compute capabilities of the laptop whenever I was doing programming.
 
 # The Second Laptop
 
 In late 2020/early 2021, my first laptop started having occasional screen issues. The screen would randomly go blank, and closing the lid and reopening it would do the trick. In February 2021, the issue became severe: if the lid was opened beyond 45°, the screen would go blank. This was obviously unusable.
 
-However, during this time, I was having online classes, and the final exams were about to start. Due to these immiment threats, we went out and bought a laptop for ₹54 000.
+However, during this time, I was having online classes, and the final exams were about to start. Due to these imminent threats, we went out and bought a laptop for ₹54 000.
 
 {% figure [caption: "The laptop I got: an Inspiron 3501."] %}
 ![Inspiron 3501 picture]({{ "/assets/images/Inspiron_3501.png" | relative_url }})
@@ -73,7 +73,7 @@ Overall, I am very happy with the purchase due to the sheer power of the laptop 
 The laptop was quite expensive: with Diwali discounts and a bit of bargaining, I got the price down to ₹147 490. It still cost an arm and a leg, as you can see :smiling_face_with_tear:
 
 However, the specs are amazing:
-- Processor: Intel 12th Gen [i7-12700H](https://ark.intel.com/content/www/us/en/ark/products/132228/intel-core-i712700h-processor-24m-cache-up-to-4-70-ghz.html), 8 Efficiency and 6 Performace Cores, 20 threads
+- Processor: Intel 12th Gen [i7-12700H](https://ark.intel.com/content/www/us/en/ark/products/132228/intel-core-i712700h-processor-24m-cache-up-to-4-70-ghz.html), 8 Efficiency and 6 Performance Cores, 20 threads
 - RAM: 16 GB DDR5 4800MHz RAM
 - Storage: 1 TB SSD
 - Screen: 2560×1600p, 165 refresh rate
@@ -87,4 +87,4 @@ Overall, I'm very impressed and happy with the performance, and hope to get 5 ye
 
 ## My Technical Knowledge
 
-As I have an Nvidia GPU again, I've been slowly learning about the plethora of softwares that Nvidia has. I will share these learnings in subsequent blog posts. Stay tuned!
+As I have an Nvidia GPU again, I've been slowly learning about the plethora of software that Nvidia has. I will share the things I learned in subsequent blog posts. Stay tuned!

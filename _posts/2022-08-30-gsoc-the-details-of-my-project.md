@@ -53,7 +53,7 @@ ACTS uses matrix operations in many places, such as for doing track reconstructi
 
 Some time ago, an alternate implementation of 4×4 matrices and the related operations were written using a library called [`Vc`](https://github.com/VcDevel/Vc), and it performed quite well in benchmarks at the time.
 
-My work is to continue this work and write implemenations for all these desired dimensions, so that the ACTS project's routines run faster.
+My work is to continue this work and write implementations for all these desired dimensions, so that the ACTS project's routines run faster.
 
 I will go more into the details of the work and what we have accomplished so far in the next blog post. For now, I will discuss a bit about our weekly meeting schedule, and what it is like to work with my mentors.
 
