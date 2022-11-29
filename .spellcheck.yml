@@ -1,0 +1,28 @@
+matrix:
+- name: Markdown
+  aspell:
+    lang: en
+    ignore-case: true
+  dictionary:
+    wordlists:
+    - wordlists/anime.txt
+    - wordlists/computer-stuff.txt
+    - wordlists/computer-science.txt
+    - wordlists/genshin.txt
+    - wordlists/gsoc.txt
+    - wordlists/latex.txt
+    - wordlists/markup.txt
+    - wordlists/programming-languages.txt
+    - wordlists/misc.txt
+    encoding: utf-8
+  pipeline:
+  - pyspelling.filters.markdown:
+  - pyspelling.filters.html:
+      comments: false
+      ignores:
+      - code
+      - pre
+      - blockquote
+  sources:
+  - '**/*.md'
+  default_encoding: utf-8
