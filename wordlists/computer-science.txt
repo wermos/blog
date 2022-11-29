@@ -1,0 +1,15 @@
+ISA
+ISAs
+SIMD
+AVX
+SSSE
+intrinsics
+CUDA
+OpenCL
+xsimd
+submodule
+submodules
+Vectorization
+vectorized
+Vendored
+precomputed
