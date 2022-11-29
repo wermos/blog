@@ -1,0 +1,10 @@
+toc
+usecodehl
+endfigure
+usemathjax
+noln
+endnoln
+cpp
+plaintext
+endhighlight
+png

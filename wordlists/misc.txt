@@ -1,0 +1,13 @@
+webpage
+README
+raytracer
+framebuffer
+naïve
+GIFs
+Crysis
+subdirectory
+subexpression
+QoL
+Kolkata's
+playability
+nitty
