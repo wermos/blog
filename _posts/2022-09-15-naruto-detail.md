@@ -24,7 +24,7 @@ One of the things Kushina mentions is that the Uzumaki clan was known for their 
 
 # Summoning Jutsu
 
-An important class of jutsus in the show are the _Summoning Jutsu_. As you may recall, these are jutsus used to summon animals, usually for fighting purposes.
+An important class of jutsu in the show are the _Summoning Jutsu_. As you may recall, these are jutsu used to summon animals, usually for fighting purposes.
 
 ## An Aside: Uses of Summoned Animals
 
@@ -52,9 +52,9 @@ Well, it was established before that Minato spent time around his wife's clan, t
 
 It would be natural to wonder where else he is shown to be using his Sealing Jutsu skills in the show. Here is a small list of the other places where he used them, or his skill with Sealing Jutsu are indirectly demonstrated:
 
-1. He put his teleporation mark into Kushina's Jinchuriki seal so that he could teleport to her directly if she was ever in danger.
+1. He put his teleportation mark into Kushina's Jinchuriki seal so that he could teleport to her directly if she was ever in danger.
 
-2. He unsealed the nine tails from Tobi, freeing it from the Sharingan's hynoptic gaze, and making it free to be sealed inside a Jinchuriki again.
+2. He unsealed the nine tails from Tobi, freeing it from the Sharingan's hypnotic gaze, and making it free to be sealed inside a Jinchuriki again.
 
 3. When he seals the nine tails into Naruto, he makes sure to mix a bit of his and Kushina's chakra into the seal so that they can appear in his mind at crucial moments and guide him away from the dark path he was going down.
 
