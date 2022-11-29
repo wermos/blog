@@ -56,7 +56,7 @@ The first thing my mentors recommended doing was to take a closer look at the re
 
 After looking at `fast5x5.hpp` for a while, I decided that I should make some changes to make the benchmarking program faster and more reliable. So, I started making changes to the repository. I started off by removing the Docker stuff because it would not be necessary for the project.
 
-After making a few changes, it became apparent that I needed somewhere to push my changes to, so that it was available for everyone to see and use. However, because the original project was on Gitlab, I could not fork it the way projects on GitHub can be forked. Instead, I pushed my copy of the Gitlab repository onto GitHub, and made sure to point to the original URL in my repository description. The original repository can be found [here](https://gitlab.in2p3.fr/CodeursIntensifs/Fast5x5), and my fork can be found [here](https://github.com/wermos/Fast5x5/).
+After making a few changes, it became apparent that I needed somewhere to push my changes to, so that it was available for everyone to see and use. However, because the original project was on GitLab, I could not fork it the way projects on GitHub can be forked. Instead, I pushed my copy of the GitLab repository onto GitHub, and made sure to point to the original URL in my repository description. The original repository can be found [here](https://gitlab.in2p3.fr/CodeursIntensifs/Fast5x5), and my fork can be found [here](https://github.com/wermos/Fast5x5/).
 
 ### Repository Reorganization
 
@@ -142,11 +142,11 @@ The advantage of the new hierarchical directory structure is that it allows othe
 
 Originally, the repository expected the user to have `Eigen` and `xsimd` installed. However, the existing `CMakeLists.txt` file downloaded Google Test from GitHub, thereby avoiding that library dependency.
 
-In order to minimize library dependencies and make it easier for other people to run the benchmarks, I removed the reliance on user installations and opted to "vendor" the libraries along with the project. Even though both Fast5×5 and `algebra-plugins` both used CMake to download dependencies from GitHub, I chose the Git submodule approach because I was more familiar with the latter at the time. I added `Eigen`, `xsimd`, and GoogleTest as Git sumbodules. Furthermore, all subsequent additions (like Google Benchmark, `blaze`, and `Fastor`) were added as submodules to Fast5×5.
+In order to minimize library dependencies and make it easier for other people to run the benchmarks, I removed the reliance on user installations and opted to "vendor" the libraries along with the project. Even though both Fast5×5 and `algebra-plugins` both used CMake to download dependencies from GitHub, I chose the Git submodule approach because I was more familiar with the latter at the time. I added `Eigen`, `xsimd`, and GoogleTest as Git submodules. Furthermore, all subsequent additions (like Google Benchmark, `blaze`, and `Fastor`) were added as submodules to Fast5×5.
 
 I converted the libraries into submodules in [`21aad0e`](https://github.com/wermos/Fast5x5/commit/21aad0e2a38425e0c959b259359e6e67084ec282), and then performed an `xsimd` version upgrade (from `v5.0.0` to `v7.6.0`) in [`e1e1c71`](https://github.com/wermos/Fast5x5/commit/e1e1c71aed01d2aee8e24a8b63bcf4360916df81) and performed two Eigen version upgrades in [`18dbd4e`](https://github.com/wermos/Fast5x5/commit/18dbd4eab48ed6dcda108c4545632e9d431d6305) (from `v3.3.4` to `v3.4.0`), and then in [`0e702b0`](https://github.com/wermos/Fast5x5/commit/0e702b0607c28631a24875d94aa1a5acb80a5554) (from `v3.4.0` to `3.4.90`).
 
-Due to the fact that I had converted the libraries into submodules, version upgardes were as simple as checking out a new commit in the submodule repository and then committing that change.
+Due to the fact that I had converted the libraries into submodules, version upgrades were as simple as checking out a new commit in the submodule repository and then committing that change.
 
 ### `/usr/bin/time` vs. Google Benchmark
 
@@ -164,7 +164,7 @@ For these reasons, I decided to move away from `/usr/bin/time` and switched the 
 
 ### Matrix Generation
 
-A key part of the benchmarking code is the random matrix generation. Doing this properly is essential because otherwise, the compiler might figure out the fact that we have pre-computed matrices. Once it does so, it is free to calculate the results ahead of time, which would defeat the point of the benchmark. The original Fast 5×5 code was using index-based operations to fill up the matrix, like so:
+A key part of the benchmarking code is the random matrix generation. Doing this properly is essential because otherwise, the compiler might figure out the fact that we have precomputed matrices. Once it does so, it is free to calculate the results ahead of time, which would defeat the point of the benchmark. The original Fast 5×5 code was using index-based operations to fill up the matrix, like so:
 {% highlight cpp %}
 float a[SIZE * SIZE];
 float b[SIZE * SIZE];

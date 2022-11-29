@@ -8,11 +8,11 @@ usecodehl: true
 categories: gsoc
 ---
 
-In this blog post, I will describe the work I have done after the midterm evalulation.
+In this blog post, I will describe the work I have done after the midterm evaluation.
 
 # Integrating Fastor
 
-As I mentiond in the previous post, the next step was for me to fully integrate Fastor as a backend into `algebra-plugins`. To that end, I opened [PR #78](https://github.com/acts-project/algebra-plugins/pull/78).
+As I mentioned in the previous post, the next step was for me to fully integrate Fastor as a backend into `algebra-plugins`. To that end, I opened [PR #78](https://github.com/acts-project/algebra-plugins/pull/78).
 
 ## `algebra-plugins` Architecture
 
@@ -32,14 +32,15 @@ As I spent time mucking around in the `algebra-plugins` repository and writing c
 
 ## Expression Templates
 
-In order to understand how to write the code for Fastor in `algebra-plugins`, I spent time looking at how the code for the other backends was written. An imoprtant optimization that many math libraries use is [expression templates](https://en.wikipedia.org/wiki/Expression_templates). This is imoprtant because C++ is a eager evaluation language (as opposed to, say, Haskell, which uses lazy evaluation).
+In order to understand how to write the code for Fastor in `algebra-plugins`, I spent time looking at how the code for the other backends was written. An important optimization that many math libraries use is [expression templates](https://en.wikipedia.org/wiki/Expression_templates). This is important because C++ is a eager evaluation language (as opposed to, say, Haskell, which uses lazy evaluation).
 
 Imagine we have the line of code `auto result = 3 * v1 + 5 * v2;`, where `v1` and `v2` are vectors. If the expression were to be lazily evaluated, then every element of the resultant vector would not be computed until the whole expression had been read. In C++ (and other eager evaluation languages) what happens is as follows:
 1. The subexpression `3 * v1` is read. Since this is something that can be computed, C++ computes it and puts it in temporary storage, say `temp1`.
 2. The subexpression `5 * v2` is read. Once again, since this is something that can be computed, C++ computes it and puts it in temporary storage, say `temp2`.
 3. The result of adding `temp1` and `temp2` is stored in `result`.
 
-Obviously, a lot of unnecessary work is being done here. Expression Templates solve this issue by recording the work to be done in lightweight structs using templates until the expression needs to be evaluated, and only then does it fully evaluate the exprsssion.
+Obviously, a lot of unnecessary work is being done here. Expression Templates solve this issue by recording the work to be done in lightweight structs using templates until the expression needs to be evaluated, and only then does it fully evaluate the expression.
 
 ### Expression Templates and `algebra-plugins`
 
+Because of expression templates, many functions have multiple definitions
