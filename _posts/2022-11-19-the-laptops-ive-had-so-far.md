@@ -45,18 +45,18 @@ However, during this time, I was having online classes, and the final exams were
 
 The minute I laid eyes on this laptop, I had nothing but disdain for the specs. After all, my previous laptop was so much better :triumph:
 
-The specs were:
+The specs are:
 - Processor: Intel 11th Gen [i5-1135G7](https://ark.intel.com/content/www/us/en/ark/products/208658/intel-core-i51135g7-processor-8m-cache-up-to-4-20-ghz.html), 4 cores, 8 threads
 - RAM: 8 GB DDR4 RAM
 - Storage: 1 TB HDD
 - Screen: 1920×1080p, 60 Hz refresh rate
 - GPU: None.
 
-Due to the lack of a GPU, I could not play most games I was playing/wanted to play. During this time, I got into the game [Genshin Impact](https://genshin.hoyoverse.com/en/), but I had to play the game at Lowest settings. Yes, they really had a setting below Low, called Lowest, for people with potato PCs like me. Even then, the loading screens to forever to load.
+Due to the lack of a GPU, I could not play most games I was playing/wanted to play. During this time, I got into the game [Genshin Impact](https://genshin.hoyoverse.com/en/), but I had to play the game at Lowest settings. Yes, they really had a setting below Low, called Lowest, for people with potato PCs like me. Even then, the loading screens took forever to load.
 
 ## My Technical Knowledge
 
-During my tenure with this laptop, I learned practiced Vim and eventually made it my daily driver. (I learned Vim on my first laptop, but didn't use it much.) I was forced to use Vim in the second laptop because it couldn't handle the load of having a few browser tabs open along with VS Code. Apart from this, I deep-dived into C++ and also learned a lot about computer architecture and SIMD.
+During my tenure with this laptop, I learned and practiced Vim and eventually made it my daily driver. (I learned Vim on my first laptop, but didn't use it much.) I was forced to use Vim in the second laptop because it couldn't handle the load of having a few browser tabs open along with VS Code. Apart from this, I deep-dived into C++ and also learned a lot about computer architecture and SIMD.
 
 I wrote a CPU-side raytracer (to be discussed in an upcoming blog post), and that was the moment when my desire to learn how to make the GPU do my bidding materialized. However, the problem is that Intel integrated GPUs (iGPUs) don't support CUDA as that is Nvidia's proprietary technology. Instead, to communicate with an Intel iGPU, I would have to use OpenCL, which is widely regarded as being harder to use than CUDA. Moreover, OpenCL is known to be slower on Nvidia GPUs than CUDA, so I would have to learn CUDA at some point anyways.
 
@@ -70,13 +70,13 @@ Overall, I am very happy with the purchase due to the sheer power of the laptop 
 ![Legion 5 Pro picture]({{ "/assets/images/Legion_5_Pro.png" | relative_url }})
 {% endfigure %}
 
-The laptop was quite expensive: with Diwali discounts and a bit of bargaining, I got the price down to ₹147 490. It still cost an arm and a leg, as you can see :smiling_face_with_tear:
+The laptop was quite expensive: with Diwali discounts and a bit of bargaining, I got the price down to ₹147 490. It still cost an arm and a leg, as you can see :smiling_face_with_tear:
 
 However, the specs are amazing:
 - Processor: Intel 12th Gen [i7-12700H](https://ark.intel.com/content/www/us/en/ark/products/132228/intel-core-i712700h-processor-24m-cache-up-to-4-70-ghz.html), 8 Efficiency and 6 Performance Cores, 20 threads
 - RAM: 16 GB DDR5 4800MHz RAM
 - Storage: 1 TB SSD
-- Screen: 2560×1600p, 165 refresh rate
+- Screen: 2560×1600p, 165 Hz refresh rate
 - GPU: RTX 3060 (with 6 GB GDDR6 VRAM), max. TGP of 140 W
 
 Apart from these, the laptop also has a MUX switch. This boosts game FPS as well, because it means that the discrete GPU doesn't need to go through the iGPU to write to the screen's framebuffer.
