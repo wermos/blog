@@ -14,15 +14,18 @@ matrix:
     - wordlists/markup.txt
     - wordlists/programming-languages.txt
     - wordlists/misc.txt
+    - wordlists/videos.txt
     encoding: utf-8
   pipeline:
   - pyspelling.filters.markdown:
+  - pyspelling.filters.url:
   - pyspelling.filters.html:
       comments: false
       ignores:
       - code
       - pre
       - blockquote
+      - iframe
   sources:
   - '**/*.md'
   default_encoding: utf-8
