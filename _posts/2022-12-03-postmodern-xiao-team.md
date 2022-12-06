@@ -46,7 +46,7 @@ In that blog post, he has a section dedicated to naming the new generation of C+
 >
 > This name discussion is difficult.
 
-The blog post continues on to say
+The blog post goes on to say
 > You see, there is a slight tendency to postmodern. Maybe, you have a better idea.
 
 which is where I got the idea for the word _Postmodern_ from! :see_no_evil:
@@ -85,6 +85,8 @@ We cannot use the Tenacity of the Millelith set because another character is usi
 
 A small thing to note here is that Noblesse Oblige will work best if the enemies can be cleared in 1 rotation or so, because we aren't really feeding particles back to Sucrose with the rotations in this team comp, so getting her burst back will be a bit of an issue. This is not so much of an issue in the overworld, but it can make a difference in the Spiral Abyss.
 
+![Thrilling Tales of Dragon Slayers book](https://static.wikia.nocookie.net/gensin-impact/images/9/9e/Weapon_Thrilling_Tales_of_Dragon_Slayers_2nd.png/){: .align-left}
+
 Sucrose is the only character whose weapon is fixed: She _must_ use Thrilling Tales of Dragon Slayers (TTDS) for its massive 48% ATK buff to the character who comes on-field next.
 
 ## Zhongli
@@ -109,12 +111,16 @@ Accounting for average substat rolls, VH offers a 5-10% damage increase over 2x 
 
 The only acceptable artifact set on Albedo is the Husk of Opulent Dream set. The set was tailor-made for DEF-scaling characters such as Albedo.
 
-Technically, Albedo is a split-scaling character because his E scales of off DEF but his Q scales off ATK.
-
-Albedo's weapon is essentially fixed, but only because of how good his signature 4-star event weapon, the Cinnabar Spindle, is on him.
+Technically, Albedo is a split-scaling character because his E scales of off DEF but his Q scales off ATK. However, his E constitutes most of his damage output and not his Q. For this reason, the general advice given is to just ignore his dependence on ATK and just stack as much DEF as possible.
 
 **Warning:** While you are free to put the characters in whatever slots you want, you are strongly advised against placing Albedo in the first slot in the Spiral Abyss. If he is in Slot 1, then he spawns with 0 Curiosity stacks from the Husk set's 4-piece bonus. This means that you are losing out on a grand total of a 24% DEF bonus and a 24% Geo Damage bonus. However, if he is in any other slot, he spawns with all 4 stacks.
 {: .notice--warning}
+
+![Cinnabar Spindle weapon](https://static.wikia.nocookie.net/gensin-impact/images/4/4a/Weapon_Cinnabar_Spindle_2nd.png/){: .align-left}
+
+Albedo's weapon is essentially fixed, but only because of how good his signature 4-star event weapon, the Cinnabar Spindle, is on him, with a 69% DEF bonus at level 90 and refinement rank 5 (R5 for short).
+
+If you don't have Cinnabar Spindle for some reason, Harbinger of Dawn also works well on him.
 
 # How Do The Characters Function?
 
