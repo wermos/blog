@@ -140,6 +140,8 @@ The first thing to consider is whether his Q will be used or not. This mostly de
 
 If damage output is of the utmost priority, then Zhongli can only be used as a shield bot. However, if you like the (occasionally) big numbers that he outputs with his Q, and the Petrification feature of his burst, then you can use him as a burst support.
 
+![Clip of Zhongli's Burst]({{ "assets/gifs/genshin/zhongli.gif" | relative_url }})
+
 The other aspect to keep in mind is his E usage, i.e. his Stone Stele placement. This can be a little tricky to get right at C0, and slightly easier at C1 (because it allows you place 2 Steles instead of 1).
 
 The 4-piece set bonus for the Tenacity of the Millelith set can only be activated if the Stele's tick hits an opponent.
@@ -155,6 +157,8 @@ He is the DPS of the team. There isn't anything special about the way he operate
 ## Albedo
 
 He deals off-field Geo damage via his E. Every once in a while, the player must switch to him to use his E and/or Q and then switch out.
+
+![Clip of Albedo's Burst]({{ "assets/gifs/genshin/albedo.gif" | relative_url }})
 
 That being said, in Abyss floors, I often stay on Albedo and proc his E with normal attacks to generate particles for him and Zhongli, for subsequent chambers. I find it easier to generate particles with him instead of Zhongli.
 
