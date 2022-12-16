@@ -13,3 +13,10 @@ Vectorization
 vectorized
 Vendored
 precomputed
+SymPy
+SciPy
+OpenCV
+LLVM
+dev
+CPython
+FFmpeg
