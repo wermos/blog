@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en" class="no-js">
+ <head>
+   <meta charset="utf-8">
+<title>GSoC — The Final Status Report | Tirthankar’s Blog</title>
+<meta name="description" content="In this blog post, I will describe the work I have done after the midterm evaluation.">
+ <meta name="author" content="Tirthankar Mazumder">
+ <meta property="article:author" content="Tirthankar Mazumder">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Tirthankar's Blog">
+<meta property="og:title" content="GSoC — The Final Status Report">
+<meta property="og:url" content="https://wermos.github.io//blog/gsoc/gsoc-the-final-status-report/">
+ <meta property="og:description" content="In this blog post, I will describe the work I have done after the midterm evaluation.">
+ <meta property="article:published_time" content="2022-11-21T14:49:56+00:00">
+<link rel="canonical" href="https://wermos.github.io//blog/gsoc/gsoc-the-final-status-report/">
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Tirthankar Mazumder",
+      "url": "https://wermos.github.io//blog/"
+  }
+</script>
+<link href="/blog/feed.xml" type="application/atom+xml" rel="alternate" title="Tirthankar's Blog Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+<link rel="stylesheet" href="/blog/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+<link rel="icon" type="image/png" sizes="192x192" href=/blog/assets/icons/android-chrome-192x192.png>
+<link rel="icon" type="image/png" sizes="512x512" href=/blog/assets/icons/android-chrome-512x512.png>
+<link rel="apple-touch-icon" sizes="180x180" href=/blog/assets/icons/apple-touch-icon.png>
+<link rel="apple-touch-icon" sizes="180x180" href=/blog/assets/icons/apple-touch-icon-180x180.png>
+<link rel="apple-touch-icon" sizes="152x152" href=/blog/assets/icons/apple-touch-icon-152x152.png>
+<link rel="apple-touch-icon" sizes="120x120" href=/blog/assets/icons/apple-touch-icon-120x120.png>
+<link rel="apple-touch-icon" sizes="76x76" href=/blog/assets/icons/apple-touch-icon-76x76.png>
+<link rel="apple-touch-icon" sizes="60x60" href=/blog/assets/icons/apple-touch-icon-60x60.png>
+<link rel="icon" type="image/png" sizes="32x32" href=/blog/favicon-32x32.png>
+<link rel="icon" type="image/png" sizes="16x16" href=/blog/favicon-16x16.png>
+<link rel="shortcut icon" href=/blog/favicon.ico>
+<link rel="manifest" href=/blog/site.webmanifest>
+<link rel="mask-icon" href=/blog/assets/icons/safari-pinned-tab.svg color="#5099d8">
+<meta name='msapplication-config' content=/blog/browserconfig.xml>
+<meta name="apple-mobile-web-app-title" content="Tirthankar's Blog">
+<meta name="application-name" content="Tirthankar's Blog">
+<meta name="msapplication-TileColor" content="#ffc40d">
+<meta name="theme-color" content="#ffffff">
+ <body class="layout--single wide">
+   <nav class="skip-links">
+ <ul>
+   <li>
+<a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a>
+   </li>
+<li>
+<a href="#main" class="screen-reader-shortcut">Skip to content</a>
+   </li>
+<li>
+<a href="#footer" class="screen-reader-shortcut">Skip to footer</a>
+ </li>
+</ul>
+</nav>
+<div class="masthead">
+ <div class="masthead__inner-wrap">
+   <div class="masthead__menu">
+     <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/blog/">
+          Tirthankar's Blog
+          <span class="site-subtitle">My own little place on the internet.</span>
+        </a>
+       <ul class="visible-links"></ul>
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+         <div class="navicon"></div>
+        </button>
+       <ul class="hidden-links hidden"></ul>
+     </nav>
+   </div>
+ </div>
+</div>
+   <div class="initial-content">
+<div id="main" role="main">
+ <div class="sidebar sticky">
+<div itemscope itemtype="https://schema.org/Person">
+ <div class="author__content">
+     <h3 class="author__name" itemprop="name">Tirthankar Mazumder</h3>
+     <div class="author__bio" itemprop="description">
+       <p>I don’t know what to write here so I’ll keep it blank for now.</p>
+     </div>
+ </div>
+ <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+   <ul class="author__urls social-icons">
+       <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Maharasthra, India</span>
+           </li>
+<li>
+<a href="https://github.com/wermos" rel="noopener noreferrer" target="_blank"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a>
+       </li>
+<li>
+          <a href="mailto:mztirthankar@gmail.com">
+           <meta itemprop="email" content="mztirthankar@gmail.com">
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span>
+          </a>
+   </li>
+</ul>
+ </div>
+</div>
+ </div>
+ <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+   <meta itemprop="headline" content="GSoC — The Final Status Report">
+   <meta itemprop="description" content="In this blog post, I will describe the work I have done after the midterm evaluation.">
+   <meta itemprop="datePublished" content="2022-11-21T14:49:56+00:00">
+   <div class="page__inner-wrap">
+      <header>
+         <h1 id="page-title" class="page__title" itemprop="headline">GSoC — The Final Status Report
+</h1>
+ <p class="page__meta">
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+          2 minute read
+      </span>
+ </p>
+       </header>
+     <section class="page__content" itemprop="text">
+         <aside class="sidebar__right ">
+           <nav class="toc">
+            <header><h4 class="nav__title">
+<i class="fas fa-file-alt"></i> On this page</h4></header>
+             <ul class="toc__menu"><li>
+<a href="#integrating-fastor">Integrating Fastor</a><ul>
+<li>
+<a href="#algebra-plugins-architecture">algebra-plugins Architecture</a><ul>
+<li><a href="#uniform-function-names">Uniform Function Names</a></li>
+<li><a href="#uniform-type-names">Uniform Type Names</a></li>
+</ul>
+</li>
+<li>
+<a href="#expression-templates">Expression Templates</a><ul><li><a href="#expression-templates-and-algebra-plugins">Expression Templates and algebra-plugins</a></li></ul>
+</li>
+</ul>
+</li></ul>
+           </nav>
+         </aside>
+       <p>In this blog post, I will describe the work I have done after the midterm evaluation.</p>
+<h1 id="integrating-fastor">Integrating Fastor</h1>
+<p>As I mentioned in the previous post, the next step was for me to fully integrate Fastor as a backend into <code>algebra-plugins</code>. To that end, I opened <a href="https://github.com/acts-project/algebra-plugins/pull/78" target="_blank" rel="noopener noreferrer">PR #78</a>.</p>
+<h2 id="algebra-plugins-architecture">
+<code>algebra-plugins</code> Architecture</h2>
+<p>Integrating Fastor into <code>algebra-plugins</code> was not an easy feat. The architecture of <code>algebra-plugins</code> is quite complicated and very C++ template-heavy (in order to minimize code duplication). Moreover, there are many things which do not make sense to a beginner. For example, it is not immediately obvious to the newcomer why we need to write code both in the <a href="https://github.com/wermos/algebra-plugins/tree/9b3f0fe50d4be688ca99bd33e64e8837f6efa8f9/math" target="_blank" rel="noopener noreferrer"><code>math</code> subdirectory</a> as well as the <a href="https://github.com/wermos/algebra-plugins/tree/9b3f0fe50d4be688ca99bd33e64e8837f6efa8f9/frontend" target="_blank" rel="noopener noreferrer"><code>frontend</code> subdirectory</a>. Moreover, the frontend names like <code>eigen_eigen</code> and <code>eigen_cmath</code> are not the most illuminating either.</p>
+<h3 id="uniform-function-names">Uniform Function Names</h3>
+<p>Regardless, I got to work in the <code>math</code> subdirectory first. Inside this directory, all the functions used by the other projects and the rest of the repository are defined in terms of the math backend functions. A specific library might call the function <code>dot()</code>, <a href="https://eigen.tuxfamily.org/dox/classEigen_1_1MatrixBase.html#adfd32bf5fcf6ee603c924dde9bf7bc39" target="_blank" rel="noopener noreferrer">as Eigen does</a>, or it might call it <code>inner()</code> (short for <a href="https://en.wikipedia.org/wiki/Dot_product" target="_blank" rel="noopener noreferrer">inner product</a>), <a href="https://github.com/romeric/Fastor/wiki/Linear-algebra-functions#inner-product-inner" target="_blank" rel="noopener noreferrer">as Fastor does</a>.</p>
+<p><code>algebra-plugins</code> uses the functions defined in the <code>math</code> directory to provide an uniform API, regardless of the backend. The name that was decided upon for <code>algebra-plugins</code> for this function was <code>dot()</code>.</p>
+<h3 id="uniform-type-names">Uniform Type Names</h3>
+<p>Type names are another thing which have a lot of variation from library to library. Eigen calls their type as simply <a href="https://eigen.tuxfamily.org/dox/group__TutorialMatrixClass.html" target="_blank" rel="noopener noreferrer"><code>Matrix</code></a>, whereas <code>SMatrix</code>, for example, calls their matrix type <a href="https://root.cern.ch/doc/master/classROOT_1_1Math_1_1SMatrix.html" target="_blank" rel="noopener noreferrer"><code>SMatrix</code></a> (unsurprisingly). For this reason, we have to define types such as <code>matrix_type</code> and <code>vector3</code> in the <a href="https://github.com/wermos/algebra-plugins/blob/9b3f0fe50d4be688ca99bd33e64e8837f6efa8f9/storage/fastor/include/algebra/storage/fastor.hpp" target="_blank" rel="noopener noreferrer"><code>storage</code> directory</a>.</p>
+<p>As I spent time mucking around in the <code>algebra-plugins</code> repository and writing code, these little things started to make more and more sense to me.</p>
+<h2 id="expression-templates">Expression Templates</h2>
+<p>In order to understand how to write the code for Fastor in <code>algebra-plugins</code>, I spent time looking at how the code for the other backends was written. An important optimization that many math libraries use is <a href="https://en.wikipedia.org/wiki/Expression_templates" target="_blank" rel="noopener noreferrer">expression templates</a>. This is important because C++ is a eager evaluation language (as opposed to, say, Haskell, which uses lazy evaluation).</p>
+<p>Imagine we have the line of code <code>auto result = 3 * v1 + 5 * v2;</code>, where <code>v1</code> and <code>v2</code> are vectors. If the expression were to be lazily evaluated, then every element of the resultant vector would not be computed until the whole expression had been read. In C++ (and other eager evaluation languages) what happens is as follows:</p>
+<ol>
+ <li>The subexpression <code>3 * v1</code> is read. Since this is something that can be computed, C++ computes it and puts it in temporary storage, say <code>temp1</code>.
+ </li>
+<li>The subexpression <code>5 * v2</code> is read. Once again, since this is something that can be computed, C++ computes it and puts it in temporary storage, say <code>temp2</code>.
+ </li>
+<li>The result of adding <code>temp1</code> and <code>temp2</code> is stored in <code>result</code>.
+</li>
+</ol>
+<p>Obviously, a lot of unnecessary work is being done here. Expression Templates solve this issue by recording the work to be done in lightweight structs using templates until the expression needs to be evaluated, and only then does it fully evaluate the expression.</p>
+<h3 id="expression-templates-and-algebra-plugins">Expression Templates and <code>algebra-plugins</code>
+</h3>
+<p>Because of expression templates, many functions have multiple definitions</p>
+     </section>
+     <footer class="page__meta">
+ <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+      <a href="/blog/categories/#gsoc" class="page__taxonomy-item" rel="tag">gsoc</a>
+    </span>
+ </p>
+ <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2022-11-21T14:49:56+00:00">November 21, 2022</time></p>
+     </footer>
+     <section class="page__share">
+   <h4 class="page__share-title">Share on</h4>
+  <a href="https://twitter.com/intent/tweet?text=GSoC+---+The+Final+Status+Report%20https%3A%2F%2Fwermos.github.io%2F%2Fblog%2Fgsoc%2Fgsoc-the-final-status-report%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter" target="_blank" rel="noopener noreferrer"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwermos.github.io%2F%2Fblog%2Fgsoc%2Fgsoc-the-final-status-report%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwermos.github.io%2F%2Fblog%2Fgsoc%2Fgsoc-the-final-status-report%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+ <nav class="pagination">
+      <a href="/blog/anime/naruto/naruto-detail/" class="pagination--pager" title="A Small Detail in Naruto Shippuuden: Sealing Jutsu
+">Previous</a>
+      <a href="/blog/the-laptops-ive-had-so-far/" class="pagination--pager" title="The Laptops I’ve Had So Far
+">Next</a>
+ </nav>
+   </div>
+     <div class="page__comments">
+     <h4 class="page__comments-title">Leave a comment</h4>
+     <section id="giscus-comments"></section>
+</div>
+ </article>
+   <div class="page__related">
+     <h4 class="page__related-title">You may also enjoy</h4>
+     <div class="grid__wrapper">
+<div class="grid__item">
+ <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+   <h2 class="archive__item-title no_toc" itemprop="headline">
+        <a href="/blog/gsoc/gsoc-the-application-process/" rel="permalink">GSoC — The Application Process
+</a>
+   </h2>
+ <p class="page__meta">
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+          17 minute read
+      </span>
+ </p>
+   <p class="archive__item-excerpt" itemprop="description">In this blog post, I will discuss what the application process for GSoC is like, and the timeline in which I did things and applied.
+</p>
+ </article>
+</div>
+<div class="grid__item">
+ <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+   <h2 class="archive__item-title no_toc" itemprop="headline">
+        <a href="/blog/genshin-impact/xiao/postmodern-xiao-team/" rel="permalink">A Spiral Abyss-Friendly Xiao Team: Postmodern Xiao
+</a>
+   </h2>
+ <p class="page__meta">
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+          10 minute read
+      </span>
+ </p>
+   <p class="archive__item-excerpt" itemprop="description">In this blog post, I will introduce a Genshin Impact team I came up with myself, which I call Postmodern Xiao.
+</p>
+ </article>
+</div>
+<div class="grid__item">
+ <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+   <h2 class="archive__item-title no_toc" itemprop="headline">
+        <a href="/blog/the-laptops-ive-had-so-far/" rel="permalink">The Laptops I’ve Had So Far
+</a>
+   </h2>
+ <p class="page__meta">
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+          5 minute read
+      </span>
+ </p>
+   <p class="archive__item-excerpt" itemprop="description">A short account of the different laptops I’ve owned so far.
+</p>
+ </article>
+</div>
+<div class="grid__item">
+ <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+   <h2 class="archive__item-title no_toc" itemprop="headline">
+        <a href="/blog/anime/naruto/naruto-detail/" rel="permalink">A Small Detail in Naruto Shippuuden: Sealing Jutsu
+</a>
+   </h2>
+ <p class="page__meta">
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+          5 minute read
+      </span>
+ </p>
+   <p class="archive__item-excerpt" itemprop="description">This post is about a small detail I noticed while telling someone about an amazing scene in the show.
+</p>
+ </article>
+</div>
+     </div>
+   </div>
+</div>
+   </div>
+     <div class="search-content">
+       <div class="search-content__inner-wrap">
+<div class="search-searchbar"></div>
+ <div class="search-hits"></div>
+</div>
+     </div>
+   <div id="footer" class="page__footer">
+     <footer>
+       <div class="page__footer-follow">
+ <ul class="social-icons">
+     <li>
+<strong>Follow:</strong>
+         </li>
+<li>
+<a href="https://github.com/wermos" rel="noopener noreferrer" target="_blank"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a>
+     </li>
+<li>
+<a href="/blog/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a>
+ </li>
+</ul>
+</div>
+<div class="page__footer-copyright">© 2022 Tirthankar Mazumder. Powered by <a href="https://jekyllrb.com" rel="noopener noreferrer" target="_blank">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="noopener noreferrer" target="_blank">Minimal Mistakes</a>.</div>
+     </footer>
+   </div>
+  <script src="/blog/assets/js/main.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch-theme-algolia.min.css">
+<script>
+// Instanciating InstantSearch.js with Algolia credentials
+const search = instantsearch({
+  appId: 'IAFKFFWNO2',
+  apiKey: '1822efaff6c7c7bcdacef47f8411167b',
+  indexName: 'blog',
+  searchParameters: {
+    restrictSearchableAttributes: [
+      'title',
+      'content'
+    ]
+  }
+});
+const hitTemplate = function(hit) {
+  const url = hit.url;
+  const title = hit._highlightResult.title.value;
+  const content = hit._highlightResult.html.value;
+  return `
+   <div class="list__item">
+     <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+       <h2 class="archive__item-title" itemprop="headline"><a href="/blog${url}">${title}</a></h2>
+       <div class="archive__item-excerpt" itemprop="description">${content}</div>
+     </article>
+   </div>
+  `;
+}
+// Adding searchbar and results widgets
+search.addWidget(
+  instantsearch.widgets.searchBox({
+    container: '.search-searchbar',
+    poweredBy: true,
+    placeholder: 'Enter your search term...'
+  })
+);
+search.addWidget(
+  instantsearch.widgets.hits({
+    container: '.search-hits',
+    templates: {
+      item: hitTemplate,
+      empty: 'No results',
+    }
+  })
+);
+// Starting the search only when toggle is clicked
+$(document).ready(function () {
+  $(".search__toggle").on("click", function() {
+    if(!search.started) {
+      search.start();
+    }
+  });
+});
+</script>
+    <script>
+  'use strict';
+  (function () {
+    var commentContainer = document.querySelector('#giscus-comments');
+    if (!commentContainer) {
+      return;
+    }
+    var script = document.createElement('script');
+    script.setAttribute('src', 'https://giscus.app/client.js');
+    script.setAttribute('data-repo', 'wermos/blog');
+    script.setAttribute('data-repo-id', 'R_kgDOH0ZkXg');
+    script.setAttribute('data-category', 'Announcements');
+    script.setAttribute('data-category-id', 'DIC_kwDOH0ZkXs4CSNuD');
+    script.setAttribute('data-mapping', 'pathname');
+    script.setAttribute('data-reactions-enabled', '1');
+    script.setAttribute('data-theme', 'transparent_dark');
+    script.setAttribute('crossorigin', 'anonymous');
+    commentContainer.appendChild(script);
+  })();
+</script>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/monokai-sublime.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/highlightjs-line-numbers.js@2.8.0/dist/highlightjs-line-numbers.min.js"></script>
+<script>
+       hljs.highlightAll();
+       hljs.initLineNumbersOnLoad();
+</script>
+<script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  backgroundColor: 'rgb(255, 133, 0)',
+  //backgroundColor: 'rgb(191, 191, 191)',
+  textColor: '#fff',
+  scrollDuration: 150
+})</script>
+  

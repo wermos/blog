@@ -1,0 +1,13 @@
+Inspiron
+SSD
+GTX
+RTX
+VRAM
+GPUs
+DDR
+GDDR
+GPUs
+iGPU
+iGPUs
+TGP
+MUX

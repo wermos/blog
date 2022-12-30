@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en" class="no-js">
+ <head>
+   <meta charset="utf-8">
+<title>GSoC — The Work So Far | Tirthankar’s Blog</title>
+<meta name="description" content="In this blog post, I will discuss the work I have done so far, and what our future direction will be.">
+ <meta name="author" content="Tirthankar Mazumder">
+ <meta property="article:author" content="Tirthankar Mazumder">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Tirthankar's Blog">
+<meta property="og:title" content="GSoC — The Work So Far">
+<meta property="og:url" content="https://wermos.github.io//blog/gsoc/gsoc-the-work-so-far/">
+ <meta property="og:description" content="In this blog post, I will discuss the work I have done so far, and what our future direction will be.">
+ <meta property="article:published_time" content="2022-08-31T10:46:37+00:00">
+<link rel="canonical" href="https://wermos.github.io//blog/gsoc/gsoc-the-work-so-far/">
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Tirthankar Mazumder",
+      "url": "https://wermos.github.io//blog/"
+  }
+</script>
+<link href="/blog/feed.xml" type="application/atom+xml" rel="alternate" title="Tirthankar's Blog Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+<link rel="stylesheet" href="/blog/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+<link rel="icon" type="image/png" sizes="192x192" href=/blog/assets/icons/android-chrome-192x192.png>
+<link rel="icon" type="image/png" sizes="512x512" href=/blog/assets/icons/android-chrome-512x512.png>
+<link rel="apple-touch-icon" sizes="180x180" href=/blog/assets/icons/apple-touch-icon.png>
+<link rel="apple-touch-icon" sizes="180x180" href=/blog/assets/icons/apple-touch-icon-180x180.png>
+<link rel="apple-touch-icon" sizes="152x152" href=/blog/assets/icons/apple-touch-icon-152x152.png>
+<link rel="apple-touch-icon" sizes="120x120" href=/blog/assets/icons/apple-touch-icon-120x120.png>
+<link rel="apple-touch-icon" sizes="76x76" href=/blog/assets/icons/apple-touch-icon-76x76.png>
+<link rel="apple-touch-icon" sizes="60x60" href=/blog/assets/icons/apple-touch-icon-60x60.png>
+<link rel="icon" type="image/png" sizes="32x32" href=/blog/favicon-32x32.png>
+<link rel="icon" type="image/png" sizes="16x16" href=/blog/favicon-16x16.png>
+<link rel="shortcut icon" href=/blog/favicon.ico>
+<link rel="manifest" href=/blog/site.webmanifest>
+<link rel="mask-icon" href=/blog/assets/icons/safari-pinned-tab.svg color="#5099d8">
+<meta name='msapplication-config' content=/blog/browserconfig.xml>
+<meta name="apple-mobile-web-app-title" content="Tirthankar's Blog">
+<meta name="application-name" content="Tirthankar's Blog">
+<meta name="msapplication-TileColor" content="#ffc40d">
+<meta name="theme-color" content="#ffffff">
+ <body class="layout--single wide">
+   <nav class="skip-links">
+ <ul>
+   <li>
+<a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a>
+   </li>
+<li>
+<a href="#main" class="screen-reader-shortcut">Skip to content</a>
+   </li>
+<li>
+<a href="#footer" class="screen-reader-shortcut">Skip to footer</a>
+ </li>
+</ul>
+</nav>
+<div class="masthead">
+ <div class="masthead__inner-wrap">
+   <div class="masthead__menu">
+     <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/blog/">
+          Tirthankar's Blog
+          <span class="site-subtitle">My own little place on the internet.</span>
+        </a>
+       <ul class="visible-links"></ul>
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+         <div class="navicon"></div>
+        </button>
+       <ul class="hidden-links hidden"></ul>
+     </nav>
+   </div>
+ </div>
+</div>
+   <div class="initial-content">
+<div id="main" role="main">
+ <div class="sidebar sticky">
+<div itemscope itemtype="https://schema.org/Person">
+ <div class="author__content">
+     <h3 class="author__name" itemprop="name">Tirthankar Mazumder</h3>
+     <div class="author__bio" itemprop="description">
+       <p>I don’t know what to write here so I’ll keep it blank for now.</p>
+     </div>
+ </div>
+ <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+   <ul class="author__urls social-icons">
+       <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Maharasthra, India</span>
+           </li>
+<li>
+<a href="https://github.com/wermos" rel="noopener noreferrer" target="_blank"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a>
+       </li>
+<li>
+          <a href="mailto:mztirthankar@gmail.com">
+           <meta itemprop="email" content="mztirthankar@gmail.com">
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span>
+          </a>
+   </li>
+</ul>
+ </div>
+</div>
+ </div>
+ <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+   <meta itemprop="headline" content="GSoC — The Work So Far">
+   <meta itemprop="description" content="In this blog post, I will discuss the work I have done so far, and what our future direction will be.">
+   <meta itemprop="datePublished" content="2022-08-31T10:46:37+00:00">
+   <div class="page__inner-wrap">
+      <header>
+         <h1 id="page-title" class="page__title" itemprop="headline">GSoC — The Work So Far
+</h1>
+ <p class="page__meta">
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+          8 minute read
+      </span>
+ </p>
+       </header>
+     <section class="page__content" itemprop="text">
+         <aside class="sidebar__right ">
+           <nav class="toc">
+            <header><h4 class="nav__title">
+<i class="fas fa-file-alt"></i> On this page</h4></header>
+             <ul class="toc__menu">
+<li>
+<a href="#fast-55">Fast 5×5</a><ul><li>
+<a href="#my-changes-to-fast-55">My Changes to Fast 5×5</a><ul>
+<li><a href="#repository-reorganization">Repository Reorganization</a></li>
+<li><a href="#installed-vs-vendored-libraries">Installed vs. Vendored Libraries</a></li>
+<li><a href="#usrbintime-vs-google-benchmark">/usr/bin/time vs. Google Benchmark</a></li>
+<li><a href="#matrix-generation">Matrix Generation</a></li>
+</ul>
+</li></ul>
+</li>
+<li><a href="#benchmarking-results">Benchmarking Results</a></li>
+</ul>
+           </nav>
+         </aside>
+       <p>In this blog post, I will discuss the work I have done so far, and what our future direction will be.</p>
+<h1 id="fast-55">Fast 5×5</h1>
+<p>In 2019, Hadrien worked with a Masters student to create <a href="https://gitlab.in2p3.fr/CodeursIntensifs/Fast5x5" target="_blank" rel="noopener noreferrer">Fast 5×5</a>, which was supposed to be a proof-of-concept demonstrating that the existing matrix routines in <code>Eigen</code> could be better optimized for small dimensions like 5×5.</p>
+<h2 id="my-changes-to-fast-55">My Changes to Fast 5×5</h2>
+<p>The first thing my mentors recommended doing was to take a closer look at the repository and understand where we stand with respect to the work to be done.</p>
+<p>After looking at <code>fast5x5.hpp</code> for a while, I decided that I should make some changes to make the benchmarking program faster and more reliable. So, I started making changes to the repository. I started off by removing the Docker stuff because it would not be necessary for the project.</p>
+<p>After making a few changes, it became apparent that I needed somewhere to push my changes to, so that it was available for everyone to see and use. However, because the original project was on GitLab, I could not fork it the way projects on GitHub can be forked. Instead, I pushed my copy of the GitLab repository onto GitHub, and made sure to point to the original URL in my repository description. The original repository can be found <a href="https://gitlab.in2p3.fr/CodeursIntensifs/Fast5x5" target="_blank" rel="noopener noreferrer">here</a>, and my fork can be found <a href="https://github.com/wermos/Fast5x5/" target="_blank" rel="noopener noreferrer">here</a>.</p>
+<h3 id="repository-reorganization">Repository Reorganization</h3>
+<p>The original directory structure was quite flat. However, it was not amenable to the amount and volume of changes I needed to make. For this reason, I reorganized the entire repository multiple times (for example, in <a href="https://github.com/wermos/Fast5x5/commit/85ad3fd1de82ee6313bb2685e2a02f368d7e5e6a" target="_blank" rel="noopener noreferrer"><code>85ad3fd</code></a>, <a href="https://github.com/wermos/Fast5x5/commit/20d4fb9940f01c547272cb3b2e775335992d8ea6" target="_blank" rel="noopener noreferrer"><code>20d4fb9</code></a>, <a href="https://github.com/wermos/Fast5x5/commit/125a084f374c92936a2bc9f8e41d561c31346588" target="_blank" rel="noopener noreferrer"><code>125a084</code></a>, and <a href="https://github.com/wermos/Fast5x5/commit/69bd4d8cc3f6e3aeb0c6baf21d9510b931984799" target="_blank" rel="noopener noreferrer"><code>69bd4d8</code></a>).</p>
+<p>The original directory structure was:</p>
+<figure class="highlight"><pre><code class="nohljsln">.
+├── README.md
+├── CMakeLists.txt
+├── custom_scal.txt
+├── eigen_scal.txt
+├── analysis.R
+├── measure_perf.sh
+├── fast5x5.hpp
+├── matrix_product_custom.cpp
+├── matrix_product_eigen.cpp
+├── benchmark/
+│   ├── benchmark.sh
+│   ├── gemm_custom.cpp
+│   ├── gemm_eigen.cpp
+│   ├── gemm_header.h
+│   └── gemm_simple.cpp
+├── docker/
+│   ├── Dockerfile-extracts
+│   ├── kokkos
+│   └── xsimd
+└── test/
+    ├── CMakeLists.txt
+    ├── unit_inverse.cpp
+    ├── unit_matrix.cpp
+    ├── unit_operator.cpp
+    ├── unit_vector.cpp
+    └── run_all.cpp</code></pre></figure>
+<p>The current (at the time of writing) file structure is as follows:</p>
+<figure class="highlight"><pre><code class="nohljsln">.
+├── README.md
+├── CMakeLists.txt
+├── include/
+│   ├── fast5x5/
+│   │   └── fast5x5.hpp
+│   └── benchmarks/
+│       ├── coord-transform
+│       ├── gemm
+│       ├── inversion
+│       ├── similarity
+│       ├── shared
+│       ├── mat_mul.hpp
+│       ├── mat_inv.hpp
+│       ├── mat_sim.hpp
+│       └── mat_coord_transform.hpp
+└── src/
+    ├── CMakeLists.txt
+    ├── libs/
+    │   ├── eigen
+    │   ├── xsimd
+    │   ├── googletest
+    │   ├── benchmark
+    │   ├── blaze
+    │   └── Fastor
+    ├── benchmarks/
+    │   ├── CMakeLists.txt
+    │   ├── combined_benchmark.cpp
+    │   ├── gemm_benchmark.cpp
+    │   ├── inversion_benchmark.cpp
+    │   ├── similarity_benchmark.cpp
+    │   └── coord_transform_benchmark.cpp
+    └── test/
+        ├── CMakeLists.txt
+        ├── unit_inverse.cpp
+        ├── unit_matrix.cpp
+        ├── unit_operator.cpp
+        ├── unit_vector.cpp
+        └── run_all.cpp</code></pre></figure>
+<p>The advantage of the new hierarchical directory structure is that it allows others to get up to speed with respect to where everything is faster, and it also allows me to easily add more benchmarks and backends.</p>
+<h3 id="installed-vs-vendored-libraries">Installed vs. Vendored Libraries</h3>
+<p>Originally, the repository expected the user to have <code>Eigen</code> and <code>xsimd</code> installed. However, the existing <code>CMakeLists.txt</code> file downloaded Google Test from GitHub, thereby avoiding that library dependency.</p>
+<p>In order to minimize library dependencies and make it easier for other people to run the benchmarks, I removed the reliance on user installations and opted to “vendor” the libraries along with the project. Even though both Fast5×5 and <code>algebra-plugins</code> both used CMake to download dependencies from GitHub, I chose the Git submodule approach because I was more familiar with the latter at the time. I added <code>Eigen</code>, <code>xsimd</code>, and GoogleTest as Git submodules. Furthermore, all subsequent additions (like Google Benchmark, <code>blaze</code>, and <code>Fastor</code>) were added as submodules to Fast5×5.</p>
+<p>I converted the libraries into submodules in <a href="https://github.com/wermos/Fast5x5/commit/21aad0e2a38425e0c959b259359e6e67084ec282" target="_blank" rel="noopener noreferrer"><code>21aad0e</code></a>, and then performed an <code>xsimd</code> version upgrade (from <code>v5.0.0</code> to <code>v7.6.0</code>) in <a href="https://github.com/wermos/Fast5x5/commit/e1e1c71aed01d2aee8e24a8b63bcf4360916df81" target="_blank" rel="noopener noreferrer"><code>e1e1c71</code></a> and performed two Eigen version upgrades in <a href="https://github.com/wermos/Fast5x5/commit/18dbd4eab48ed6dcda108c4545632e9d431d6305" target="_blank" rel="noopener noreferrer"><code>18dbd4e</code></a> (from <code>v3.3.4</code> to <code>v3.4.0</code>), and then in <a href="https://github.com/wermos/Fast5x5/commit/0e702b0607c28631a24875d94aa1a5acb80a5554" target="_blank" rel="noopener noreferrer"><code>0e702b0</code></a> (from <code>v3.4.0</code> to <code>3.4.90</code>).</p>
+<p>Due to the fact that I had converted the libraries into submodules, version upgrades were as simple as checking out a new commit in the submodule repository and then committing that change.</p>
+<h3 id="usrbintime-vs-google-benchmark">
+<code>/usr/bin/time</code> vs. Google Benchmark</h3>
+<p><a href="https://github.com/google/benchmark" target="_blank" rel="noopener noreferrer">Google Benchmark</a> is a C++ library dedicated to performing micro-benchmarks.</p>
+<p>Benchmarking small pieces of code like the ones in this project is called micro-benchmarking. Among software developers, it is well known that micro-benchmarking is tough to do properly because the very nature of the benchmarks means that a small amount of noise (to the order of a few nanoseconds) can greatly alter the results of a specific benchmark.</p>
+<p><code>/usr/bin/time</code> was the original method of benchmarking that was being used. However, it is not well suited to micro-benchmarks because the resolution of the underlying clock used is <a href="https://stackoverflow.com/a/9006802/12591388" target="_blank" rel="noopener noreferrer">not that great</a>. On the other hand, Google Benchmark has no problem with reporting the elapsed time for tasks which take a few nanoseconds (5 to 7 ns, for example).</p>
+<p>An interesting and very useful feature that Google Benchmark has is its <code>DoNotOptimize()</code> function, which prevents the compiler from optimizing out a certain operation. After all, what good is the benchmark if it isn’t even doing what I am trying to measure? Obviously, <code>/usr/bin/time</code> has no such thing (because it was created for a different purpose), so Google Benchmark is superior in this regard as well.</p>
+<p>Apart from these technical considerations, Google Benchmark offers considerable Quality of Life (QoL) features as well, such as the option to run multiple benchmarks back to back, an uniform output format, the option to export the output into different formats like csv and json, and more.</p>
+<p>For these reasons, I decided to move away from <code>/usr/bin/time</code> and switched the Google Benchmark instead.</p>
+<h3 id="matrix-generation">Matrix Generation</h3>
+<p>A key part of the benchmarking code is the random matrix generation. Doing this properly is essential because otherwise, the compiler might figure out the fact that we have precomputed matrices. Once it does so, it is free to calculate the results ahead of time, which would defeat the point of the benchmark. The original Fast 5×5 code was using index-based operations to fill up the matrix, like so:</p>
+<figure class="highlight"><pre><code class="language-cpp">float a[SIZE * SIZE];
+float b[SIZE * SIZE];
+
+// the BaseMatrix data type in fast5x5.hpp has a constructor
+// that takes in C-style arrays. So, the code simply filled
+// up two arrays and then made two BaseMatrix objects out
+// of them.
+
+for (int i = 0; i &lt; SIZE; i++) {
+    for (int j = 0; j &lt; SIZE; j++) {
+        a[i * SIZE + j] = i + j;
+    }
+}
+
+for (int i = 0; i &lt; SIZE; i++) {
+    for (int j = 0; j &lt; SIZE; j++) {
+        float val;
+        if (i == 0 &amp;&amp; j == 1) val = -1;
+        else if (i == 1 &amp;&amp; j == 0) val = 1;
+        else if (i &gt; 1 &amp;&amp; i == j &amp;&amp; i % 2) val = -1;
+        else if (i &gt; 1 &amp;&amp; i == j &amp;&amp; !(i % 2)) val = 1;
+        else val = 0;
+        b[i * SIZE + j] = val;
+    }
+}</code></pre></figure>
+<p>I rewrote the matrix generation code using the random number generators in the <code>&lt;random&gt;</code> header, and mimicked <code>Eigen</code>’s <code>Random()</code> implementation, which generates a random float in the range [-1, 1]:</p>
+<figure class="highlight"><pre><code class="language-cpp">// random.hpp
+#include &lt;random&gt;
+#include &lt;limits&gt;
+
+inline float randomFloat(float min, float max) {
+    // Returns a random real in [min, max].
+    static std::uniform_real_distribution&lt;float&gt; distribution(
+        min, std::nextafter(max,
+            std::numeric_limits&lt;float&gt;::infinity()
+            )
+        );
+
+    static std::mt19937_64 generator;
+
+    return distribution(generator);
+}
+
+// this is the matrix generation code
+float a[SIZE * SIZE];
+
+for (int i = 0; i &lt; SIZE; i++) {
+    for (int j = 0; j &lt; SIZE; j++) {
+        a[i * SIZE + j] = randomFloat(-1.0, 1.0);
+    }
+}</code></pre></figure>
+<p>This change was made in <a href="https://github.com/wermos/Fast5x5/commit/ff821df8906a226749408e24b40e627d21fa3894" target="_blank" rel="noopener noreferrer"><code>ff821df</code></a>.</p>
+<h1 id="benchmarking-results">Benchmarking Results</h1>
+<p>I wrote benchmarks for testing the performance of <code>Eigen</code>, <code>fast5x5</code>, <code>blaze</code>, and <code>Fastor</code> in various matrix computation tasks like <a href="https://github.com/wermos/Fast5x5/tree/a495e9bf66303c76550797a1cbdf09ad6a555baa/include/benchmarks/gemm" target="_blank" rel="noopener noreferrer">matrix multiplication</a>, <a href="https://github.com/wermos/Fast5x5/tree/a495e9bf66303c76550797a1cbdf09ad6a555baa/include/benchmarks/inversion" target="_blank" rel="noopener noreferrer">matrix inversion</a>, computing the <a href="https://github.com/wermos/Fast5x5/tree/a495e9bf66303c76550797a1cbdf09ad6a555baa/include/benchmarks/similarity" target="_blank" rel="noopener noreferrer">similarity transform</a> and computing <a href="https://github.com/wermos/Fast5x5/tree/a495e9bf66303c76550797a1cbdf09ad6a555baa/include/benchmarks/coord-transform" target="_blank" rel="noopener noreferrer">coordinate transforms</a> in various matrix dimensions (more specifically, in 4×4, 6×6, 6×8, and 8×8).</p>
+<p>I ran the benchmarks on my own machine, gathered the data, and then plotted it using a Python script I wrote:</p>
+<figure class="half ">
+      <a href="/blog/assets/images/gsoc/gemm_plot_float.png" title="Benchmark plot for GEMM with &lt;code&gt;float&lt;/code&gt; matrices.">
+          <img src="/blog/assets/images/gsoc/gemm_plot_float.png" alt="">
+      </a>
+      <a href="/blog/assets/images/gsoc/gemm_plot_double.png" title="Benchmark plot for GEMM with &lt;code&gt;double&lt;/code&gt; matrices.">
+          <img src="/blog/assets/images/gsoc/gemm_plot_double.png" alt="">
+      </a>
+   <figcaption>GEMM benchmark plots
+</figcaption>
+</figure>
+<figure class="half ">
+      <a href="/blog/assets/images/gsoc/inversion_plot_float.png" title="Benchmark plot for matrix inversion with &lt;code&gt;float&lt;/code&gt; matrices.">
+          <img src="/blog/assets/images/gsoc/inversion_plot_float.png" alt="">
+      </a>
+      <a href="/blog/assets/images/gsoc/inversion_plot_double.png" title="Benchmark plot for matrix inversion with &lt;code&gt;double&lt;/code&gt; matrices.">
+          <img src="/blog/assets/images/gsoc/inversion_plot_double.png" alt="">
+      </a>
+   <figcaption>Matrix inversion benchmark plots
+</figcaption>
+</figure>
+<figure class="half ">
+      <a href="/blog/assets/images/gsoc/similarity_plot_float.png" title="Benchmark plot for matrix similarity with &lt;code&gt;float&lt;/code&gt; matrices.">
+          <img src="/blog/assets/images/gsoc/similarity_plot_float.png" alt="">
+      </a>
+      <a href="/blog/assets/images/gsoc/similarity_plot_double.png" title="Benchmark plot for matrix similarity with &lt;code&gt;double&lt;/code&gt; matrices.">
+          <img src="/blog/assets/images/gsoc/similarity_plot_double.png" alt="">
+      </a>
+   <figcaption>Similarity transform (i.e. computing $ABA^\top$) benchmark plots
+</figcaption>
+</figure>
+<figure class="half ">
+      <a href="/blog/assets/images/gsoc/freeToBound_plot_float.png" title="Benchmark plot for free coordinates to bound coordinates with &lt;code&gt;float&lt;/code&gt; matrices.">
+          <img src="/blog/assets/images/gsoc/freeToBound_plot_float.png" alt="">
+      </a>
+      <a href="/blog/assets/images/gsoc/freeToBound_plot_double.png" title="Benchmark plot for free coordinates to bound coordinates with &lt;code&gt;double&lt;/code&gt; matrices.">
+          <img src="/blog/assets/images/gsoc/freeToBound_plot_double.png" alt="">
+      </a>
+   <figcaption>Free coordinates to bound coordinates benchmark plots
+</figcaption>
+</figure>
+<figure class="half ">
+      <a href="/blog/assets/images/gsoc/boundToFree_plot_float.png" title="Benchmark plot for bound coordinates to free coordinates with &lt;code&gt;float&lt;/code&gt; matrices.">
+          <img src="/blog/assets/images/gsoc/boundToFree_plot_float.png" alt="">
+      </a>
+      <a href="/blog/assets/images/gsoc/boundToFree_plot_double.png" title="Benchmark plot for bound coordinates to free coordinates with &lt;code&gt;double&lt;/code&gt; matrices.">
+          <img src="/blog/assets/images/gsoc/boundToFree_plot_double.png" alt="">
+      </a>
+   <figcaption>Bound coordinates to free coordinates benchmark plots
+</figcaption>
+</figure>
+<p>Note that the bar graphs for the <code>Custom</code> backend and <code>double</code> matrices do not exist for the 6×6 and 8×8 dimensions. This is an intentional and recurring theme: The <code>custom</code> backend has a size limitation which prevents it from being usable for 6×6 and 8×8 matrices without the AVX512 instruction set, which <a href="https://ark.intel.com/content/www/us/en/ark/products/132228/intel-core-i712700h-processor-24m-cache-up-to-4-70-ghz.html" target="_blank" rel="noopener noreferrer">my processor</a> (at the time of writing) does not support. For this reason, the <code>custom</code> 6×6 and 8×8 data is missing from all of my benchmark plots.</p>
+<p>After gathering the data, my mentors and I analyzed the performance of each backend. After a deep look into the assembly generated by each backend, as well as a look at the performance each library brought to the table, we decided to use Fastor because it was consistently first or second in all the benchmarks we threw at it, and its assembly generation was the cleanest (i.e. free of cruft and the pointless register shuffling that plagued a few of the other backends).</p>
+<p>That’s it for the status report of the work so far! The next steps for me and my GSoC project are to</p>
+<ol>
+ <li>integrate Fastor into <code>algebra-plugins</code>, and
+ </li>
+<li>write the front-end for it so that we can see Fastor in action in a more realistic setting.
+</li>
+</ol>
+<p>To that end, I already integrated Fastor to the repository in <a href="https://github.com/acts-project/algebra-plugins/pull/77" target="_blank" rel="noopener noreferrer">PR #77</a>, and am currently working on writing the front-end.</p>
+     </section>
+     <footer class="page__meta">
+ <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+      <a href="/blog/categories/#gsoc" class="page__taxonomy-item" rel="tag">gsoc</a>
+    </span>
+ </p>
+ <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2022-08-31T10:46:37+00:00">August 31, 2022</time></p>
+     </footer>
+     <section class="page__share">
+   <h4 class="page__share-title">Share on</h4>
+  <a href="https://twitter.com/intent/tweet?text=GSoC+---+The+Work+So+Far%20https%3A%2F%2Fwermos.github.io%2F%2Fblog%2Fgsoc%2Fgsoc-the-work-so-far%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter" target="_blank" rel="noopener noreferrer"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwermos.github.io%2F%2Fblog%2Fgsoc%2Fgsoc-the-work-so-far%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwermos.github.io%2F%2Fblog%2Fgsoc%2Fgsoc-the-work-so-far%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+ <nav class="pagination">
+      <a href="/blog/gsoc/gsoc-the-details-of-my-project/" class="pagination--pager" title="GSoC — The Details of My Project
+">Previous</a>
+      <a href="/blog/anime/naruto/naruto-detail/" class="pagination--pager" title="A Small Detail in Naruto Shippuuden: Sealing Jutsu
+">Next</a>
+ </nav>
+   </div>
+     <div class="page__comments">
+     <h4 class="page__comments-title">Leave a comment</h4>
+     <section id="giscus-comments"></section>
+</div>
+ </article>
+   <div class="page__related">
+     <h4 class="page__related-title">You may also enjoy</h4>
+     <div class="grid__wrapper">
+<div class="grid__item">
+ <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+   <h2 class="archive__item-title no_toc" itemprop="headline">
+        <a href="/blog/gsoc/gsoc-the-application-process/" rel="permalink">GSoC — The Application Process
+</a>
+   </h2>
+ <p class="page__meta">
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+          17 minute read
+      </span>
+ </p>
+   <p class="archive__item-excerpt" itemprop="description">In this blog post, I will discuss what the application process for GSoC is like, and the timeline in which I did things and applied.
+</p>
+ </article>
+</div>
+<div class="grid__item">
+ <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+   <h2 class="archive__item-title no_toc" itemprop="headline">
+        <a href="/blog/genshin-impact/xiao/postmodern-xiao-team/" rel="permalink">A Spiral Abyss-Friendly Xiao Team: Postmodern Xiao
+</a>
+   </h2>
+ <p class="page__meta">
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+          10 minute read
+      </span>
+ </p>
+   <p class="archive__item-excerpt" itemprop="description">In this blog post, I will introduce a Genshin Impact team I came up with myself, which I call Postmodern Xiao.
+</p>
+ </article>
+</div>
+<div class="grid__item">
+ <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+   <h2 class="archive__item-title no_toc" itemprop="headline">
+        <a href="/blog/the-laptops-ive-had-so-far/" rel="permalink">The Laptops I’ve Had So Far
+</a>
+   </h2>
+ <p class="page__meta">
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+          5 minute read
+      </span>
+ </p>
+   <p class="archive__item-excerpt" itemprop="description">A short account of the different laptops I’ve owned so far.
+</p>
+ </article>
+</div>
+<div class="grid__item">
+ <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+   <h2 class="archive__item-title no_toc" itemprop="headline">
+        <a href="/blog/gsoc/gsoc-the-final-status-report/" rel="permalink">GSoC — The Final Status Report
+</a>
+   </h2>
+ <p class="page__meta">
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+          2 minute read
+      </span>
+ </p>
+   <p class="archive__item-excerpt" itemprop="description">In this blog post, I will describe the work I have done after the midterm evaluation.
+</p>
+ </article>
+</div>
+     </div>
+   </div>
+</div>
+   </div>
+     <div class="search-content">
+       <div class="search-content__inner-wrap">
+<div class="search-searchbar"></div>
+ <div class="search-hits"></div>
+</div>
+     </div>
+   <div id="footer" class="page__footer">
+     <footer>
+       <div class="page__footer-follow">
+ <ul class="social-icons">
+     <li>
+<strong>Follow:</strong>
+         </li>
+<li>
+<a href="https://github.com/wermos" rel="noopener noreferrer" target="_blank"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a>
+     </li>
+<li>
+<a href="/blog/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a>
+ </li>
+</ul>
+</div>
+<div class="page__footer-copyright">© 2022 Tirthankar Mazumder. Powered by <a href="https://jekyllrb.com" rel="noopener noreferrer" target="_blank">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="noopener noreferrer" target="_blank">Minimal Mistakes</a>.</div>
+     </footer>
+   </div>
+  <script src="/blog/assets/js/main.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch-theme-algolia.min.css">
+<script>
+// Instanciating InstantSearch.js with Algolia credentials
+const search = instantsearch({
+  appId: 'IAFKFFWNO2',
+  apiKey: '1822efaff6c7c7bcdacef47f8411167b',
+  indexName: 'blog',
+  searchParameters: {
+    restrictSearchableAttributes: [
+      'title',
+      'content'
+    ]
+  }
+});
+const hitTemplate = function(hit) {
+  const url = hit.url;
+  const title = hit._highlightResult.title.value;
+  const content = hit._highlightResult.html.value;
+  return `
+   <div class="list__item">
+     <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+       <h2 class="archive__item-title" itemprop="headline"><a href="/blog${url}">${title}</a></h2>
+       <div class="archive__item-excerpt" itemprop="description">${content}</div>
+     </article>
+   </div>
+  `;
+}
+// Adding searchbar and results widgets
+search.addWidget(
+  instantsearch.widgets.searchBox({
+    container: '.search-searchbar',
+    poweredBy: true,
+    placeholder: 'Enter your search term...'
+  })
+);
+search.addWidget(
+  instantsearch.widgets.hits({
+    container: '.search-hits',
+    templates: {
+      item: hitTemplate,
+      empty: 'No results',
+    }
+  })
+);
+// Starting the search only when toggle is clicked
+$(document).ready(function () {
+  $(".search__toggle").on("click", function() {
+    if(!search.started) {
+      search.start();
+    }
+  });
+});
+</script>
+    <script>
+  'use strict';
+  (function () {
+    var commentContainer = document.querySelector('#giscus-comments');
+    if (!commentContainer) {
+      return;
+    }
+    var script = document.createElement('script');
+    script.setAttribute('src', 'https://giscus.app/client.js');
+    script.setAttribute('data-repo', 'wermos/blog');
+    script.setAttribute('data-repo-id', 'R_kgDOH0ZkXg');
+    script.setAttribute('data-category', 'Announcements');
+    script.setAttribute('data-category-id', 'DIC_kwDOH0ZkXs4CSNuD');
+    script.setAttribute('data-mapping', 'pathname');
+    script.setAttribute('data-reactions-enabled', '1');
+    script.setAttribute('data-theme', 'transparent_dark');
+    script.setAttribute('crossorigin', 'anonymous');
+    commentContainer.appendChild(script);
+  })();
+</script>
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+<script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/monokai-sublime.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/highlightjs-line-numbers.js@2.8.0/dist/highlightjs-line-numbers.min.js"></script>
+<script>
+       hljs.highlightAll();
+       hljs.initLineNumbersOnLoad();
+</script>
+<script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  backgroundColor: 'rgb(255, 133, 0)',
+  //backgroundColor: 'rgb(191, 191, 191)',
+  textColor: '#fff',
+  scrollDuration: 150
+})</script>
+  

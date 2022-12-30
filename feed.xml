@@ -1,0 +1,1135 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="https://wermos.github.io//blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wermos.github.io//blog/" rel="alternate" type="text/html" /><updated>2022-12-30T06:58:17+00:00</updated><id>https://wermos.github.io//blog/feed.xml</id><title type="html">Tirthankar’s Blog</title><subtitle>A blog about C++, math, anime, games, and more.</subtitle><author><name>Tirthankar Mazumder</name><email>mztirthankar@gmail.com</email></author><entry><title type="html">GSoC — The Application Process</title><link href="https://wermos.github.io//blog/gsoc/gsoc-the-application-process/" rel="alternate" type="text/html" title="GSoC — The Application Process" /><published>2022-12-15T15:32:29+00:00</published><updated>2022-12-15T15:32:29+00:00</updated><id>https://wermos.github.io//blog/gsoc/gsoc-the-application-process</id><content type="html" xml:base="https://wermos.github.io//blog/gsoc/gsoc-the-application-process/"><![CDATA[<p>In this blog post, I will discuss what the application process for GSoC is like, and the timeline in which I did things and applied.</p>
+
+<p>This post is aimed towards people who want to try out GSoC for the first time, and are new to Open Source. I assume no prior knowledge, other than a basic understanding of what GSoC is.</p>
+
+<h1 id="eligibility">Eligibility</h1>
+
+<p>Before starting on your GSoC journey, it makes sense to check if you are eligible, right? The good news is that if you are a college student in India, you are most likely eligible for GSoC.</p>
+
+<p>The <a href="https://developers.google.com/open-source/gsoc/rules">GSoC FAQ</a> states that</p>
+
+<blockquote>
+  <ul>
+    <li>You must be at least 18 years of age when you register</li>
+    <li>You must be eligible to work in the country you will reside in during the program.</li>
+    <li>You must be an open source beginner or a student.</li>
+    <li>You have not been accepted as a GSoC Contributor/Student in GSoC more than once.</li>
+    <li>You must reside in a country that is not currently embargoed by the United States. See <a href="https://developers.google.com/open-source/gsoc/rules">Program Rules</a> for more information.</li>
+  </ul>
+</blockquote>
+
+<p>Like the excerpt says, you can refer to the <a href="https://summerofcode.withgoogle.com/rules">Program Rules</a> for a full description of everything relating to the program, in lawyer-y language.</p>
+
+<h2 id="changes-in-eligibility-over-previous-years">Changes in Eligibility Over Previous Years</h2>
+
+<p>Up until (but not including) 2022, the eligibility rules only allowed current students and recent graduates to apply for GSoC.</p>
+
+<p>In November 2021, Google <a href="https://opensource.googleblog.com/2021/11/expanding-google-summer-of-code-in-2022.html">announced a few changes</a> that would take place starting 2022. One of the key changes was that anyone above the age of 18 can now apply to GSoC:</p>
+
+<blockquote>
+  <p>Beginning in 2022, we are opening the program up to all newcomers of open source that are 18 years and older. The program will no longer be solely focused on university students or recent graduates.</p>
+</blockquote>
+
+<p>The immediate consequence of this change, for an aspiring GSoC applicant, is that the competition is more fierce due to the increased number of applicants.</p>
+
+<p>However, there is nothing to fear! If you read this guide on the application process and follow the steps given here, you will have a pretty high chance of getting selected.</p>
+
+<h1 id="willingness-to-learn-things">Willingness to Learn Things</h1>
+
+<p>An oft-overlooked aspect to think about when applying to GSoC is your willingness to learn things. For example, are you willing to learn a new language to work with a specific organization? Are you willing to learn an entirely new topic to work on a specific project?</p>
+
+<p>Let’s say I know C++ but don’t know Python. However, I am really interested in CASes (Computer Algebra Systems) and want to work on one. A great choice in this case would be SymPy, but it’s in Python. In such a case, I might just learn Python for the express purpose of contributing to SymPy. (I might even backwards rationalize it later on by telling myself that Python is a popular language and that learning it allows me to work with ML libraries and image processing libraries :yum:)</p>
+
+<p>However, I might not be that interested in CASes, and not willing to learn a new language. In that case, I would be limited to choosing an organization which has available projects in C++. If I am interested in compilers, I might want to contribute to <a href="https://summerofcode.withgoogle.com/programs/2022/organizations/llvm-compiler-infrastructure">LLVM</a>, and if I’m interested in OS development, I might look into working with <a href="https://summerofcode.withgoogle.com/programs/2022/organizations/haiku">Haiku</a>.</p>
+
+<h2 id="my-experience">My Experience</h2>
+
+<p>I knew C++ and Python before starting off on my GSoC journey, and I didn’t have a preference for either language, as I view them as a means to an end. The two main organizations I looked at were <a href="https://summerofcode.withgoogle.com/programs/2022/organizations/sympy">SymPy</a> and <a href="https://summerofcode.withgoogle.com/programs/2022/organizations/cern-hsf">CERN-HSF</a>. The former uses Python, while the latter primarily uses C++ for its projects (and languages like HTML5 for the web dev-oriented ones).</p>
+
+<p>That being said, the CERN-HSF project I was most interested in had to do with SIMD, and knowledge about computer architecture in general would help a lot. I did not know these topics that well at the time, but I was willing to learn. Ultimately, <a href="https://summerofcode.withgoogle.com/programs/2022/projects/H0ek5yGF">this was the project I was selected for</a>, and I learned a lot about vectorization and computer architecture during the project.</p>
+
+<h1 id="choosing-an-organization">Choosing an Organization</h1>
+
+<p>The first step for applying to GSoC is to choose an Organization. To that end, the <a href="https://google.github.io/gsocguides/student/choosing-an-organization">official GSoC Student Guide</a> does a great job explaining what to look for when choosing an organization.</p>
+
+<p>Apart from the points mentioned in the Student Guide, here are some alternative factors you might base your decision upon:</p>
+<ul>
+  <li>The programming languages they use. This is primarily for those who do not want a (programming) language barrier.</li>
+  <li>What they do. This is primarily for people who want a behind-the-scenes look on how people achieve a certain task. For example, if I wanted a behind-the-scenes look on how Linux kernel development works, I might want to apply to <a href="https://summerofcode.withgoogle.com/programs/2022/organizations/the-linux-foundation">The Linux Foundation</a>.</li>
+  <li>How interesting their projects are. This is for people for whom the organization does not matter too much.</li>
+</ul>
+
+<p>In the end, I chose my organization based on how interested I was in the projects they had: I found <a href="https://hepsoftwarefoundation.org/gsoc/2022/proposal_Acts-vectorized-LA-backend.html">this project</a> very interesting and wanted to help them make their math backend faster. For me, the fact that I was also getting to work with CERN was just an added bonus.</p>
+
+<h2 id="how-do-i-know-that-the-organization-will-come-next-year">How Do I Know That The Organization Will Come Next Year?</h2>
+
+<p>The short answer is that before the Organization List comes out (which is <a href="https://developers.google.com/open-source/gsoc/timeline#february_22_-_1800_utc">February 22, 2023</a> for next year), you don’t know for sure.</p>
+
+<p>The best we can do is to check whether the Organization came in previous years. For example, SymPy has been a GSoC Organization every year since 2016. Based on this, we can reasonably infer that they will also come in 2023.</p>
+
+<p>However, it is important to note that this is not a fool-proof method. Mozilla had been a GSoC organization every year between 2016-2020 (inclusive). However, 2021 onwards, they have not been a GSoC Organization.</p>
+
+<p>The good news is that all is not lost if the organization does not come as a GSoC Organization. For starters, you can mention the work you did in that organization on your GSoC proposal, regardless of where you apply because it counts as prior Open Source experience (I mentioned my SymPy PRs in my CERN-HSF proposal), which increases the reviewers’<sup id="fnref:reviewer" role="doc-noteref"><a href="#fn:reviewer" class="footnote" rel="footnote">1</a></sup> confidence in you. Moreover, the experience you gained while working with that organization carries over to any other open source organization.</p>
+
+<p>Let’s say that I start working with SymPy, and had to learn Git and GitHub to be an effective contributor. If SymPy does not come next year as a GSoC organization, and I end up applying to <a href="https://summerofcode.withgoogle.com/programs/2022/organizations/opencv">OpenCV</a>, which also uses GitHub, the knowledge I gained while working with SymPy did not go to waste because I already learned how Git and GitHub works.</p>
+
+<h2 id="the-two-types-of-organizations">The Two Types of Organizations</h2>
+
+<p>There are two types of organizations; I like to call them PR-based<sup id="fnref:pr" role="doc-noteref"><a href="#fn:pr" class="footnote" rel="footnote">2</a></sup> organizations and qualification task-based organizations. They work slightly differently.</p>
+
+<h3 id="pr-based-organizations">PR-based Organizations</h3>
+
+<p>These organizations primarily choose their GSoC students based on their prior work with the organizations, namely their PRs. To increase your chances of being selected, it is wise to start as early as possible, and get as many meaningful PRs in as possible.</p>
+
+<p>Reviewers usually place a greater weightage on code PRs (i.e. PRs which actually make changes to the code) over documentation PRs (i.e. PRs which either fix typos in the documentation or add some documentation). That being said, documentation PRs are a great way to start contributing to an organization, as it can be less daunting than modifying the code.</p>
+
+<p>Examples of popular PR-based organizations include</p>
+<ul>
+  <li><a href="https://github.com/sympy/sympy/wiki/GSoC-Student-Instructions">SymPy</a></li>
+  <li><a href="https://github.com/scipy/scipy/wiki/GSoC-2022-project-ideas">SciPy</a></li>
+</ul>
+
+<h4 id="getting-started-with-pr-based-organizations">Getting Started with PR-based Organizations</h4>
+
+<p>A question many people have is, “How do I get started with PRs if I have no prior experience?” The good news is that it’s quite straightforward: Most projects have issues labeled “Easy to Fix” or “Good First Issue” or some variant of it. These are issues that the community has labeled as such for not requiring too much knowledge to fix.</p>
+
+<p>For example,</p>
+<ol>
+  <li><a href="https://github.com/python/cpython">CPython</a> has the <a href="https://github.com/python/cpython/issues?q=is%3Aopen+is%3Aissue+label%3Aeasy">“easy” tag</a></li>
+  <li><a href="https://github.com/sympy/sympy">SymPy</a> has the <a href="https://github.com/sympy/sympy/issues?q=is%3Aopen+is%3Aissue+label%3A%22Easy+to+Fix%22">“Easy to Fix” tag</a>.</li>
+  <li><a href="https://github.com/scipy/scipy">SciPy</a> has the <a href="https://github.com/scipy/scipy/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22">“good first issue” tag</a>.</li>
+</ol>
+
+<h3 id="qualification-task-based-organizations">Qualification Task-based Organizations</h3>
+
+<p>If you wish to apply to one of these organizations, you typically have to email the mentor assigned to the project you are interested in (their contact details will be on the project page). After that, they will send you a qualification task, which is usually a smaller version of the actual project. After you are done with the task, you might have to write up a small report on your work (this varies from organization to organization), and send them the code.</p>
+
+<p>An important thing to note is that you should not contact mentors from this organization before the Organization List for that year is released by Google. Qualification task organizations typically ask prospective contributors to wait until the List is released to avoid wasted effort.</p>
+
+<p>These types of organizations choose their GSoC Contributors on the basis of how good the code is (in terms of coding style, clarity, descriptive comments) and how well the code does the required task.</p>
+
+<p>Sometimes (but not all the time), reviewers also take how long you take to the assignment into account. Because of this, it is best to turn in the qualification task as soon as possible, without sacrificing the quality of your work.</p>
+
+<p>Examples of qualification task-based organizations include</p>
+<ul>
+  <li><a href="https://summerofcode.withgoogle.com/programs/2022/organizations/cern-hsf">CERN-HSF</a></li>
+  <li><a href="https://summerofcode.withgoogle.com/programs/2022/organizations/ffmpeg">FFmpeg</a></li>
+</ul>
+
+<h4 id="my-experience-1">My Experience</h4>
+
+<p>I emailed the mentors for both <a href="https://hepsoftwarefoundation.org/gsoc/2022/proposal_Acts-vectorized-LA-backend.html">this project (Vectorized Linear Algebra Backend)</a> and <a href="https://hepsoftwarefoundation.org/gsoc/2022/proposal_Geant4-Symplectic-integrators.html">this project (Symplectic Integrators)</a>. I took 4 days on the qualification task for the first project, and 7 days on the qualification task for the second one.</p>
+
+<p>My write-up for the Vectorized Linear Algebra Backend project can be found <a href="https://docs.google.com/document/d/17zZFPpkaThDxDctZu2rRtgBGUXZWAUOBhoxgZ-6iwyo/edit?usp=sharing">here</a>, and my write-up for the Symplectic Integrators project can be found <a href="https://docs.google.com/document/d/1uPMF53IFITruSWTe2Kzr87Ux09wrrIV25iQMLL1c9xE/edit">here</a>.</p>
+
+<p>I ultimately got selected for the Vectorized Linear Algebra Backend project.</p>
+
+<h1 id="choosing-a-project">Choosing a Project</h1>
+
+<p>So at this point, you probably have a specific organization in mind. (Or maybe not, if you are choosing your organization based on your project interest.)</p>
+
+<h2 id="changes-made-in-2022">Changes Made in 2022</h2>
+
+<p>In 2022, Google <a href="https://opensource.googleblog.com/2021/11/expanding-google-summer-of-code-in-2022.html">made a couple of changes</a> to the way projects work:</p>
+<ul>
+  <li>Two project formats were introduced: medium length projects, which are expected to take approximately 175 hours of work, and long projects, which are expected to take approximately 350 hours of work. Long projects have a stipend that is twice that of the medium length projects.</li>
+  <li>Project timeframes were made flexible:
+    <blockquote>
+      <p>You can spread the project out over a longer period of time and you can even switch to a longer timeframe mid-program if life happens. Rather than a mandatory 12-week program that runs from June – August with everyone required to finish their projects by the end of the 12th week, we are opening it up so mentors and their GSoC Contributors can decide together if they want to extend the deadline for the project up to 22 weeks.</p>
+    </blockquote>
+  </li>
+</ul>
+
+<h2 id="how-do-i-choose">How Do I Choose?</h2>
+
+<p>The best way to narrow down the list of possibilities is to first choose what length of project you are fine with: If you are fine with a more intensive project, long projects might be the way to go. However, if you want to do a bit less work during the Coding Period, a medium length project might be the way to go.</p>
+
+<p>Apart from these considerations, the <a href="https://google.github.io/gsocguides/student/finding-the-right-project">official GSoC Student guide</a> does a great job of explaining how to choose the right project for you.</p>
+
+<h2 id="how-do-i-choose-the-timeframe">How Do I Choose The Timeframe?</h2>
+
+<p>To start off, Google assumes that everyone will be working on the standard 12-week project timeframe, regardless of their project length. This means that people with long projects are expected to work twice as much per week as the people with the medium length project assuming that the timeframes are the same.</p>
+
+<p>If you wish to modify the timeframe (to either extend or shorten it), you have to contact your mentor (after you are selected) and come to an agreement about the project length. Keep in mind that mentors may not always be willing to extend a project because they may have other responsibilities (like, say, teaching).</p>
+
+<h1 id="writing-a-proposal">Writing A Proposal</h1>
+
+<h2 id="what-to-write">What To Write?</h2>
+
+<p>Now that you have an Organization and project in mind, it is time to write the proposal. But what do you write in it?</p>
+
+<p>The good news is that many organizations, like <a href="https://github.com/sympy/sympy/wiki/GSoC-Application-Template">SymPy</a>, have a specific template they want all applications to follow.</p>
+
+<p>However, if the application you are applying to does not have such a template, you can always use the template from one of the aforementioned organizations and leave out the organization-specific bits :laughing:</p>
+
+<p>In all seriousness, however, apart from the big things like a section on your previous experience and a proposed list of the GSoC timeline and the milestones you plan on hitting, the format of a GSoC proposal is quite flexible (assuming that your organization doesn’t have a template).</p>
+
+<h2 id="when-to-write-the-proposal">When To Write The Proposal?</h2>
+
+<p>Ideally, it would be best to have a proposal (for each project you are applying to) ready right before the student application period starts. That way, you can contact the project mentors for each project of interest with your proposal, get some feedback, and incorporate those changes in your proposal.</p>
+
+<p>The only thing to remember is to make sure to get mentor feedback while writing the proposal. Doing so greatly increases your chances of being selected, and mentors often point out errors (spelling, grammar, etc.) and ask you to elaborate on points which they feel are important for the project. The latter makes your proposal stronger as a whole, so asking for mentor feedback is highly beneficial.</p>
+
+<h2 id="my-experience-2">My Experience</h2>
+
+<p>I started writing my proposal for the Vectorized Linear Algebra backend project on April 13<sup>th</sup>. For reference, GSoC application window for 2022 was from April 4<sup>th</sup> to April 19<sup>th</sup>. This was quite a bit later than the timeframe I am recommending :see_no_evil:</p>
+
+<p>However, I made sure to get feedback from the mentors and incorporated those changes. I remember that I was asked to fix some grammar mistakes, and add a section explaining my reasoning for some of the ideas that I was proposing.</p>
+
+<p>You can find my GSoC proposal <a href="https://docs.google.com/document/d/1Ick3iDF_2bGbLiR-ZDGWnk06rrP64JBQG8Et4TccxRs/edit?usp=sharing">here</a>.</p>
+
+<h1 id="timeline">Timeline</h1>
+
+<p>Finally, what is the timeline at which a newcomer should do things?</p>
+
+<p>The first thing to look at is the <a href="https://developers.google.com/open-source/gsoc/timeline">published GSoC timeline</a> for the next year.</p>
+
+<p>The three dates of interest are:</p>
+<ul>
+  <li>the date that the accepted GSoC organizations are announced (<a href="https://developers.google.com/open-source/gsoc/timeline#february_22_-_1800_utc">February 22<sup>nd</sup>, 2023</a> for next year). This is the day you can start contacting qualification-task based organizations if they were accepted.</li>
+  <li>the date that GSoC application period starts (<a href="https://developers.google.com/open-source/gsoc/timeline#march_20_-_1800_utc">March 20<sup>th</sup>, 2023</a> for next year). This is the day you should ideally have a first draft of your proposal ready, and start asking for mentor feedback.</li>
+  <li>the date that the GSoC application period ends (<a href="https://developers.google.com/open-source/gsoc/timeline#april_4_-_1800_utc">April 4<sup>th</sup>, 2023</a> for the next year). This is the day by which you should have submitted all your proposals on the portal, and overall be done with everything. <strong>This is a hard deadline.</strong></li>
+</ul>
+
+<h2 id="when-should-i-start">When Should I Start?</h2>
+
+<p>There is no hard and fast date by which you should start. That being said, there are still some tips I can share.</p>
+
+<p>If it is your first time applying to GSoC and contributing to Open Source, the earlier you start, the better. There is no “too early” when it comes to Open Source contributions. In fact, starting early has many advantages:</p>
+<ul>
+  <li>It allows you to learn Git and GitHub, and possibly a new language, with less pressure as the GSoC deadline is still very far away.</li>
+  <li>It allows you to get used to the process and cadence of fixing bugs, opening PRs, and dealing with code reviews.</li>
+  <li>It gives you a lot of time to get lots of PRs merged, which will increase your chances of getting accepted for GSoC.</li>
+  <li>If you don’t like your first choice of organization, you can still switch and experiment with multiple organizations before settling on one.</li>
+  <li>It allows you to explore multiple submodules before settling on one. If we take the example of SymPy specifically, then starting early allows you to explore submodules like <a href="https://github.com/sympy/sympy/tree/4801871259a1a8db27bae99f5ea4db109bb1320a/sympy/codegen"><code>codegen</code></a> and <a href="https://github.com/sympy/sympy/tree/4801871259a1a8db27bae99f5ea4db109bb1320a/sympy/integrals"><code>integrals</code></a>.</li>
+</ul>
+
+<p>In terms of real time, October or November is a great time to start, but you can start a bit later too, like December or even January. The main difference between starting later and earlier, like I said before, is the amount of exploration you can do.</p>
+
+<h3 id="my-experience-3">My Experience</h3>
+
+<p>I originally planned to start early, but due to various circumstances (read: being lazy), I ended up starting out with SymPy PRs in mid-February.</p>
+
+<p>Since I originally planned to work with SymPy, I spent a lot of time on SymPy until I came across CERN-HSF. After that, I contacted the mentors for the projects I was interested in and completed the qualification tasks given to me. Around halfway through these tasks, I decided to focus on CERN-HSF as I found those projects more interesting than the ones I was looking at for SymPy. Because of that, I stopped working on PRs for SymPy and redirected all my time and energy to CERN-HSF.</p>
+
+<h1 id="miscellaneous-tips">Miscellaneous Tips</h1>
+
+<h2 id="project-mentors">Project Mentors</h2>
+
+<p>One small thing to keep in mind is that it may be difficult to find mentors for the project you are interested in. This is an uncommon but not impossible scenario. In such a case, you have no choice but to choose a different project to apply to, since it is not possible to complete a GSoC project without mentors.</p>
+
+<p>In 2022, a highly qualified GSoC SymPy applicant was unable to find a mentor for the project that he wanted to work on, so he was not selected for GSoC. The story however, has a silver lining, as the creator of SymPy (<a href="https://ondrejcertik.com/">Ondrej Certik</a>) took interest in his proposal, and the applicant went on to work with him.</p>
+
+<h2 id="gsoc-applicant-pre-requisites">GSoC Applicant Pre-requisites</h2>
+
+<p>Before applying to an Organization, make sure to read their application guideline closely.</p>
+
+<p>Many GSoC Organizations require a prospective applicant to have an accepted PR before applying. For example, the <a href="https://python-gsoc.org/psf_ideas.html">Python Software Foundation</a> guidelines say</p>
+
+<blockquote>
+  <p>dont [sic] forget to be accepted all students must make at least 1 pull request!</p>
+</blockquote>
+
+<p>A similar statement can be found in the SciPy guidelines:</p>
+
+<blockquote>
+  <p>Make a enhancement/bugfix/documentation fix – it does not have to be a large PR, and it does not need to be related to your proposal. Doing so before applying for the GSoC is a hard requirement for SciPy. It helps everyone by providing some idea on how things would work during GSoC.</p>
+</blockquote>
+
+<p>SymPy has a <a href="https://github.com/sympy/sympy/wiki/GSoC-Application-Template#patch-requirement">Patch Requirement</a> as well:</p>
+
+<blockquote>
+  <p>In addition to the written proposal, we require every GSoC applicant to write a patch and get it pushed into the main SymPy repo. Note: even if your project will primarily deal with another repo such as SymEngine or SymPy Live, you must have at least one patch in the <a href="https://github.com/sympy/sympy">main SymPy repo</a>.</p>
+</blockquote>
+
+<h2 id="organization-specific-tips">Organization-Specific Tips</h2>
+
+<p>The organizations I was planning on applying to were SymPy and CERN-HSF. For this reason, I am most knowledgeable about how these two organizations work. As such, I have some extra tips to share if you are planning to apply to one of these organizations:</p>
+
+<ol>
+  <li>Starting this year, CERN-HSF required all its contributors to also make a blog about their work and experiences during the GSoC period. These blogs can be found <a href="https://hepsoftwarefoundation.org/gsoc/2022/blogs.html">here</a>. These blogs should be useful if you are interested in working with CERN-HSF and to get an idea of our experiences.</li>
+  <li>If you are planning to apply to SymPy, around 6 or 7 accepted (code-related) PRs is the sweet-spot for ensuring a high probability of getting selected for GSoC.</li>
+  <li>Many SymPy GSoC Contributors also write a blog about their experience. (Here are <a href="https://sumith1896.github.io/Google-Summer-Of-Code-with-SymPy">some</a> <a href="https://0sidharth.github.io/jekyll/2021/05/18/gsoc-acceptance/">examples</a>.) If you want to know what it’s like to work with SymPy, you can read these blogs for more information.</li>
+</ol>
+
+<h2 id="what-would-i-have-done-differently">What Would I Have Done Differently?</h2>
+
+<p>The biggest thing I struggled with during my GSoC application period was time management. I consistently fell behind self-imposed schedules and did things close to the deadline. If I could redo it, I would make sure to leave lots of time at each stage of the journey by starting out with SymPy earlier, starting with the proposal writing earlier, etc.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:reviewer" role="doc-endnote">
+      <p>The reviewer is the person who will be reading your proposal and ultimately deciding whether they want you as a GSoC Contributor or not. Often, there are multiple reviewers. <a href="#fnref:reviewer" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:pr" role="doc-endnote">
+      <p>PR is short for Pull Request. In case you don’t know what those are, you can read more about them <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">here</a>. <a href="#fnref:pr" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name>Tirthankar Mazumder</name><email>mztirthankar@gmail.com</email></author><category term="gsoc" /><summary type="html"><![CDATA[In this blog post, I will discuss what the application process for GSoC is like, and the timeline in which I did things and applied.]]></summary></entry><entry><title type="html">A Spiral Abyss-Friendly Xiao Team: Postmodern Xiao</title><link href="https://wermos.github.io//blog/genshin-impact/xiao/postmodern-xiao-team/" rel="alternate" type="text/html" title="A Spiral Abyss-Friendly Xiao Team: Postmodern Xiao" /><published>2022-12-02T23:55:35+00:00</published><updated>2022-12-02T23:55:35+00:00</updated><id>https://wermos.github.io//blog/genshin-impact/xiao/postmodern-xiao-team</id><content type="html" xml:base="https://wermos.github.io//blog/genshin-impact/xiao/postmodern-xiao-team/"><![CDATA[<p>In this blog post, I will introduce a Genshin Impact team I came up with myself, which I call <em>Postmodern Xiao</em>.</p>
+
+<p>Even though I came up with the team comp myself, it is highly unlikely that I am the <em>first</em> person to come up with it :cry: The reason for that is twofold:</p>
+<ol>
+  <li>I started playing the game a year after it came out (near the end of version 2.2, to be precise).</li>
+  <li>All the characters required for the team were there at release (i.e. version 1.0 of the game), or were released a few patches later (Xiao was the last character to be released out of all everyone in the team, but even he was released in version 1.3).</li>
+</ol>
+
+<p>Because of this, there was a long period of time during which other players would have most likely arrived at the same conclusions I did.</p>
+
+<p>However, since this team comp is not explicitly mentioned on the <a href="https://keqingmains.com/xiao/#Team_Comps">Keqing Mains page for Xiao</a>, I decided to take the opportunity to talk about a personal favorite team comp of mine.</p>
+
+<h1 id="why-is-it-called-postmodern-xiao">Why Is It Called “<em>Postmodern</em> Xiao”?</h1>
+
+<p>The name is a nod to Xiao’s most popular team comp, which I like to call <em>Classic Xiao</em>:</p>
+
+<p><img src="/blog/assets/images/genshin/classic-xiao-team.png" alt="Classic Xiao team comp with Jean, Zhongli, Xiao, and Albedo" class="align-center" /></p>
+
+<p>As the above image shows, the team consists of Jean, Zhongli, Xiao, and Albedo.</p>
+
+<p>The idea behind this team is quite simple. Jean is there to provide healing, Zhongli is there for interrupt resistance, and Albedo is there for strong off-field Geo damage. Xiao, of course, is the star of the show and the main DPS of the team.</p>
+
+<p>The team comp I (independently) discovered is the next-generation evolution of the <em>Classic Xiao</em> team comp, hence the name.</p>
+
+<p>So far, the explanation explains the reason I wanted to move past the <em>Classic</em> part of the team name, but not why I settled upon <em>Postmodern</em>.</p>
+
+<p>The reason for that is a bit geeky: A long time ago (in a galaxy far, far away), I was reading Rainer Grimm’s post on C++20, <a href="https://www.modernescpp.com/index.php/c-20-an-overview">where discussed the new features that were coming</a> with the update.</p>
+
+<p>In that blog post, he has a section dedicated to naming the new generation of C++ updates:</p>
+<blockquote>
+  <p>Okay, we should give the new child a name, because the existing C++ standards have all informal names.</p>
+
+  <ul>
+    <li>Legacy C++: C++98, and C++03</li>
+    <li>Modern C++: C++11, C++14, and C++17</li>
+    <li>&lt;To be filled&gt;: C++20, C++23 …</li>
+  </ul>
+
+  <p>This name discussion is difficult.</p>
+</blockquote>
+
+<p>The blog post goes on to say</p>
+<blockquote>
+  <p>You see, there is a slight tendency to postmodern. Maybe, you have a better idea.</p>
+</blockquote>
+
+<p>which is where I got the idea for the word <em>Postmodern</em> from! :see_no_evil:</p>
+
+<h1 id="who-is-in-the-team">Who Is In The Team?</h1>
+<p>This team consists of, in no particular order,</p>
+<ol>
+  <li>Sucrose</li>
+  <li>Zhongli</li>
+  <li>Xiao</li>
+  <li>Albedo</li>
+</ol>
+
+<p><img src="/blog/assets/images/genshin/postmodern-xiao-team.png" alt="Postmodern Xiao team comp with Sucrose, Zhongli, Xiao, and Albedo" class="align-center" /></p>
+
+<h2 id="team-ordering-an-aside">Team Ordering: An Aside</h2>
+<p>When I started playing the game, I had the Traveler as slot 1. Then, I got my first 5-star, Keqing, whom I put in slot 3. Obviously, Keqing functions as a better DPS than the Traveler, so I eventually ended up training myself to gravitate towards slot 3 whenever I wanted to use my team’s DPS.</p>
+
+<p>Because of the teams I used in my early days, the character’s function became synonymous with the meaning of the slot number. As another example, I put Xiangling in slot 1 in my early teams, so slot 1 became synonymous with a sub-DPS slot for me.</p>
+
+<p>For the sake of completeness, here are the 4 team slots and what they mean for me:</p>
+<ol>
+  <li>The sub-DPS or healer slot. It used to be solely a sub-DPS slot until I started using classic Xiao. In my early days, Jean used to act as both a healer and a sub-DPS, which is where it got its secondary meaning.</li>
+  <li>The burst support slot. The characters slotted here are solely used for their Elemental Skill and/or Bursts.</li>
+  <li>The DPS slot. Always, without fail.</li>
+  <li>This slot is for supports and off-field damage dealers. Basically, characters who come on-field for a short amount of time.</li>
+</ol>
+
+<h1 id="what-are-the-builds">What Are The Builds?</h1>
+
+<h2 id="sucrose">Sucrose</h2>
+
+<p><img src="https://static.wikia.nocookie.net/gensin-impact/images/7/71/Item_Royal_Flora.png/" alt="The flower from the Noblesse Oblige set" class="align-left" /></p>
+
+<p>In just about every other team Sucrose is slotted in, she uses the Viridescent Venerer (VV) artifact set. Well, not here!</p>
+
+<p>The VV set makes sense in reaction-based team comps, because of its big res. shred. However, VV does not reduce the enemies’ Anemo resistance (because Anemo cannot swirl itself), so putting that on her would waste an artifact slot that could potentially buff the DPS of the team.</p>
+
+<p>We cannot use the Tenacity of the Millelith set because another character is using the set already, and its description states that the 4-piece bonus cannot be stacked. The classic answer to the question of “What other buffing artifact set is there?” is the Noblesse Oblige set.</p>
+
+<p>A small thing to note here is that Noblesse Oblige will work best if the enemies can be cleared in 1 rotation or so, because we aren’t really feeding particles back to Sucrose with the rotations in this team comp, so getting her burst back will be a bit of an issue. This is not so much of an issue in the overworld, but it can make a difference in the Spiral Abyss.</p>
+
+<p><img src="https://static.wikia.nocookie.net/gensin-impact/images/9/9e/Weapon_Thrilling_Tales_of_Dragon_Slayers_2nd.png/" alt="Thrilling Tales of Dragon Slayers book" class="align-left" /></p>
+
+<p>Sucrose is the only character whose weapon is fixed: She <em>must</em> use Thrilling Tales of Dragon Slayers (TTDS) for its massive 48% ATK buff to the character who comes on-field next.</p>
+
+<h2 id="zhongli">Zhongli</h2>
+
+<p><img src="https://static.wikia.nocookie.net/gensin-impact/images/5/51/Item_Flower_of_Accolades.png/" alt="The flower from the Tenacity of the Millelith set" class="align-left" /></p>
+
+<p>The standard artifact set to put on him, assuming that your Zhongli has enough HP to be an effective shielder, is the Tenacity of the Millelith set.</p>
+
+<p>The 4-piece set bonus grants a +20% ATK bonus when the wearer’s Elemental Skill (E for short, since that is the default keybinding on PC), so it’s good for Xiao too.</p>
+
+<h2 id="xiao">Xiao</h2>
+
+<p><img src="https://static.wikia.nocookie.net/gensin-impact/images/1/11/Item_Flowering_Life.png/" alt="The flower from the Vermillion Hereafter set" class="align-left" /></p>
+
+<p>Strictly speaking, Xiao here will have the same build he would have in the <em>Classic Xiao</em> team comp. This means that any artifact set whose 2-piece grants an ATK boost works, and farming for Vermillion Hereafter (VH), his Best in Slot (BiS) is not really required.</p>
+
+<p>Accounting for average substat rolls, VH offers a 5-10% damage increase over 2x 2-piece combinations. For a full-fledged discussion on what artifacts to use on Xiao, refer to <a href="https://keqingmains.com/xiao/#Artifacts">Keqing Mains’ Xiao guide</a>.</p>
+
+<h2 id="albedo">Albedo</h2>
+
+<p><img src="https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Item_Bloom_Times.png/" alt="The flower from the Husk of Opulent Dreams artifact set" class="align-left" /></p>
+
+<p>The only acceptable artifact set on Albedo is the Husk of Opulent Dream set. The set was tailor-made for DEF-scaling characters such as Albedo.</p>
+
+<p>Technically, Albedo is a split-scaling character because his E scales of off DEF but his Q scales off ATK. However, his E constitutes most of his damage output and not his Q. For this reason, the general advice given is to just ignore his dependence on ATK and just stack as much DEF as possible.</p>
+
+<p class="notice--warning"><strong>Warning:</strong> While you are free to put the characters in whatever slots you want, you are strongly advised against placing Albedo in the first slot in the Spiral Abyss. If he is in Slot 1, then he spawns with 0 Curiosity stacks from the Husk set’s 4-piece bonus. This means that you are losing out on a grand total of a 24% DEF bonus and a 24% Geo Damage bonus. However, if he is in any other slot, he spawns with all 4 stacks.</p>
+
+<p><img src="https://static.wikia.nocookie.net/gensin-impact/images/4/4a/Weapon_Cinnabar_Spindle_2nd.png/" alt="Cinnabar Spindle weapon" class="align-left" /></p>
+
+<p>Albedo’s weapon is essentially fixed, but only because of how good his signature 4-star event weapon, the Cinnabar Spindle, is on him, with a 69% DEF bonus at level 90 and refinement rank 5 (R5 for short).</p>
+
+<p>If you don’t have Cinnabar Spindle for some reason, Harbinger of Dawn also works well on him.</p>
+
+<h1 id="how-do-the-characters-function">How Do The Characters Function?</h1>
+
+<h2 id="sucrose-1">Sucrose</h2>
+
+<p>Sucrose mainly acts as a support, using her Elemental Burst (Q for short because that is the default keybinding on PC) to activate the 4-piece Noblesse Oblige buff.</p>
+
+<p>Extra care must be taken to make sure to slot her in before Xiao so that he gets the TTDS ATK buff.</p>
+
+<h2 id="zhongli-1">Zhongli</h2>
+
+<p>Since this is an F2P (Free 2 Play) friendly team, Zhongli is expected to be C2 at most. In this case, he functions as a shield bot/burst support.</p>
+
+<p>There are a couple layers to his use.</p>
+
+<p>The first thing to consider is whether his Q will be used or not. This mostly depends on how optimally one wants to play Zhongli: It is a well-known fact that using Zhongli’s Q if he is pre-C2 is a DPS loss for the team due to its long animation. If he is C2, then using his Q automatically gives you the shield, thus saving valuable time and making his Q viable from a DPS standpoint.</p>
+
+<p>If damage output is of the utmost priority, then Zhongli can only be used as a shield bot. However, if you like the (occasionally) big numbers that he outputs with his Q, and the Petrification feature of his burst, then you can use him as a burst support.</p>
+
+<p><img src="/blog/assets/gifs/genshin/zhongli.gif" alt="Clip of Zhongli's Burst" /></p>
+
+<p>The other aspect to keep in mind is his E usage, i.e. his Stone Stele placement. This can be a little tricky to get right at C0, and slightly easier at C1 (because it allows you place 2 Steles instead of 1).</p>
+
+<p>The 4-piece set bonus for the Tenacity of the Millelith set can only be activated if the Stele’s tick hits an opponent.</p>
+
+<p>The other main feature that Zhongli has is his res. shred. He is a valuable source of Anemo res. shred, and the easiest one to get, considering the fact that the other options are things like Jean’s 4<sup>th</sup> constellation.</p>
+
+<p>Since Zhongli’s res. shred emanates from his jade shield, and <a href="https://library.keqingmains.com/evidence/characters/geo/zhongli#zhongli-res-shred-range">has an approximate radius of 3 Abyss tiles</a>, keeping the res. shred up for the duration of the shield shouldn’t be an issue.</p>
+
+<h2 id="xiao-1">Xiao</h2>
+
+<p>He is the DPS of the team. There isn’t anything special about the way he operates, and nothing to make a special note of.</p>
+
+<h2 id="albedo-1">Albedo</h2>
+
+<p>He deals off-field Geo damage via his E. Every once in a while, the player must switch to him to use his E and/or Q and then switch out.</p>
+
+<p><img src="/blog/assets/gifs/genshin/albedo.gif" alt="Clip of Albedo's Burst" /></p>
+
+<p>That being said, in Abyss floors, I often stay on Albedo and proc his E with normal attacks to generate particles for him and Zhongli, for subsequent chambers. I find it easier to generate particles with him instead of Zhongli.</p>
+
+<h1 id="what-is-the-rotation">What Is The Rotation?</h1>
+
+<p>The rotation is very simple, if you keep all the little things mentioned in the previous sections in mind. There are two minor variations, and they have to do with how you prepared for the rotation.</p>
+
+<h2 id="spiral-abyss-rotation">Spiral Abyss Rotation</h2>
+
+<p>Assuming that we have no preparation and the characters are slotted in the order shown in the image, the rotation would be as follows:</p>
+
+<p><img src="/blog/assets/images/genshin/postmodern-xiao-team.png" alt="Postmodern Xiao team comp with Sucrose, Zhongli, Xiao, and Albedo" class="align-center" /></p>
+<ol>
+  <li>Switch to Xiao so that he gets the TTDS buff.</li>
+  <li>Switch to Zhongli, do his E.</li>
+  <li>Switch to Albedo and place his E.</li>
+  <li>In Abyss, I like to do Albedo’s Q right off the bat, assuming it’s up.</li>
+  <li>Switch back to Zhongli and do his Q, if it’s up. The reason we don’t do his Q immediately is so that we can proc Albedo’s E and deal even more damage to the enemies.</li>
+  <li>Sucrose Q (bonus points if the Q picks up an element), Sucrose E.</li>
+  <li>Xiao E, E, and then Q. After that, we start plunging!</li>
+</ol>
+
+<h2 id="overworld-rotation">Overworld Rotation</h2>
+
+<p>In the overworld, I usually use Zhongli for moving around and climbing since he is a tall character. In this case, there is no danger of Sucrose’s TTDS buff going to the wrong character, since we have already prepared for the rotation.</p>
+
+<ol>
+  <li>Do Zhongli’s E.</li>
+  <li>Switch to Albedo and place his E.</li>
+  <li>Do Albedo’s Q if it’s up, and the enemies are worthy of its use.</li>
+  <li>Switch back to Zhongli and do his Q, if it’s up, and the enemies are worthy of its use.</li>
+  <li>Sucrose Q (bonus points if the Q picks up an element), Sucrose E.</li>
+  <li>Xiao E, E, and then Q. After that, we start plunging!</li>
+</ol>
+
+<p>In general, however, the overworld is far more forgiving than the Spiral Abyss, so it’s not a big deal if you miss steps or just make up your own rotation.</p>
+
+<h2 id="example-rotation">Example Rotation</h2>
+
+<p>Here is a video demonstrating the Spiral Abyss rotation in the game:</p>
+
+<!-- Courtesy of embedresponsively.com //-->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/3JImpX29Qkw" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>]]></content><author><name>Tirthankar Mazumder</name><email>mztirthankar@gmail.com</email></author><category term="genshin-impact" /><category term="xiao" /><summary type="html"><![CDATA[In this blog post, I will introduce a Genshin Impact team I came up with myself, which I call Postmodern Xiao.]]></summary></entry><entry><title type="html">The Laptops I’ve Had So Far</title><link href="https://wermos.github.io//blog/the-laptops-ive-had-so-far/" rel="alternate" type="text/html" title="The Laptops I’ve Had So Far" /><published>2022-11-21T19:39:02+00:00</published><updated>2022-11-21T19:39:02+00:00</updated><id>https://wermos.github.io//blog/the-laptops-ive-had-so-far</id><content type="html" xml:base="https://wermos.github.io//blog/the-laptops-ive-had-so-far/"><![CDATA[<p>A short account of the different laptops I’ve owned so far.</p>
+
+<p>I’ve owned 3 laptops so far. I got my first laptop in 2017. It worked great for 4 years, until the screen suddenly gave out in 2021. After that, I got a crappy laptop which I used for 1.5 years before buying a gaming laptop that I am proud to call my own. Without further ado, let’s look at the 3 laptops I’ve owned, their specs, and the prices.</p>
+
+<h1 id="the-first-laptop">The First Laptop</h1>
+
+<p>My very first laptop was an entry-level gaming laptop: it was a Dell Inspiron 5577. There were 2 variants in the market at the time in 2017. One sported an i7-7700HQ processor and an SSD and cost $800. The other variant had an i7-7300HQ and a HDD and cost $700. (The other specs were the same.)</p>
+
+<p>Since the laptop is so old, I can’t find a picture of it to put on the blog post. However, I found <a href="https://medium.com/matrixpc/dell-inspiron-5577-a-great-laptop-if-you-get-it-cheap-b67811d19e62">a review of the more expensive version on Medium</a>. Before I read the review, I had actually forgotten all about the more expensive version! :joy:</p>
+
+<p>The specs are:</p>
+<ul>
+  <li>Processor: Intel 7th Gen <a href="https://www.intel.in/content/www/in/en/products/sku/97456/intel-core-i57300hq-processor-6m-cache-up-to-3-50-ghz/specifications.html">i5-7300HQ</a>, 4 cores, 4 threads</li>
+  <li>RAM: 8 GB RAM</li>
+  <li>Storage: 1 TB HDD</li>
+  <li>Screen: 1920×1080p, 60 Hz refresh rate</li>
+  <li>GPU: GTX 1050, 4 GB VRAM</li>
+</ul>
+
+<h2 id="thoughts">Thoughts</h2>
+
+<p>This laptop was the most powerful machine I knew about and had for the longest time. I really can’t say anything bad about it. I played games like Crysis 3 at max settings and got a comfortable 50 fps. I even managed to run Assassin’s Creed Origins near high settings and got a stable 40-50 fps. (I said “near high” because I had manually tweaked the settings, so some were Medium, and others were at High.)</p>
+
+<p>The only bad thing is that the screen stopped working, and the repair shops I took it to were unable to fix it. My theory is that the screen stopped working because it was not built to withstand Kolkata’s heat. Since the laptop was bought in the US, it stands to reason that it was made to withstand the average US temperatures.</p>
+
+<h2 id="my-technical-knowledge">My Technical Knowledge</h2>
+
+<p>While I was using the laptop, I barely knew anything about programming and GPUs. I never installed Visual Studio or the like. The idea that you could use the GPU for your own purposes was something that never occurred to me. As such, I barely used the full compute capabilities of the laptop whenever I was doing programming.</p>
+
+<h1 id="the-second-laptop">The Second Laptop</h1>
+
+<p>In late 2020/early 2021, my first laptop started having occasional screen issues. The screen would randomly go blank, and closing the lid and reopening it would do the trick. In February 2021, the issue became severe: if the lid was opened beyond 45°, the screen would go blank. This was obviously unusable.</p>
+
+<p>However, during this time, I was having online classes, and the final exams were about to start. Due to these imminent threats, we went out and bought a laptop for ₹54 000.</p>
+
+<figure>
+<p><img src="/blog/assets/images/Inspiron_3501.png" alt="Inspiron 3501 picture" /></p>
+  <figcaption>The laptop I got: an Inspiron 3501.</figcaption>
+</figure>
+
+<p>The minute I laid eyes on this laptop, I had nothing but disdain for the specs. After all, my previous laptop was so much better :triumph:</p>
+
+<p>The specs are:</p>
+<ul>
+  <li>Processor: Intel 11th Gen <a href="https://ark.intel.com/content/www/us/en/ark/products/208658/intel-core-i51135g7-processor-8m-cache-up-to-4-20-ghz.html">i5-1135G7</a>, 4 cores, 8 threads</li>
+  <li>RAM: 8 GB DDR4 RAM</li>
+  <li>Storage: 1 TB HDD</li>
+  <li>Screen: 1920×1080p, 60 Hz refresh rate</li>
+  <li>GPU: None.</li>
+</ul>
+
+<p>Due to the lack of a GPU, I could not play most games I was playing/wanted to play. During this time, I got into the game <a href="https://genshin.hoyoverse.com/en/">Genshin Impact</a>, but I had to play the game at Lowest settings. Yes, they really had a setting below Low, called Lowest, for people with potato PCs like me. Even then, the loading screens took forever to load.</p>
+
+<h2 id="my-technical-knowledge-1">My Technical Knowledge</h2>
+
+<p>During my tenure with this laptop, I learned and practiced Vim and eventually made it my daily driver. (I learned Vim on my first laptop, but didn’t use it much.) I was forced to use Vim in the second laptop because it couldn’t handle the load of having a few browser tabs open along with VS Code. Apart from this, I deep-dived into C++ and also learned a lot about computer architecture and SIMD.</p>
+
+<p>I wrote a CPU-side raytracer (to be discussed in an upcoming blog post), and that was the moment when my desire to learn how to make the GPU do my bidding materialized. However, the problem is that Intel integrated GPUs (iGPUs) don’t support CUDA as that is Nvidia’s proprietary technology. Instead, to communicate with an Intel iGPU, I would have to use OpenCL, which is widely regarded as being harder to use than CUDA. Moreover, OpenCL is known to be slower on Nvidia GPUs than CUDA, so I would have to learn CUDA at some point anyways.</p>
+
+<h1 id="the-third-laptop">The Third Laptop</h1>
+
+<p>On October 23, 2022, I finally caved and used the GSoC money I had gotten so far (and the other half that I hadn’t received yet) to buy the laptop I had been eyeing for over an year: the Legion 5 Pro.</p>
+
+<p>Overall, I am very happy with the purchase due to the sheer power of the laptop (especially when comparing it to the previous laptop), and I also finally have an Nvidia GPU again :star_struck:</p>
+
+<figure>
+<p><img src="/blog/assets/images/Legion_5_Pro.png" alt="Legion 5 Pro picture" /></p>
+  <figcaption>My new pride and joy.</figcaption>
+</figure>
+
+<p>The laptop was quite expensive: with Diwali discounts and a bit of bargaining, I got the price down to ₹147 490. It still cost an arm and a leg, as you can see :smiling_face_with_tear:</p>
+
+<p>However, the specs are amazing:</p>
+<ul>
+  <li>Processor: Intel 12th Gen <a href="https://ark.intel.com/content/www/us/en/ark/products/132228/intel-core-i712700h-processor-24m-cache-up-to-4-70-ghz.html">i7-12700H</a>, 8 Efficiency and 6 Performance Cores, 20 threads</li>
+  <li>RAM: 16 GB DDR5 4800MHz RAM</li>
+  <li>Storage: 1 TB SSD</li>
+  <li>Screen: 2560×1600p, 165 Hz refresh rate</li>
+  <li>GPU: RTX 3060 (with 6 GB GDDR6 VRAM), max. TGP of 140 W</li>
+</ul>
+
+<p>Apart from these, the laptop also has a MUX switch. This boosts game FPS as well, because it means that the discrete GPU doesn’t need to go through the iGPU to write to the screen’s framebuffer.</p>
+
+<h2 id="thoughts-1">Thoughts</h2>
+
+<p>Overall, I’m very impressed and happy with the performance, and hope to get 5 years out of this laptop. I can finally play Genshin Impact at max settings. I also tried out <a href="https://www.cyberpunk.net/in/en/">Cyberpunk 2077</a> with ray-tracing on, and I was getting a stable 30-40 fps. In <a href="https://controlgame.com/">Control</a>, I was getting a stable 60 fps with ray-tracing on.</p>
+
+<h2 id="my-technical-knowledge-2">My Technical Knowledge</h2>
+
+<p>As I have an Nvidia GPU again, I’ve been slowly learning about the plethora of software that Nvidia has. I will share the things I learned in subsequent blog posts. Stay tuned!</p>]]></content><author><name>Tirthankar Mazumder</name><email>mztirthankar@gmail.com</email></author><summary type="html"><![CDATA[A short account of the different laptops I’ve owned so far.]]></summary></entry><entry><title type="html">GSoC — The Final Status Report</title><link href="https://wermos.github.io//blog/gsoc/gsoc-the-final-status-report/" rel="alternate" type="text/html" title="GSoC — The Final Status Report" /><published>2022-11-21T14:49:56+00:00</published><updated>2022-11-21T14:49:56+00:00</updated><id>https://wermos.github.io//blog/gsoc/gsoc-the-final-status-report</id><content type="html" xml:base="https://wermos.github.io//blog/gsoc/gsoc-the-final-status-report/"><![CDATA[<p>In this blog post, I will describe the work I have done after the midterm evaluation.</p>
+
+<h1 id="integrating-fastor">Integrating Fastor</h1>
+
+<p>As I mentioned in the previous post, the next step was for me to fully integrate Fastor as a backend into <code>algebra-plugins</code>. To that end, I opened <a href="https://github.com/acts-project/algebra-plugins/pull/78">PR #78</a>.</p>
+
+<h2 id="algebra-plugins-architecture"><code>algebra-plugins</code> Architecture</h2>
+
+<p>Integrating Fastor into <code>algebra-plugins</code> was not an easy feat. The architecture of <code>algebra-plugins</code> is quite complicated and very C++ template-heavy (in order to minimize code duplication). Moreover, there are many things which do not make sense to a beginner. For example, it is not immediately obvious to the newcomer why we need to write code both in the <a href="https://github.com/wermos/algebra-plugins/tree/9b3f0fe50d4be688ca99bd33e64e8837f6efa8f9/math"><code>math</code> subdirectory</a> as well as the <a href="https://github.com/wermos/algebra-plugins/tree/9b3f0fe50d4be688ca99bd33e64e8837f6efa8f9/frontend"><code>frontend</code> subdirectory</a>. Moreover, the frontend names like <code>eigen_eigen</code> and <code>eigen_cmath</code> are not the most illuminating either.</p>
+
+<h3 id="uniform-function-names">Uniform Function Names</h3>
+
+<p>Regardless, I got to work in the <code>math</code> subdirectory first. Inside this directory, all the functions used by the other projects and the rest of the repository are defined in terms of the math backend functions. A specific library might call the function <code>dot()</code>, <a href="https://eigen.tuxfamily.org/dox/classEigen_1_1MatrixBase.html#adfd32bf5fcf6ee603c924dde9bf7bc39">as Eigen does</a>, or it might call it <code>inner()</code> (short for <a href="https://en.wikipedia.org/wiki/Dot_product">inner product</a>), <a href="https://github.com/romeric/Fastor/wiki/Linear-algebra-functions#inner-product-inner">as Fastor does</a>.</p>
+
+<p><code>algebra-plugins</code> uses the functions defined in the <code>math</code> directory to provide an uniform API, regardless of the backend. The name that was decided upon for <code>algebra-plugins</code> for this function was <code>dot()</code>.</p>
+
+<h3 id="uniform-type-names">Uniform Type Names</h3>
+
+<p>Type names are another thing which have a lot of variation from library to library. Eigen calls their type as simply <a href="https://eigen.tuxfamily.org/dox/group__TutorialMatrixClass.html"><code>Matrix</code></a>, whereas <code>SMatrix</code>, for example, calls their matrix type <a href="https://root.cern.ch/doc/master/classROOT_1_1Math_1_1SMatrix.html"><code>SMatrix</code></a> (unsurprisingly). For this reason, we have to define types such as <code>matrix_type</code> and <code>vector3</code> in the <a href="https://github.com/wermos/algebra-plugins/blob/9b3f0fe50d4be688ca99bd33e64e8837f6efa8f9/storage/fastor/include/algebra/storage/fastor.hpp"><code>storage</code> directory</a>.</p>
+
+<p>As I spent time mucking around in the <code>algebra-plugins</code> repository and writing code, these little things started to make more and more sense to me.</p>
+
+<h2 id="expression-templates">Expression Templates</h2>
+
+<p>In order to understand how to write the code for Fastor in <code>algebra-plugins</code>, I spent time looking at how the code for the other backends was written. An important optimization that many math libraries use is <a href="https://en.wikipedia.org/wiki/Expression_templates">expression templates</a>. This is important because C++ is a eager evaluation language (as opposed to, say, Haskell, which uses lazy evaluation).</p>
+
+<p>Imagine we have the line of code <code>auto result = 3 * v1 + 5 * v2;</code>, where <code>v1</code> and <code>v2</code> are vectors. If the expression were to be lazily evaluated, then every element of the resultant vector would not be computed until the whole expression had been read. In C++ (and other eager evaluation languages) what happens is as follows:</p>
+<ol>
+  <li>The subexpression <code>3 * v1</code> is read. Since this is something that can be computed, C++ computes it and puts it in temporary storage, say <code>temp1</code>.</li>
+  <li>The subexpression <code>5 * v2</code> is read. Once again, since this is something that can be computed, C++ computes it and puts it in temporary storage, say <code>temp2</code>.</li>
+  <li>The result of adding <code>temp1</code> and <code>temp2</code> is stored in <code>result</code>.</li>
+</ol>
+
+<p>Obviously, a lot of unnecessary work is being done here. Expression Templates solve this issue by recording the work to be done in lightweight structs using templates until the expression needs to be evaluated, and only then does it fully evaluate the expression.</p>
+
+<h3 id="expression-templates-and-algebra-plugins">Expression Templates and <code>algebra-plugins</code></h3>
+
+<p>Because of expression templates, many functions have multiple definitions</p>]]></content><author><name>Tirthankar Mazumder</name><email>mztirthankar@gmail.com</email></author><category term="gsoc" /><summary type="html"><![CDATA[In this blog post, I will describe the work I have done after the midterm evaluation.]]></summary></entry><entry><title type="html">A Small Detail in Naruto Shippuuden: Sealing Jutsu</title><link href="https://wermos.github.io//blog/anime/naruto/naruto-detail/" rel="alternate" type="text/html" title="A Small Detail in Naruto Shippuuden: Sealing Jutsu" /><published>2022-09-15T10:30:35+00:00</published><updated>2022-09-15T10:30:35+00:00</updated><id>https://wermos.github.io//blog/anime/naruto/naruto-detail</id><content type="html" xml:base="https://wermos.github.io//blog/anime/naruto/naruto-detail/"><![CDATA[<p>This post is about a small detail I noticed while telling someone about an amazing scene in the show.</p>
+
+<blockquote>
+  <p><strong>Warning:</strong>
+Spoilers ahead. If you are still watching Naruto Shippuuden, and are at an episode before <strong>episode 250</strong>, skip this blog post.</p>
+</blockquote>
+
+<h1 id="the-detail">The Detail</h1>
+
+<p>Whenever anyone in the show performs a Jutsu that results in seal marks being created, they always do it on the ground, and the marks always show up on the ground, or somewhere with a hard surface. The one exception to this rule is Minato Namikaze. His extensive knowledge of Sealing Jutsu allows him to use Jutsu that result in seal marks anywhere (including doing them in the air), and the resultant marks show up in the air.</p>
+
+<p>If you’re wondering where I got this theory from, or why I think it’s true, keep reading!</p>
+
+<h1 id="narutos-parents">Naruto’s Parents</h1>
+
+<p>We know that Naruto’s parents are Minato Namikaze, of the Namikaze clan, and Kushina Uzumaki, of the Uzumaki clan. When Naruto is trying to tame the nine-tailed fox and he meets his mother, we get to see the whole backstory about the infamous attack on the Hidden Leaf Village 16 years ago.</p>
+
+<p>One of the things Kushina mentions is that the Uzumaki clan was known for their deep knowledge of Sealing Jutsu. She goes on say that Minato spent time with her mother and learned many things about Sealing Jutsu.</p>
+
+<h1 id="summoning-jutsu">Summoning Jutsu</h1>
+
+<p>An important class of jutsu in the show are the <em>Summoning Jutsu</em>. As you may recall, these are jutsu used to summon animals, usually for fighting purposes.</p>
+
+<h2 id="an-aside-uses-of-summoned-animals">An Aside: Uses of Summoned Animals</h2>
+
+<p>Not everyone uses the summoned animals for fighting. Jiraiya and Naruto both use their signature summons, toads, for fighting purposes. However, Tsunade and Sakura use their signature summons, the slug (Katsuyu), for healing purposes. Moreover, Kakashi’s summon brings out dogs, which have zero fighting power (against the enemies in the Naruto-verse), and are used for tracking purposes.</p>
+
+<h2 id="so-what-about-these-summons">So What About These Summons?</h2>
+
+<p>One thing you will notice is that whenever people use a summoning jutsu, the summon results in some seal marks being written on the ground:</p>
+<div style="position:relative; padding-bottom:calc(76.67% + 44px)"><iframe src="https://gfycat.com/ifr/search/AnimatedFewAnhinga?controls=0&amp;hd=1" frameborder="0" scrolling="no" width="100%" height="100%" style="position:absolute;top:0;left:0;" allowfullscreen=""></iframe></div>
+<p><br />
+This little detail stays constant throughout: the marks show up when the Legendary Sannin do a Summoning Jutsu, when Tobi summons the nine tails, and also when Pain does his (their?) summons.</p>
+
+<p>That is to say, the marks are not a result of a “skill issue”. They show up regardless of who is performing the summon.</p>
+
+<h2 id="minato-vs-nine-tailed-fox">Minato vs. Nine-Tailed Fox</h2>
+
+<p>Think back to when Minato fought the nine tails, and it unleashed a Tailed Beast Bomb at him. What did he do? Since a picture is worth a thousand words, I won’t describe it, but rather show it:</p>
+<div style="position:relative; padding-bottom:calc(56.25% + 44px)"><iframe src="https://gfycat.com/ifr/search/SpryWeightyGoosefish?controls=0&amp;hd=1" frameborder="0" scrolling="no" width="100%" height="100%" style="position:absolute;top:0;left:0;" allowfullscreen=""></iframe></div>
+<p><br />
+The key thing to note is that the seal marks are being written and drawn in the air itself. <em>In the air</em>. No other ninja in the show ever achieves a similar feat.</p>
+
+<h2 id="how-does-minato-know-how-to-do-it">How Does Minato Know How To Do It?</h2>
+
+<p>Well, it was established before that Minato spent time around his wife’s clan, the Uzumakis, and learned their craft. It would appear that he used the knowledge he learned extensively.</p>
+
+<h3 id="where-else">Where Else?</h3>
+
+<p>It would be natural to wonder where else he is shown to be using his Sealing Jutsu skills in the show. Here is a small list of the other places where he used them, or his skill with Sealing Jutsu are indirectly demonstrated:</p>
+
+<ol>
+  <li>
+    <p>He put his teleportation mark into Kushina’s Jinchuriki seal so that he could teleport to her directly if she was ever in danger.</p>
+  </li>
+  <li>
+    <p>He unsealed the nine tails from Tobi, freeing it from the Sharingan’s hypnotic gaze, and making it free to be sealed inside a Jinchuriki again.</p>
+  </li>
+  <li>
+    <p>When he seals the nine tails into Naruto, he makes sure to mix a bit of his and Kushina’s chakra into the seal so that they can appear in his mind at crucial moments and guide him away from the dark path he was going down.</p>
+  </li>
+  <li>
+    <p>When Naruto meets Kushina, she explains to him that the Tetragram Seal on his abdomen is a seal modeled after jutsu from Uzushiogakure, which is the village where the Uzumaki clan lived.</p>
+  </li>
+  <li>
+    <p>The seal written on Gerotora is Naruto’s Jinchuriki Seal. The visual we are shown in the anime (and the manga too!) is testament to the sheer complexity of the seal that Minato used. None other than a person highly skilled in the art of Sealing Jutsu could have created such a seal.</p>
+  </li>
+  <li>
+    <p>Apart from the sheer complexity of Naruto’s seal, we also have to remember that Minato came up with the seal under duress (the village was being attacked). This little detail also indirectly shows Minato’s skill with Sealing Jutsu.</p>
+  </li>
+</ol>
+
+<h2 id="but-wait">But Wait!</h2>
+
+<p>An astute reader/viewer of the series might object to this post by saying that this theory does not hold up against the first time that Naruto summons Gamabunta.</p>
+
+<p>There are two aspects to this objection: First of all, this is a very good point. Naruto <em>was</em> falling into the canyon, so if he succeeded in performing the summoning (which he did), the seal marks would have to have been drawn in the air. One other possibility is that the seal marks were drawn on the ground and Gamabunta ended up being summoned on the ground. After that, he jumped up and caught Naruto in mid-air.</p>
+
+<p>If one watches that episode again, they will notice that there is no evidence that supports either theory over the other. <em>However</em>, the manga has a very interesting visual, wherein no seal marks are drawn at all.</p>
+
+<p><img src="/blog/assets/images/naruto-summoning.png" alt="Naruto performing the Summoning Jutsu for the first time" /></p>
+
+<p>Hence, both the anime adaptation as well as the source material are inconclusive on this topic. That is, it doesn’t prove nor disprove my theory. However, my explanation for this is that because he tapped into his nine-tails chakra in order to summon Gamabunta, so the normal rules don’t apply.</p>
+
+<p>As a final note, recall that Naruto was inside the sand coffin when he summoned Gamabunta in the fight against Gaara, so that instance does nothing to help or hurt this theory either.</p>]]></content><author><name>Tirthankar Mazumder</name><email>mztirthankar@gmail.com</email></author><category term="anime" /><category term="naruto" /><summary type="html"><![CDATA[This post is about a small detail I noticed while telling someone about an amazing scene in the show.]]></summary></entry><entry><title type="html">GSoC — The Work So Far</title><link href="https://wermos.github.io//blog/gsoc/gsoc-the-work-so-far/" rel="alternate" type="text/html" title="GSoC — The Work So Far" /><published>2022-08-31T10:46:37+00:00</published><updated>2022-08-31T10:46:37+00:00</updated><id>https://wermos.github.io//blog/gsoc/gsoc-the-work-so-far</id><content type="html" xml:base="https://wermos.github.io//blog/gsoc/gsoc-the-work-so-far/"><![CDATA[<p>In this blog post, I will discuss the work I have done so far, and what our future direction will be.</p>
+
+<h1 id="fast-55">Fast 5×5</h1>
+
+<p>In 2019, Hadrien worked with a Masters student to create <a href="https://gitlab.in2p3.fr/CodeursIntensifs/Fast5x5">Fast 5×5</a>, which was supposed to be a proof-of-concept demonstrating that the existing matrix routines in <code>Eigen</code> could be better optimized for small dimensions like 5×5.</p>
+
+<h2 id="my-changes-to-fast-55">My Changes to Fast 5×5</h2>
+
+<p>The first thing my mentors recommended doing was to take a closer look at the repository and understand where we stand with respect to the work to be done.</p>
+
+<p>After looking at <code>fast5x5.hpp</code> for a while, I decided that I should make some changes to make the benchmarking program faster and more reliable. So, I started making changes to the repository. I started off by removing the Docker stuff because it would not be necessary for the project.</p>
+
+<p>After making a few changes, it became apparent that I needed somewhere to push my changes to, so that it was available for everyone to see and use. However, because the original project was on GitLab, I could not fork it the way projects on GitHub can be forked. Instead, I pushed my copy of the GitLab repository onto GitHub, and made sure to point to the original URL in my repository description. The original repository can be found <a href="https://gitlab.in2p3.fr/CodeursIntensifs/Fast5x5">here</a>, and my fork can be found <a href="https://github.com/wermos/Fast5x5/">here</a>.</p>
+
+<h3 id="repository-reorganization">Repository Reorganization</h3>
+
+<p>The original directory structure was quite flat. However, it was not amenable to the amount and volume of changes I needed to make. For this reason, I reorganized the entire repository multiple times (for example, in <a href="https://github.com/wermos/Fast5x5/commit/85ad3fd1de82ee6313bb2685e2a02f368d7e5e6a"><code>85ad3fd</code></a>, <a href="https://github.com/wermos/Fast5x5/commit/20d4fb9940f01c547272cb3b2e775335992d8ea6"><code>20d4fb9</code></a>, <a href="https://github.com/wermos/Fast5x5/commit/125a084f374c92936a2bc9f8e41d561c31346588"><code>125a084</code></a>, and <a href="https://github.com/wermos/Fast5x5/commit/69bd4d8cc3f6e3aeb0c6baf21d9510b931984799"><code>69bd4d8</code></a>).</p>
+
+<p>The original directory structure was:</p>
+
+<figure class="highlight"><pre><code class="nohljsln">.
+├── README.md
+├── CMakeLists.txt
+├── custom_scal.txt
+├── eigen_scal.txt
+├── analysis.R
+├── measure_perf.sh
+├── fast5x5.hpp
+├── matrix_product_custom.cpp
+├── matrix_product_eigen.cpp
+├── benchmark/
+│   ├── benchmark.sh
+│   ├── gemm_custom.cpp
+│   ├── gemm_eigen.cpp
+│   ├── gemm_header.h
+│   └── gemm_simple.cpp
+├── docker/
+│   ├── Dockerfile-extracts
+│   ├── kokkos
+│   └── xsimd
+└── test/
+    ├── CMakeLists.txt
+    ├── unit_inverse.cpp
+    ├── unit_matrix.cpp
+    ├── unit_operator.cpp
+    ├── unit_vector.cpp
+    └── run_all.cpp</code></pre></figure>
+
+<p>The current (at the time of writing) file structure is as follows:</p>
+
+<figure class="highlight"><pre><code class="nohljsln">.
+├── README.md
+├── CMakeLists.txt
+├── include/
+│   ├── fast5x5/
+│   │   └── fast5x5.hpp
+│   └── benchmarks/
+│       ├── coord-transform
+│       ├── gemm
+│       ├── inversion
+│       ├── similarity
+│       ├── shared
+│       ├── mat_mul.hpp
+│       ├── mat_inv.hpp
+│       ├── mat_sim.hpp
+│       └── mat_coord_transform.hpp
+└── src/
+    ├── CMakeLists.txt
+    ├── libs/
+    │   ├── eigen
+    │   ├── xsimd
+    │   ├── googletest
+    │   ├── benchmark
+    │   ├── blaze
+    │   └── Fastor
+    ├── benchmarks/
+    │   ├── CMakeLists.txt
+    │   ├── combined_benchmark.cpp
+    │   ├── gemm_benchmark.cpp
+    │   ├── inversion_benchmark.cpp
+    │   ├── similarity_benchmark.cpp
+    │   └── coord_transform_benchmark.cpp
+    └── test/
+        ├── CMakeLists.txt
+        ├── unit_inverse.cpp
+        ├── unit_matrix.cpp
+        ├── unit_operator.cpp
+        ├── unit_vector.cpp
+        └── run_all.cpp</code></pre></figure>
+
+<p>The advantage of the new hierarchical directory structure is that it allows others to get up to speed with respect to where everything is faster, and it also allows me to easily add more benchmarks and backends.</p>
+
+<h3 id="installed-vs-vendored-libraries">Installed vs. Vendored Libraries</h3>
+
+<p>Originally, the repository expected the user to have <code>Eigen</code> and <code>xsimd</code> installed. However, the existing <code>CMakeLists.txt</code> file downloaded Google Test from GitHub, thereby avoiding that library dependency.</p>
+
+<p>In order to minimize library dependencies and make it easier for other people to run the benchmarks, I removed the reliance on user installations and opted to “vendor” the libraries along with the project. Even though both Fast5×5 and <code>algebra-plugins</code> both used CMake to download dependencies from GitHub, I chose the Git submodule approach because I was more familiar with the latter at the time. I added <code>Eigen</code>, <code>xsimd</code>, and GoogleTest as Git submodules. Furthermore, all subsequent additions (like Google Benchmark, <code>blaze</code>, and <code>Fastor</code>) were added as submodules to Fast5×5.</p>
+
+<p>I converted the libraries into submodules in <a href="https://github.com/wermos/Fast5x5/commit/21aad0e2a38425e0c959b259359e6e67084ec282"><code>21aad0e</code></a>, and then performed an <code>xsimd</code> version upgrade (from <code>v5.0.0</code> to <code>v7.6.0</code>) in <a href="https://github.com/wermos/Fast5x5/commit/e1e1c71aed01d2aee8e24a8b63bcf4360916df81"><code>e1e1c71</code></a> and performed two Eigen version upgrades in <a href="https://github.com/wermos/Fast5x5/commit/18dbd4eab48ed6dcda108c4545632e9d431d6305"><code>18dbd4e</code></a> (from <code>v3.3.4</code> to <code>v3.4.0</code>), and then in <a href="https://github.com/wermos/Fast5x5/commit/0e702b0607c28631a24875d94aa1a5acb80a5554"><code>0e702b0</code></a> (from <code>v3.4.0</code> to <code>3.4.90</code>).</p>
+
+<p>Due to the fact that I had converted the libraries into submodules, version upgrades were as simple as checking out a new commit in the submodule repository and then committing that change.</p>
+
+<h3 id="usrbintime-vs-google-benchmark"><code>/usr/bin/time</code> vs. Google Benchmark</h3>
+
+<p><a href="https://github.com/google/benchmark">Google Benchmark</a> is a C++ library dedicated to performing micro-benchmarks.</p>
+
+<p>Benchmarking small pieces of code like the ones in this project is called micro-benchmarking. Among software developers, it is well known that micro-benchmarking is tough to do properly because the very nature of the benchmarks means that a small amount of noise (to the order of a few nanoseconds) can greatly alter the results of a specific benchmark.</p>
+
+<p><code>/usr/bin/time</code> was the original method of benchmarking that was being used. However, it is not well suited to micro-benchmarks because the resolution of the underlying clock used is <a href="https://stackoverflow.com/a/9006802/12591388">not that great</a>. On the other hand, Google Benchmark has no problem with reporting the elapsed time for tasks which take a few nanoseconds (5 to 7 ns, for example).</p>
+
+<p>An interesting and very useful feature that Google Benchmark has is its <code>DoNotOptimize()</code> function, which prevents the compiler from optimizing out a certain operation. After all, what good is the benchmark if it isn’t even doing what I am trying to measure? Obviously, <code>/usr/bin/time</code> has no such thing (because it was created for a different purpose), so Google Benchmark is superior in this regard as well.</p>
+
+<p>Apart from these technical considerations, Google Benchmark offers considerable Quality of Life (QoL) features as well, such as the option to run multiple benchmarks back to back, an uniform output format, the option to export the output into different formats like csv and json, and more.</p>
+
+<p>For these reasons, I decided to move away from <code>/usr/bin/time</code> and switched the Google Benchmark instead.</p>
+
+<h3 id="matrix-generation">Matrix Generation</h3>
+
+<p>A key part of the benchmarking code is the random matrix generation. Doing this properly is essential because otherwise, the compiler might figure out the fact that we have precomputed matrices. Once it does so, it is free to calculate the results ahead of time, which would defeat the point of the benchmark. The original Fast 5×5 code was using index-based operations to fill up the matrix, like so:</p>
+
+<figure class="highlight"><pre><code class="language-cpp">float a[SIZE * SIZE];
+float b[SIZE * SIZE];
+
+// the BaseMatrix data type in fast5x5.hpp has a constructor
+// that takes in C-style arrays. So, the code simply filled
+// up two arrays and then made two BaseMatrix objects out
+// of them.
+
+for (int i = 0; i &lt; SIZE; i++) {
+    for (int j = 0; j &lt; SIZE; j++) {
+        a[i * SIZE + j] = i + j;
+    }
+}
+
+for (int i = 0; i &lt; SIZE; i++) {
+    for (int j = 0; j &lt; SIZE; j++) {
+        float val;
+        if (i == 0 &amp;&amp; j == 1) val = -1;
+        else if (i == 1 &amp;&amp; j == 0) val = 1;
+        else if (i &gt; 1 &amp;&amp; i == j &amp;&amp; i % 2) val = -1;
+        else if (i &gt; 1 &amp;&amp; i == j &amp;&amp; !(i % 2)) val = 1;
+        else val = 0;
+        b[i * SIZE + j] = val;
+    }
+}</code></pre></figure>
+
+<p>I rewrote the matrix generation code using the random number generators in the <code>&lt;random&gt;</code> header, and mimicked <code>Eigen</code>’s <code>Random()</code> implementation, which generates a random float in the range [-1, 1]:</p>
+
+<figure class="highlight"><pre><code class="language-cpp">// random.hpp
+#include &lt;random&gt;
+#include &lt;limits&gt;
+
+inline float randomFloat(float min, float max) {
+    // Returns a random real in [min, max].
+    static std::uniform_real_distribution&lt;float&gt; distribution(
+        min, std::nextafter(max,
+            std::numeric_limits&lt;float&gt;::infinity()
+            )
+        );
+
+    static std::mt19937_64 generator;
+
+    return distribution(generator);
+}
+
+// this is the matrix generation code
+float a[SIZE * SIZE];
+
+for (int i = 0; i &lt; SIZE; i++) {
+    for (int j = 0; j &lt; SIZE; j++) {
+        a[i * SIZE + j] = randomFloat(-1.0, 1.0);
+    }
+}</code></pre></figure>
+
+<p>This change was made in <a href="https://github.com/wermos/Fast5x5/commit/ff821df8906a226749408e24b40e627d21fa3894"><code>ff821df</code></a>.</p>
+
+<h1 id="benchmarking-results">Benchmarking Results</h1>
+
+<p>I wrote benchmarks for testing the performance of <code>Eigen</code>, <code>fast5x5</code>, <code>blaze</code>, and <code>Fastor</code> in various matrix computation tasks like <a href="https://github.com/wermos/Fast5x5/tree/a495e9bf66303c76550797a1cbdf09ad6a555baa/include/benchmarks/gemm">matrix multiplication</a>, <a href="https://github.com/wermos/Fast5x5/tree/a495e9bf66303c76550797a1cbdf09ad6a555baa/include/benchmarks/inversion">matrix inversion</a>, computing the <a href="https://github.com/wermos/Fast5x5/tree/a495e9bf66303c76550797a1cbdf09ad6a555baa/include/benchmarks/similarity">similarity transform</a> and computing <a href="https://github.com/wermos/Fast5x5/tree/a495e9bf66303c76550797a1cbdf09ad6a555baa/include/benchmarks/coord-transform">coordinate transforms</a> in various matrix dimensions (more specifically, in 4×4, 6×6, 6×8, and 8×8).</p>
+
+<p>I ran the benchmarks on my own machine, gathered the data, and then plotted it using a Python script I wrote:</p>
+
+<figure class="half ">
+  
+    
+      <a href="/blog/assets/images/gsoc/gemm_plot_float.png" title="Benchmark plot for GEMM with &lt;code&gt;float&lt;/code&gt; matrices.">
+          <img src="/blog/assets/images/gsoc/gemm_plot_float.png" alt="" />
+      </a>
+    
+  
+    
+      <a href="/blog/assets/images/gsoc/gemm_plot_double.png" title="Benchmark plot for GEMM with &lt;code&gt;double&lt;/code&gt; matrices.">
+          <img src="/blog/assets/images/gsoc/gemm_plot_double.png" alt="" />
+      </a>
+    
+  
+  
+    <figcaption>GEMM benchmark plots
+</figcaption>
+  
+</figure>
+
+<figure class="half ">
+  
+    
+      <a href="/blog/assets/images/gsoc/inversion_plot_float.png" title="Benchmark plot for matrix inversion with &lt;code&gt;float&lt;/code&gt; matrices.">
+          <img src="/blog/assets/images/gsoc/inversion_plot_float.png" alt="" />
+      </a>
+    
+  
+    
+      <a href="/blog/assets/images/gsoc/inversion_plot_double.png" title="Benchmark plot for matrix inversion with &lt;code&gt;double&lt;/code&gt; matrices.">
+          <img src="/blog/assets/images/gsoc/inversion_plot_double.png" alt="" />
+      </a>
+    
+  
+  
+    <figcaption>Matrix inversion benchmark plots
+</figcaption>
+  
+</figure>
+
+<figure class="half ">
+  
+    
+      <a href="/blog/assets/images/gsoc/similarity_plot_float.png" title="Benchmark plot for matrix similarity with &lt;code&gt;float&lt;/code&gt; matrices.">
+          <img src="/blog/assets/images/gsoc/similarity_plot_float.png" alt="" />
+      </a>
+    
+  
+    
+      <a href="/blog/assets/images/gsoc/similarity_plot_double.png" title="Benchmark plot for matrix similarity with &lt;code&gt;double&lt;/code&gt; matrices.">
+          <img src="/blog/assets/images/gsoc/similarity_plot_double.png" alt="" />
+      </a>
+    
+  
+  
+    <figcaption>Similarity transform (i.e. computing $ABA^\top$) benchmark plots
+</figcaption>
+  
+</figure>
+
+<figure class="half ">
+  
+    
+      <a href="/blog/assets/images/gsoc/freeToBound_plot_float.png" title="Benchmark plot for free coordinates to bound coordinates with &lt;code&gt;float&lt;/code&gt; matrices.">
+          <img src="/blog/assets/images/gsoc/freeToBound_plot_float.png" alt="" />
+      </a>
+    
+  
+    
+      <a href="/blog/assets/images/gsoc/freeToBound_plot_double.png" title="Benchmark plot for free coordinates to bound coordinates with &lt;code&gt;double&lt;/code&gt; matrices.">
+          <img src="/blog/assets/images/gsoc/freeToBound_plot_double.png" alt="" />
+      </a>
+    
+  
+  
+    <figcaption>Free coordinates to bound coordinates benchmark plots
+</figcaption>
+  
+</figure>
+
+<figure class="half ">
+  
+    
+      <a href="/blog/assets/images/gsoc/boundToFree_plot_float.png" title="Benchmark plot for bound coordinates to free coordinates with &lt;code&gt;float&lt;/code&gt; matrices.">
+          <img src="/blog/assets/images/gsoc/boundToFree_plot_float.png" alt="" />
+      </a>
+    
+  
+    
+      <a href="/blog/assets/images/gsoc/boundToFree_plot_double.png" title="Benchmark plot for bound coordinates to free coordinates with &lt;code&gt;double&lt;/code&gt; matrices.">
+          <img src="/blog/assets/images/gsoc/boundToFree_plot_double.png" alt="" />
+      </a>
+    
+  
+  
+    <figcaption>Bound coordinates to free coordinates benchmark plots
+</figcaption>
+  
+</figure>
+
+<p>Note that the bar graphs for the <code>Custom</code> backend and <code>double</code> matrices do not exist for the 6×6 and 8×8 dimensions. This is an intentional and recurring theme: The <code>custom</code> backend has a size limitation which prevents it from being usable for 6×6 and 8×8 matrices without the AVX512 instruction set, which <a href="https://ark.intel.com/content/www/us/en/ark/products/132228/intel-core-i712700h-processor-24m-cache-up-to-4-70-ghz.html">my processor</a> (at the time of writing) does not support. For this reason, the <code>custom</code> 6×6 and 8×8 data is missing from all of my benchmark plots.</p>
+
+<p>After gathering the data, my mentors and I analyzed the performance of each backend. After a deep look into the assembly generated by each backend, as well as a look at the performance each library brought to the table, we decided to use Fastor because it was consistently first or second in all the benchmarks we threw at it, and its assembly generation was the cleanest (i.e. free of cruft and the pointless register shuffling that plagued a few of the other backends).</p>
+
+<p>That’s it for the status report of the work so far! The next steps for me and my GSoC project are to</p>
+<ol>
+  <li>integrate Fastor into <code>algebra-plugins</code>, and</li>
+  <li>write the front-end for it so that we can see Fastor in action in a more realistic setting.</li>
+</ol>
+
+<p>To that end, I already integrated Fastor to the repository in <a href="https://github.com/acts-project/algebra-plugins/pull/77">PR #77</a>, and am currently working on writing the front-end.</p>]]></content><author><name>Tirthankar Mazumder</name><email>mztirthankar@gmail.com</email></author><category term="gsoc" /><summary type="html"><![CDATA[In this blog post, I will discuss the work I have done so far, and what our future direction will be.]]></summary></entry><entry><title type="html">GSoC — The Details of My Project</title><link href="https://wermos.github.io//blog/gsoc/gsoc-the-details-of-my-project/" rel="alternate" type="text/html" title="GSoC — The Details of My Project" /><published>2022-08-30T11:19:29+00:00</published><updated>2022-08-30T11:19:29+00:00</updated><id>https://wermos.github.io//blog/gsoc/gsoc-the-details-of-my-project</id><content type="html" xml:base="https://wermos.github.io//blog/gsoc/gsoc-the-details-of-my-project/"><![CDATA[<p>In this post, I will discuss what exactly my work is and its relation to the ACTS project.</p>
+
+<h1 id="project-description">Project Description</h1>
+
+<p>The original project description was:</p>
+<blockquote>
+  <p>We propose the development of a linear algebra plugin for ACTS, which makes use of explicit vectorization.</p>
+
+  <ul>
+    <li>Port a similar existing library implementation (<a href="https://gitlab.in2p3.fr/CodeursIntensifs/Fast5x5/">fast5x5</a>/<a href="https://github.com/xtensor-stack/xsimd">xsimd</a>) to a suitable library backend (can be decided upon together with the student).</li>
+    <li>Adapt the implementation to the linear algebra operations needed in the ACTS numerical integration for particle propagation.</li>
+    <li>Validate the approach and its performance and possibly optimize the performance further.</li>
+    <li>Given enough time, find a way to make the implementation available to ACTS as a compute backend and run it in ACTS example code.</li>
+  </ul>
+</blockquote>
+
+<p>The project, as described on the CERN-HSF webpage, can be found <a href="https://hepsoftwarefoundation.org/gsoc/2022/proposal_Acts-vectorized-LA-backend.html">here</a>.</p>
+
+<h2 id="what-is-vectorization">What is Vectorization?</h2>
+
+<p>All matrix math libraries use something called <a href="https://en.wikipedia.org/wiki/Single_instruction,_multiple_data">SIMD</a> (short for Single Instruction, Multiple Data) to achieve a speed-up compared to a naïve implementation.</p>
+
+<p>Let’s take the example of adding two 4-dimensional vectors together. The naïve way of doing it is to take one element from each vector, add it, and then store the result in the result vector. This takes 4 add instructions to complete. However, with a SIMD ISA (Instruction Set Architecture) all one needs to do is load the 4 elements of each vector into a SIMD register, add them, and store the result in a result vector. This takes just 1 add instruction to complete.</p>
+
+<p>In this simple example, using SIMD instructions gave us an approximately 4× speed-up.</p>
+
+<figure>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/SIMD2.svg/400px-SIMD2.svg.png" alt="representation of a SIMD register" /></p>
+  <figcaption>Representation of a SIMD register (Picture Credits: Wikipedia, courtesy of <a href="https://commons.wikimedia.org/w/index.php?title=User:Vadikus">Vadikus</a>)</figcaption>
+</figure>
+
+<p>However, it is not as simple as that. There are many SIMD ISAs, for example <a href="https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions">SSE</a>, <a href="https://en.wikipedia.org/wiki/SSE2">SSE2</a>, <a href="https://en.wikipedia.org/wiki/SSE3">SSE3</a>, <a href="https://en.wikipedia.org/wiki/SSSE3">SSSE3</a> (note the one extra “S”!), <a href="https://en.wikipedia.org/wiki/SSE4">SSE4</a>, <a href="https://en.wikipedia.org/wiki/Advanced_Vector_Extensions">AVX</a>, AVX2, <a href="https://en.wikipedia.org/wiki/AVX-512">AVX512</a>, and more.</p>
+
+<p>A given CPU may not support all of these ISAs. (For example, the processor I have at the time of writing, an <a href="https://ark.intel.com/content/www/us/en/ark/products/132228/intel-core-i712700h-processor-24m-cache-up-to-4-70-ghz.html">i7-12700H</a> does not support AVX512.)</p>
+
+<p>Code that is optimized for one ISA may not necessarily be optimized for other ISAs. For this reason, most people prefer to outsource their SIMD code to an external library dedicated to figuring out these headaches. Many such libraries exist, and they broadly fall into two categories:</p>
+
+<p>The first type simply exposes SIMD intrinsics to the user in an uniform way: The add instruction in SSE2 is called <code>_mm_add_ps</code>, whereas it is called <code>_mm256_add_ps</code> in AVX. (The <code>add_ps</code> here stands for “add packed scalars.) Writing code which behaves well with multiple SIMD ISAs would involve a ridiculous amount of code repetition, which is what these types of libraries aim to minimize. <a href="https://github.com/xtensor-stack/xsimd"><code>xsimd</code></a> is a great example of such a library.</p>
+
+<p>The second type goes one step further and offers fully vectorized types such as a 4-element <code>float</code>/<code>double</code> array which will use a vectorized add instruction to add all the elements at once. A good example of such a library is <a href="https://github.com/VcDevel/Vc"><code>Vc</code></a>.</p>
+
+<h2 id="alternate-project-description">Alternate Project Description</h2>
+
+<p>The aforementioned project description might be a little terse for some. This is the way I like to explain it to others:</p>
+
+<p>CERN generates a lot of data from its LHC experiments. For this reason, they have a lot of software projects which are data analysis oriented. The ACTS project is one such software package which does track reconstruction.</p>
+
+<p>ACTS uses matrix operations in many places, such as for doing track reconstruction and <a href="https://acts.readthedocs.io/en/latest/tracking.html#covariance-transport">covariance transport</a>. However, the people who work on the ACTS project noticed that the matrix libraries they were using were quite slow for small dimensions (like 4×4, 6×6, 6×8, and 8×8). Upon further investigation, it turned out that popular matrix libraries like <code>Eigen</code> and <code>SMatrix</code> are not well-optimized for these dimensions. For example, I found during my benchmarking investigations that Eigen is about 6.5 times slower at inverting a <code>double</code> 8×8 matrix than a better optimized library like <a href="https://github.com/romeric/Fastor">Fastor</a>.</p>
+
+<p>Some time ago, an alternate implementation of 4×4 matrices and the related operations were written using a library called <a href="https://github.com/VcDevel/Vc"><code>Vc</code></a>, and it performed quite well in benchmarks at the time.</p>
+
+<p>My work is to continue this work and write implementations for all these desired dimensions, so that the ACTS project’s routines run faster.</p>
+
+<p>I will go more into the details of the work and what we have accomplished so far in the next blog post. For now, I will discuss a bit about our weekly meeting schedule, and what it is like to work with my mentors.</p>
+
+<h3 id="my-project-proposal">My Project Proposal</h3>
+
+<p>My proposal can be found <a href="https://docs.google.com/document/d/1Ick3iDF_2bGbLiR-ZDGWnk06rrP64JBQG8Et4TccxRs/edit?usp=sharing">here</a>. The only change I suggested was to use <code>xsimd</code> instead of <code>Vc</code>, because the latter is not in active development anymore.</p>
+
+<h2 id="where-would-the-work-go">Where Would The Work Go?</h2>
+
+<p>The math code in the <a href="https://github.com/acts-project/acts">ACTS Project</a> proper is inextricably linked with the track-fitting code, so it would be a lot of work to change that.</p>
+
+<p>However, in the <a href="https://github.com/acts-project">ACTS project family</a>, there are two research repositories: <a href="https://github.com/acts-project/detray">detray</a> and <a href="https://github.com/acts-project/traccc">traccc</a>. These two repositories were started a couple of years after the original ACTS Project, so their approach to the math code is also slightly different. Both of these projects use another ACTS family project called <a href="https://github.com/acts-project/algebra-plugins"><code>algebra-plugins</code></a> as a layer of abstraction over the different functions that matrix libraries like <code>Eigen</code> and <code>SMatrix</code> provide. This allows the developers of these research repositories to easily switch between math backends and test them out.</p>
+
+<p>My work involves fleshing out the <a href="https://github.com/acts-project/algebra-plugins/tree/71ea1e814fae3020feedf6389c89a4ffac591bae/math/vc"><code>Vc</code> portion</a> of <code>algebra-plugins</code>, and adding all the functions which are present in the other math backends but not in the <code>Vc</code> stuff yet.
+My work involves out the <a href="https://github.com/acts-project/algebra-plugins/tree/71ea1e814fae3020feedf6389c89a4ffac591bae/math/vc"><code>Vc</code> portion</a> of <code>algebra-plugins</code>, and adding all the functions which are present in the other math backends but not in the <code>Vc</code> stuff yet.</p>
+
+<h1 id="weekly-meeting-schedule">Weekly Meeting Schedule</h1>
+
+<p>We usually meet on Mondays at 10:00 am CEST (1:30 pm IST). Sometimes, we meet on other days, if the day is a holiday in some country, or one of us has other commitments.</p>
+
+<h1 id="mentors">Mentors</h1>
+
+<p>I have the pleasure of working with 3 highly qualified mentors. I will write a bit about each person:</p>
+
+<h2 id="joana-niermann">Joana Niermann</h2>
+
+<p>She is currently a PhD student in the <a href="https://www.uni-goettingen.de/en/1.html">University of Göttingen</a>.</p>
+
+<p>She was the first person I contacted, about my interest in working on this project for GSoC, so we have been corresponding since late March of this year. She is a developer in the <a href="https://github.com/acts-project/detray">detray R&amp;D project</a>. In our weekly meets, she regularly helps us set the direction for the week, and also helps with gathering more data by running the benchmarks I have written on other machines.</p>
+
+<h2 id="hadrien-grasland">Hadrien Grasland</h2>
+
+<p>Hadrien is a software engineer who works for the <a href="https://www.cnrs.fr/en">Centre National de la Recherche Scientifique</a> (CNRS).</p>
+
+<p>His knowledge of the nitty-gritty details of computer architecture and SIMD instruction sets is unparalleled. I am highly grateful to work with him, and I have learned a lot by working on this project with him, and discussing the assembly outputs of the different benchmarks I have written.</p>
+
+<p>In the early stages of the project, he was quite supportive of me adding other matrix library backends to our benchmarks, and seeing how they perform in comparison with Eigen and Fast 5×5.</p>
+
+<h2 id="paul-gessinger-befurt">Paul Gessinger-Befurt</h2>
+
+<p>He is the person who knows the most about ACTS project out of all three mentors. When we have any questions about anything related to the ACTS project, he is the person who helps us out.</p>
+
+<p>That’s all for this blog post! In the next one, I will discuss our results so far in detail, and what we plan on doing next.</p>]]></content><author><name>Tirthankar Mazumder</name><email>mztirthankar@gmail.com</email></author><category term="gsoc" /><summary type="html"><![CDATA[In this post, I will discuss what exactly my work is and its relation to the ACTS project.]]></summary></entry><entry><title type="html">GSoC — First Blog Post</title><link href="https://wermos.github.io//blog/gsoc/gsoc-first-blog-post/" rel="alternate" type="text/html" title="GSoC — First Blog Post" /><published>2022-08-28T21:24:55+00:00</published><updated>2022-08-28T21:24:55+00:00</updated><id>https://wermos.github.io//blog/gsoc/gsoc-first-blog-post</id><content type="html" xml:base="https://wermos.github.io//blog/gsoc/gsoc-first-blog-post/"><![CDATA[<p>This is my first GSoC blog post, where I talk about what GSoC is, what organization I am working with, and what the software project I am working on actually does.</p>
+
+<h1 id="what-is-gsoc">What is GSoC?</h1>
+
+<p>GSoC is short for Google Summer of Code. Here is a quote from the official webpage, which explains the entire thing pretty well:</p>
+<blockquote>
+  <p>Google Summer of Code is a global, online program focused on bringing new contributors into open source software development. GSoC Contributors work with an open source organization on a 12+ week programming project under the guidance of mentors.</p>
+</blockquote>
+
+<p>For more information, check out their <a href="https://summerofcode.withgoogle.com/">webpage</a>.</p>
+
+<h1 id="my-gsoc-project">My GSoC Project</h1>
+
+<h2 id="my-organization">My Organization</h2>
+
+<p>In GSoC, there are Contributors and Organizations. The Contributors are individuals like myself who will work on some project, and the Organizations are the people who maintain the project and continually improve upon it.</p>
+
+<p>This year, I was selected to work with <a href="https://summerofcode.withgoogle.com/programs/2022/organizations/cern-hsf">CERN-HSF</a>, and my project falls under the purview of the <a href="https://github.com/acts-project/acts">ACTS Project</a>.</p>
+
+<h2 id="what-is-the-acts-project">What is the ACTS Project?</h2>
+
+<p>If we take a look at the <a href="https://github.com/acts-project/acts/blob/main/README.md">README.md</a>, we see that</p>
+<blockquote>
+  <p>Acts is an experiment-independent toolkit for (charged) particle track reconstruction in (high energy) physics experiments implemented in modern C++.</p>
+</blockquote>
+
+<h3 id="but-what-does-that-mean">But What Does That Mean?</h3>
+
+<p>When CERN conducts experiments at the <a href="https://home.cern/science/accelerators/large-hadron-collider">Large Hadron Collider</a> (LHC), the 8 detectors present record certain types of data. Of the 8, there are 4 main detectors are the <a href="https://atlas.cern/">ATLAS detector</a>, the <a href="https://cms.cern/detector">CMS detector</a>, <a href="https://home.cern/science/experiments/alice">ALICE</a>, and <a href="https://home.cern/science/experiments/lhcb">LHCb</a>. The other 4 detectors are for very specialized research.</p>
+
+<figure>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/7/74/LHC.svg" alt="diagram of the LHC and the 8 detectors" /></p>
+  <figcaption>A diagram of the LHC and the 8 detectors. Picture Credits: <a href="https://en.wikipedia.org/wiki/Large_Hadron_Collider#/media/File:LHC.svg">Wikipedia</a></figcaption>
+</figure>
+
+<h3 id="what-is-track-reconstruction">What is Track Reconstruction?</h3>
+
+<p>One of things mentioned in the ACTS project’s README is <a href="https://en.wikipedia.org/wiki/Tracking_(particle_physics)">track reconstruction</a>. This consists of two parts: First, when a particle interacts with a certain detector geometry, the detector records it for further analysis. Then, the software takes all the gathered points where the particle was known to be at, and recreates the path that the particle must have taken.</p>
+
+<p>Track reconstruction consists of two parts: track finding, which groups measurements which are likely to have been generated by the same particle, and then track fitting, which interpolates the path taken by the particle based on the recorded data points.</p>
+
+<figure>
+<p><img src="/blog/assets/images/gsoc/tracking.svg" alt="picture demonstrating track finding and fitting" /></p>
+  <figcaption>A diagram demonstrating the idea behind track fitting and finding. Picture Credits: <a href="https://github.com/acts-project/acts/blob/4e2c89078fab78e28f1e9f7a03118823c50b0119/docs/figures/tracking/tracking.svg">ACTS Docs</a></figcaption>
+</figure>
+
+<p>For more details about what track reconstruction is and an in-depth explanation of how it is done, one can refer to <a href="https://acts.readthedocs.io/en/latest/tracking.html">this great explanation</a>.</p>
+
+<h3 id="how-is-this-done">How Is This Done?</h3>
+
+<p>One thing to keep in mind is that in the real world, we do not (and cannot) have a perfect knowledge of the exact location the particle hit a detector geometry. What we actually have is a location and an error bound, and the software has to take this error bound into account as well.</p>
+
+<p>One of the ways to do this kind of track fitting, is to make use of a statistical technique known as <a href="https://en.wikipedia.org/wiki/Kalman_filter">Kalman Filtering</a>.</p>
+
+<h4 id="how-are-kalman-filters-used-here">How are Kalman Filters Used Here?</h4>
+<p>Wikipedia describes a Kalman Filter as follows:</p>
+<blockquote>
+  <p>Kalman filtering, also known as linear quadratic estimation (LQE), is an algorithm that uses a series of measurements observed over time, including statistical noise and other inaccuracies, and produces estimates of unknown variables that tend to be more accurate than those based on a single measurement alone, by estimating a joint probability distribution over the variables for each timeframe.</p>
+</blockquote>
+
+<p>ACTS uses Kalman Filters for track finding by breaking up the task into three steps as described in the <a href="https://acts.readthedocs.io/en/latest/tracking.html#kalman-formalism-and-kalman-track-fitter">ACTS documentation</a>:</p>
+<ol>
+  <li>Prediction, where the next state vector is calculated using the prior knowledge available,</li>
+  <li>Filtering, which refines the prediction of the previous step by using the knowledge of the new measurement, and finally</li>
+  <li>Smoothing, which smooths the state vector by walking back the steps and using information for the subsequent step to improve the estimate at the current step.</li>
+</ol>
+
+<p>In the next blog post, I will explain what my work is, and how all this ties into my GSoC project.</p>]]></content><author><name>Tirthankar Mazumder</name><email>mztirthankar@gmail.com</email></author><category term="gsoc" /><summary type="html"><![CDATA[This is my first GSoC blog post, where I talk about what GSoC is, what organization I am working with, and what the software project I am working on actually does.]]></summary></entry></feed>
