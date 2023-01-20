@@ -1,4 +1,5 @@
 Raiden
+Raiden's
 Zhongli
 Zhongli's
 Albedo
@@ -28,3 +29,5 @@ Stele's
 Anemo
 proc
 Vermillion
+substats
+theorycrafting

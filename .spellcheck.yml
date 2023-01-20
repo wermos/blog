@@ -11,6 +11,7 @@ matrix:
     - wordlists/genshin.txt
     - wordlists/gsoc.txt
     - wordlists/latex.txt
+    - wordlists/latex-commands.txt
     - wordlists/markup.txt
     - wordlists/programming-languages.txt
     - wordlists/misc.txt

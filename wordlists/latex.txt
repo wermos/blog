@@ -4,3 +4,11 @@ mathcal
 mathfrak
 mathrm
 mathsf
+mathbb
+newcommand
+scriptsize
+qquad
+cdot
+mathclap
+substack
+underbrace
