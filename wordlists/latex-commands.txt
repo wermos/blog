@@ -1,0 +1,11 @@
+charatk
+weapatk
+percentatk
+flatatk
+chardef
+percentdef
+flatdef
+charhp
+percenthp
+flathp
+weap
