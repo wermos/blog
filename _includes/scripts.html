@@ -31,8 +31,13 @@
 <!-- MathJax stuff -->
 <script>
 window.MathJax = {
+  loader: {
+    load: ['[tex]/mathtools']
+  },
   tex: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']]
+	displayMath: [["$$","$$"], ["\\[", "\\]"]],
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+	packages: {'[+]': ['mathtools']}
   }
 };
 </script>
