@@ -24,6 +24,7 @@ group :jekyll_plugins do
   gem "jekyll-algolia" # search plugin
   gem "jekyll-paginate-v2"
   gem "jemoji"
+  gem "jekyll-sass-converter", "~> 2.2.0"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
