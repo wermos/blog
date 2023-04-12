@@ -192,7 +192,7 @@ In the overworld, I usually use Zhongli for moving around and climbing since he 
 
 In general, however, the overworld is far more forgiving than the Spiral Abyss, so it's not a big deal if you miss steps or just make up your own rotation.
 
-## Example Rotation
+## Rotation Demonstration
 
 Here is a video demonstrating the Spiral Abyss rotation in the game:
 {% include video id="3JImpX29Qkw" provider="youtube" %}
