@@ -12,6 +12,9 @@ jobs:
       JEKYLL_ENV: production
     steps:
       - uses: actions/checkout@v3
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1' # Not needed with a .ruby-version file
 
       # Use GitHub Actions' cache to cache dependencies on servers
       - uses: actions/cache@v3
@@ -27,4 +30,3 @@ jobs:
           provider: "github"
           token: ${{ secrets.GITHUB_TOKEN }} # It's your Personal Access Token (PAT)
           branch: "gh-pages"         # Default is gh-pages for github provider
-          bundler_ver: ">=2.3.17"    # Default is latest bundler version
