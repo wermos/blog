@@ -1,15 +1,13 @@
-name: Build the Blog
+name: Build and Deploy to Github Pages
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+  workflow_run:
+    workflows: [Build the Blog]
+    types:
+      - completed
 
 jobs:
-  build:
+  on-success:
     runs-on: ubuntu-latest
     env:
       JEKYLL_ENV: production
@@ -26,6 +24,10 @@ jobs:
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-gems-
-      
-      - name: Build
-        uses: jerryjvl/jekyll-build-action@v1
+
+      # Use GitHub Deploy Action to build and deploy to Github
+      - uses: jeffreytse/jekyll-deploy-action@v0.4.0
+        with:
+          provider: "github"
+          token: ${{ secrets.GITHUB_TOKEN }} # It's your Personal Access Token (PAT)
+          branch: "gh-pages"
