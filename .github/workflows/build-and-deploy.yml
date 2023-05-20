@@ -1,0 +1,58 @@
+name: Build (and optinally Deploy) the Blog
+
+on:
+  push:
+    branches: main
+  pull_request:
+    branches: main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      JEKYLL_ENV: production
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+
+      # Use GitHub Actions' cache to cache dependencies on servers
+      - uses: actions/cache@v3
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+      
+      - name: Build
+        uses: jerryjvl/jekyll-build-action@v1
+  deploy:
+    if: ${{ !(github.event_name == 'pull_request') }}
+    # We only want to deploy if the CI was not triggered by a PR.
+    needs: build # We want the build to be successful.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+
+      # Use GitHub Actions' cache to cache dependencies on servers
+      - uses: actions/cache@v3
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+
+      # Use GitHub Deploy Action to build and deploy to Github
+      - name: (Re)Build and Deploy
+        uses: jeffreytse/jekyll-deploy-action@v0.4.0
+        # Even though this rebuilds the site from scratch, it's not worth the extra
+        # headache to learn how to use the previous job's artifacts to make it work.
+        with:
+          provider: "github"
+          token: ${{ secrets.GITHUB_TOKEN }} # It's your Personal Access Token (PAT)
+          branch: "gh-pages"
+    
