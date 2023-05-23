@@ -1,3 +1,4 @@
+_posts/*.md linguist-detectable
 *.md !text !filter !merge !diff
 *.yml !text !filter !merge !diff
 *.lock !text !filter !merge !diff
