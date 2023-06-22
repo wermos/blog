@@ -153,12 +153,14 @@ defaults:
       path: "assets/**/*.svg"
     values:
       sitemap: false
+  # _posts
   - scope:
       path: ""
       type: posts
     values:
       author_profile: true
       read_time: true
+      show_date: true
       share: true
       related: true
       comments: true
