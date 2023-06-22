@@ -28,5 +28,7 @@ matrix:
       - blockquote
       - iframe
   sources:
-  - '**/*.md'
+  - '_posts/*.md'
+  - 'about.md'
+  - '**/README.md'
   default_encoding: utf-8
