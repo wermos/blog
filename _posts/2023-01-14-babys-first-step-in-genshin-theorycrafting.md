@@ -199,4 +199,4 @@ $$
 
 Observe that our calculated value agrees with the number given in the character card.
 
-Note that we used the value of $0.0991$ instead of the $0.099$ given in the character card. This is because of the way artifact substats are calculated, which we will take a deep-dive into in a future blog post. The extra $0.001\%$ is significant in this case because the value of the quantity we are calculating is in the $40$ thousands, so it _does_ actually make a difference. That being said, the difference it makes amounts to about $3$ HP :stuck_out_tongue_closed_eyes:
+Note that we used the value of $0.0991$ instead of the $0.099$ given in the character card. This is because of the way artifact substats are calculated, which we will take a deep-dive into in a future blog post. The extra $0.01\%$ is significant in this case because the value of the quantity we are calculating is in the $40$ thousands, so it _does_ actually make a difference. That being said, the difference it makes amounts to about $3$ HP :stuck_out_tongue_closed_eyes:
