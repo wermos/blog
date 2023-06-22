@@ -132,17 +132,6 @@ encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 
-# Conversion
-markdown: kramdown
-kramdown:
-  syntax_highlighter_opts:
-    disable: true
-highlighter: none # Prevent the Rouge highlighter from polluting the HTML output
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
-
-
 # Jekyll Sitemap Settings
 defaults:
   - scope:
@@ -165,8 +154,10 @@ defaults:
       related: true
       comments: true
 
-# Markdown Processing
+markdown: kramdown
 kramdown:
+  syntax_highlighter_opts:
+    disable: true
   input: GFM
   hard_wrap: false
   auto_ids: true
@@ -175,6 +166,11 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
+highlighter: none # Prevent the Rouge highlighter from polluting the HTML output
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
 
 # HTML Compression
 # - https://jch.penibelst.de/
