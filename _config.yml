@@ -176,6 +176,15 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
+# HTML Compression
+# - https://jch.penibelst.de/
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  blanklines: true
+  ignore:
+    envs: development
 
 # Sass/SCSS
 sass:
@@ -243,15 +252,3 @@ tag_archive:
 #   permalinks:
 #     category: /categories/:name/
 #     tag: /tags/:name/
-
-
-# HTML Compression
-# - https://jch.penibelst.de/
-compress_html:
-  clippings: all
-  comments: all
-  endings: all
-  blanklines: true
-  ignore:
-    envs: development
-
