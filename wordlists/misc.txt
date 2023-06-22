@@ -19,3 +19,5 @@ Ondrej
 Certik
 weightage
 onwards
+permalink
+jekyllrb
