@@ -30,7 +30,9 @@ Let’s take the example of adding two 4-dimensional vectors together. The naïv
 In this simple example, using SIMD instructions gave us an approximately 4× speed-up.
 
 {% figure [caption:"Representation of a SIMD register (Picture Credits: Wikipedia, courtesy of [Vadikus](https://commons.wikimedia.org/w/index.php?title=User:Vadikus))"] %}
-![representation of a SIMD register](https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/SIMD2.svg/400px-SIMD2.svg.png)
+<div style="display: block; margin: auto;">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/SIMD2.svg/400px-SIMD2.svg.png" alt="representation of a SIMD register">
+</div>
 {% endfigure %}
 
 However, it is not as simple as that. There are many SIMD ISAs, for example [SSE](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions), [SSE2](https://en.wikipedia.org/wiki/SSE2), [SSE3](https://en.wikipedia.org/wiki/SSE3), [SSSE3](https://en.wikipedia.org/wiki/SSSE3) (note the one extra "S"!), [SSE4](https://en.wikipedia.org/wiki/SSE4), [AVX](https://en.wikipedia.org/wiki/Advanced_Vector_Extensions), AVX2, [AVX512](https://en.wikipedia.org/wiki/AVX-512), and more.
