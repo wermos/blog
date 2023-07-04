@@ -55,7 +55,7 @@ I get the output `d = log(2)`.
 
 In MATLAB's case, I got the approximate numerical value, whereas in SymPy's case, I got the symbolic answer.
 
-**Note:** I am aware that MATLAB has a [Symbolic Math Toolbox™](https://in.mathworks.com/products/symbolic.html) which gives MATLAB symbolic capabilities. On the flipside, running `d.evalf()` at the end of the SymPy snippet will print `0.693147180559945` on the terminal. Therefore, the above example is simplistic, but it helps me get the point across.
+**Note:** I am aware that MATLAB has a [Symbolic Math Toolbox™](https://in.mathworks.com/products/symbolic.html) which gives MATLAB symbolic capabilities. On the flip side, running `d.evalf()` at the end of the SymPy snippet will print `0.693147180559945` on the terminal. Therefore, the above example is simplistic, but it helps me get the point across.
 {: .notice--info}
 
 # The Project
