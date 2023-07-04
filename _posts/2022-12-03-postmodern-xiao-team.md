@@ -75,7 +75,7 @@ For the sake of completeness, here are the 4 team slots and what they mean for m
 
 ## Sucrose
 
-![The flower from the Noblesse Oblige set](https://static.wikia.nocookie.net/gensin-impact/images/7/71/Item_Royal_Flora.png/){: .align-left}
+![The flower from the Noblesse Oblige artifact set](https://static.wikia.nocookie.net/gensin-impact/images/7/71/Item_Royal_Flora.png/){: .align-left}
 
 In just about every other team Sucrose is slotted in, she uses the Viridescent Venerer (VV) artifact set. Well, not here!
 
@@ -85,13 +85,13 @@ We cannot use the Tenacity of the Millelith set because another character is usi
 
 A small thing to note here is that Noblesse Oblige will work best if the enemies can be cleared in 1 rotation or so, because we aren't really feeding particles back to Sucrose with the rotations in this team comp, so getting her burst back will be a bit of an issue. This is not so much of an issue in the overworld, but it can make a difference in the Spiral Abyss.
 
-![Thrilling Tales of Dragon Slayers book](https://static.wikia.nocookie.net/gensin-impact/images/9/9e/Weapon_Thrilling_Tales_of_Dragon_Slayers_2nd.png/){: .align-left}
+![Thrilling Tales of Dragon Slayers catalyst weapon](https://static.wikia.nocookie.net/gensin-impact/images/9/9e/Weapon_Thrilling_Tales_of_Dragon_Slayers_2nd.png/){: .align-left}
 
 Sucrose is the only character whose weapon is fixed: She _must_ use Thrilling Tales of Dragon Slayers (TTDS) for its massive 48% ATK buff to the character who comes on-field next.
 
 ## Zhongli
 
-![The flower from the Tenacity of the Millelith set](https://static.wikia.nocookie.net/gensin-impact/images/5/51/Item_Flower_of_Accolades.png/){: .align-left}
+![The flower from the Tenacity of the Millelith artifact set](https://static.wikia.nocookie.net/gensin-impact/images/5/51/Item_Flower_of_Accolades.png/){: .align-left}
 
 The standard artifact set to put on him, assuming that your Zhongli has enough HP to be an effective shielder, is the Tenacity of the Millelith set.
 
@@ -99,7 +99,7 @@ The 4-piece set bonus grants a +20% ATK bonus when the wearer's Elemental Skill 
 
 ## Xiao
 
-![The flower from the Vermillion Hereafter set](https://static.wikia.nocookie.net/gensin-impact/images/1/11/Item_Flowering_Life.png/){: .align-left}
+![The flower from the Vermillion Hereafter artifact set](https://static.wikia.nocookie.net/gensin-impact/images/1/11/Item_Flowering_Life.png/){: .align-left}
 
 Strictly speaking, Xiao here will have the same build he would have in the _Classic Xiao_ team comp. This means that any artifact set whose 2-piece grants an ATK boost works, and farming for Vermillion Hereafter (VH), his Best in Slot (BiS) is not really required.
 
@@ -116,7 +116,7 @@ Technically, Albedo is a split-scaling character because his E scales of off DEF
 **Warning:** While you are free to put the characters in whatever slots you want, you are strongly advised against placing Albedo in the first slot in the Spiral Abyss. If he is in Slot 1, then he spawns with 0 Curiosity stacks from the Husk set's 4-piece bonus. This means that you are losing out on a grand total of a 24% DEF bonus and a 24% Geo Damage bonus. However, if he is in any other slot, he spawns with all 4 stacks.
 {: .notice--warning}
 
-![Cinnabar Spindle weapon](https://static.wikia.nocookie.net/gensin-impact/images/4/4a/Weapon_Cinnabar_Spindle_2nd.png/){: .align-left}
+![Cinnabar Spindle sword](https://static.wikia.nocookie.net/gensin-impact/images/4/4a/Weapon_Cinnabar_Spindle_2nd.png/){: .align-left}
 
 Albedo's weapon is essentially fixed, but only because of how good his signature 4-star event weapon, the Cinnabar Spindle, is on him, with a 69% DEF bonus at level 90 and refinement rank 5 (R5 for short).
 
