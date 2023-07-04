@@ -21,3 +21,11 @@ weightage
 onwards
 permalink
 jekyllrb
+Boogaloo
+func
+expr
+repo
+parsimonius
+py
+PyCharm
+conda

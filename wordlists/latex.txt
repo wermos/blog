@@ -12,3 +12,4 @@ cdot
 mathclap
 substack
 underbrace
+dfrac
