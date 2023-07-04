@@ -20,31 +20,6 @@ gallery1:
 
 In this blog post, we will get our first taste of what theorycrafting in Genshin Impact looks like, and see some of the math that's involved.
 
-$$
-\newcommand{\A}{\mathbb{A}}
-\newcommand{\D}{\mathbb{D}}
-\newcommand{\H}{\mathbb{H}}
-$$
-
-$$
-\newcommand{\charatk}{\alpha_{\text{char}}}
-\newcommand{\weapatk}{\alpha_{\text{weap}}}
-\newcommand{\percentatk}{\wp_{\scriptsize\text{ATK}}}
-\newcommand{\flatatk}{\alpha_{\text{flat}}}
-$$
-
-$$
-\newcommand{\chardef}{\delta_{\text{char}}}
-\newcommand{\percentdef}{\wp_{\scriptsize\text{DEF}}}
-\newcommand{\flatdef}{\delta_{\text{flat}}}
-$$
-
-$$
-\newcommand{\charhp}{h_{\text{char}}}
-\newcommand{\percenthp}{\wp_{\scriptsize\text{HP}}}
-\newcommand{\flathp}{h_{\text{flat}}}
-$$
-
 # Calculating ATK, DEF, and Max HP
 
 Before one can do anything theory-related, we must learn how to calculate the ATK, DEF, and Max HP of a character, because these stats affect how much damage a character does against enemies.
@@ -57,6 +32,27 @@ For the purpose of these tutorials and demonstrations, we will use three of my o
 
 We will use blackboard font letters to denote the total attack, defense, and Max HP of a character, respectively. That is,
 
+$$
+\newcommand{\A}{\mathbb{A}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\H}{\mathbb{H}}
+$$
+$$
+\newcommand{\charatk}{\alpha_{\text{char}}}
+\newcommand{\weapatk}{\alpha_{\text{weap}}}
+\newcommand{\percentatk}{\wp_{\scriptsize\text{ATK}}}
+\newcommand{\flatatk}{\alpha_{\text{flat}}}
+$$
+$$
+\newcommand{\chardef}{\delta_{\text{char}}}
+\newcommand{\percentdef}{\wp_{\scriptsize\text{DEF}}}
+\newcommand{\flatdef}{\delta_{\text{flat}}}
+$$
+$$
+\newcommand{\charhp}{h_{\text{char}}}
+\newcommand{\percenthp}{\wp_{\scriptsize\text{HP}}}
+\newcommand{\flathp}{h_{\text{flat}}}
+$$
 $$
 \begin{align*}
 \A &= \text{Total Attack} \\
