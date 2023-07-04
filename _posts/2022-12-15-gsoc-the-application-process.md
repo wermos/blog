@@ -210,7 +210,7 @@ Since I originally planned to work with SymPy, I spent a lot of time on SymPy un
 
 One small thing to keep in mind is that it may be difficult to find mentors for the project you are interested in. This is an uncommon but not impossible scenario. In such a case, you have no choice but to choose a different project to apply to, since it is not possible to complete a GSoC project without mentors.
 
-In 2022, a highly qualified GSoC SymPy applicant was unable to find a mentor for the project that he wanted to work on, so he was not selected for GSoC. The story however, has a silver lining, as the creator of SymPy ([Ondřej Čertík](https://ondrejcertik.com/)) took an interest in his proposal, and the applicant went on to work with him.
+In 2022, a highly qualified GSoC SymPy applicant was unable to find a mentor for the project that he wanted to work on, so he was not selected for GSoC. The story however, has a silver lining, as the creator of SymPy ([Ondřej Certik](https://ondrejcertik.com/)) took an interest in his proposal, and the applicant went on to work with him.
 
 ## GSoC Applicant Pre-requisites
 
