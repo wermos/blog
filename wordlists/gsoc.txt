@@ -44,3 +44,13 @@ src
 PRs
 Integrators
 Symplectic
+Meurer
+ANTLR
+SymPy's
+costrouc
+sylee
+augustt
+parser's
+parsers
+codebase
+moorepants
