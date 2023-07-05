@@ -64,11 +64,11 @@ My project, as I briefly mentioned, is to rewrite the LaTeX parser using [Lark](
 
 ## My GSoC Proposal
 
-My proposal can be found [here](https://docs.google.com/document/d/1QgOpu5xwl-i1TBa_TA_qtyvUEc-o_1UBR4SsM-VZmS0/edit?usp=sharing). As such, my proposal doesn't deviate much from the original plan, unlike [last time]({% post_url 2022-08-30-gsoc-the-details-of-my-project %}).
+My proposal can be found [here](https://docs.google.com/document/d/1QgOpu5xwl-i1TBa_TA_qtyvUEc-o_1UBR4SsM-VZmS0/edit?usp=sharing). As such, my proposal doesn't deviate much from the original plan, unlike [last time]({% post_url 2022-08-30-gsoc-the-details-of-my-project %}#my-project-proposal).
 
 ## What is the LaTeX Parser?
 
-The [LaTeX parser](https://docs.sympy.org/latest/modules/parsing.html#experimental-mathrm-latex-parsing) is one of the submodules in SymPy which allows you to convert a LaTex expression into a SymPy expression. For example, if I have some LaTeX code like `\int\! x^2 \,dx`, I can convert it into a SymPy expression by running:
+The [LaTeX parser](https://docs.sympy.org/latest/modules/parsing.html#experimental-mathrm-latex-parsing) is one of the submodules in SymPy which allows you to convert a LaTeX expression into a SymPy expression. For example, if I have some LaTeX code like `\int\! x^2 \,dx`, I can convert it into a SymPy expression by running:
 {% noln latex %}
 from sympy.parsing.latex import parse_latex
 
