@@ -13,17 +13,20 @@ gem "jekyll", "~> 4.3.2"
 # The blog's theme
 gem "minimal-mistakes-jekyll"
 
+gem "faraday-retry" # Required for retrying network requests if they fail
+# Network requests are used to query the GitHub API, among other things
+
 # The plugins required for the blog
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.17"
   gem "jekyll-seo-tag"
   gem "jekyll-sitemap"
   gem "jekyll-figure"
-  gem "jekyll-target-blank"
+  gem "jekyll-target-blank" # Gem to open all links in a new tab
   gem "jekyll-assets"
   gem "jekyll-algolia" # search plugin
   gem "jekyll-paginate-v2"
-  gem "jemoji"
+  gem "jemoji" # GitHub-style Markdown emojis
   gem "jekyll-sass-converter", "~> 3.0.0"
   gem "jekyll-last-modified-at"
 end
