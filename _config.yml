@@ -206,12 +206,19 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Plugins (previously gems:)
 plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-figure
+  - jekyll-target-blank
+  # - jekyll-assets
+  - jekyll-algolia
+  - jekyll-paginate-v2
+  # - jekyll-gist # Used for embedding GitHub Gists
   - jekyll-include-cache
   - jemoji
+  - jekyll-sass-converter # TODO: See if this is still necessary
+  # The above plugin was added originally due to some version conflicts
   - jekyll-last-modified-at
 
 # mimic GitHub Pages with --safe
