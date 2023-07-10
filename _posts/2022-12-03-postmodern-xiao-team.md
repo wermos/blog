@@ -14,6 +14,7 @@ categories: genshin-impact xiao
 In this blog post, I will introduce a Genshin Impact team I came up with myself, which I call _Postmodern Xiao_.
 
 Even though I came up with the team comp myself, it is highly unlikely that I am the _first_ person to come up with it :cry: The reason for that is twofold:
+
 1. I started playing the game a year after it came out (near the end of version 2.2, to be precise).
 2. All the characters required for the team were there at release (i.e. version 1.0 of the game), or were released a few patches later (Xiao was the last character to be released out of all everyone in the team, but even he was released in version 1.3).
 
@@ -52,7 +53,9 @@ The blog post goes on to say
 which is where I got the idea for the word _Postmodern_ from! :see_no_evil:
 
 # Who Is In The Team?
+
 This team consists of, in no particular order,
+
 1. Sucrose
 2. Zhongli
 3. Xiao
@@ -61,11 +64,13 @@ This team consists of, in no particular order,
 ![Postmodern Xiao team comp with Sucrose, Zhongli, Xiao, and Albedo]({{ "assets/images/genshin/postmodern-xiao-team.png" | relative_url }}){: .align-center}
 
 ## Team Ordering: An Aside
+
 When I started playing the game, I had the Traveler as slot 1. Then, I got my first 5-star, Keqing, whom I put in slot 3. Obviously, Keqing functions as a better DPS than the Traveler, so I eventually ended up training myself to gravitate towards slot 3 whenever I wanted to use my team's DPS.
 
 Because of the teams I used in my early days, the character's function became synonymous with the meaning of the slot number. As another example, I put Xiangling in slot 1 in my early teams, so slot 1 became synonymous with a sub-DPS slot for me.
 
 For the sake of completeness, here are the 4 team slots and what they mean for me:
+
 1. The sub-DPS or healer slot. It used to be solely a sub-DPS slot until I started using classic Xiao. In my early days, Jean used to act as both a healer and a sub-DPS, which is where it got its secondary meaning.
 2. The burst support slot. The characters slotted here are solely used for their Elemental Skill and/or Bursts.
 3. The DPS slot. Always, without fail.
@@ -124,7 +129,7 @@ If you don't have Cinnabar Spindle for some reason, Harbinger of Dawn also works
 
 # How Do The Characters Function?
 
-## Sucrose 
+## Sucrose
 
 Sucrose mainly acts as a support, using her Elemental Burst (Q for short because that is the default keybinding on PC) to activate the 4-piece Noblesse Oblige buff.
 
@@ -146,7 +151,7 @@ The other aspect to keep in mind is his E usage, i.e. his Stone Stele placement.
 
 The 4-piece set bonus for the Tenacity of the Millelith set can only be activated if the Stele's tick hits an opponent.
 
-The other main feature that Zhongli has is his res. shred. He is a valuable source of Anemo res. shred, and the easiest one to get, considering the fact that the other options are things like Jean's 4<sup>th</sup> constellation.
+The other main feature that Zhongli has is his res. shred. He is a valuable source of Anemo res. shred, and the easiest one to get, considering the fact that the other options are things like Jean's 4^th^ constellation.
 
 Since Zhongli's res. shred emanates from his jade shield, and [has an approximate radius of 3 Abyss tiles](https://library.keqingmains.com/evidence/characters/geo/zhongli#zhongli-res-shred-range), keeping the res. shred up for the duration of the shield shouldn't be an issue.
 
@@ -171,6 +176,7 @@ The rotation is very simple, if you keep all the little things mentioned in the 
 Assuming that we have no preparation and the characters are slotted in the order shown in the image, the rotation would be as follows:
 
 ![Postmodern Xiao team comp with Sucrose, Zhongli, Xiao, and Albedo]({{ "assets/images/genshin/postmodern-xiao-team.png" | relative_url }}){: .align-center}
+
 1. Switch to Xiao so that he gets the TTDS buff.
 2. Switch to Zhongli, do his E.
 3. Switch to Albedo and place his E.

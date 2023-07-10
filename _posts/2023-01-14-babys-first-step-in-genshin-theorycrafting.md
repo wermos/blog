@@ -168,7 +168,7 @@ $$
 \begin{align*}
 \D &= 876\cdot (1 + \underbrace{0.690}_{\mathclap{\substack{\text{Weapon} \\ \text{Substat}}}} + \underbrace{0.583}_{\mathclap{\substack{\text{Sands} \\ \text{Main Stat}}}} + \underbrace{0.678}_{\mathclap{\substack{\text{Artifact} \\ \text{Substats}}}} + \underbrace{0.300}_{\mathclap{\substack{\text{2 pc. Husk} \\ \text{Bonus}}}}  + \underbrace{0.240}_{\mathclap{\substack{\text{4 pc. Husk} \\ \text{Bonus}}}}) + \underbrace{44}_{\mathclap{\substack{\text{Flower} \\ \text{Substat}}}} \\
 &= 3102.116 \\
-&\approx 3102 
+&\approx 3102
 \end{align*}
 $$
 
