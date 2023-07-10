@@ -102,11 +102,13 @@ However, after the code became a part of SymPy (and even while that process was 
 ### Issues
 
 There were a few issues with ANTLR, which were the reason other alternatives were being considered:
+
 1. The runtime package can be difficult to install. There have [been](https://github.com/augustt198/latex2sympy/issues/32) [reports](https://github.com/sympy/sympy/issues/14004#issuecomment-1072591073) of users who found the LaTeX parser's runtime dependencies difficult to install. There are a couple of packages on conda-forge with closely related names: `antlr4-python3-runtime` and `antlr-python-runtime`. Installing the wrong one causes hard-to-debug issues. As one user who ran into this issue pointed out,
-> That's a few lost hours for each of the two characters
+  > That's a few lost hours for each of the two characters
 2. The above issue is further exacerbated by the fact that the required package's name is `antlr4-python3-runtime` on PyPI.
 
 In [#19528](https://github.com/sympy/sympy/issues/19528), [sylee957](https://github.com/sylee957) pointed out a few more shortcomings of the existing ANTLR-based parser:
+
 1. The ANTLR generated files don't make the parser truly standalone.
 2. The ANTLR generated files generate huge diffs when changes are made to the grammar files. ([Here is an example.](https://github.com/sympy/sympy/pull/23535/files))
 3. The ANTLR generated files contain version information that cause warnings for the user. The good news is that despite this, they appear to run without critical problems. However, this is bad for developers because different versions of ANTLR give differently structured script files, which exacerbates the above problem of huge diffs.
@@ -119,6 +121,7 @@ One advantage of ANTLR is its performance which [isn't that important for this u
 ## Alternatives to ANTLR
 
 There are multiple viable alternatives that were originally considered:
+
 1. [lark](https://github.com/lark-parser/lark)
 2. [tex2py](https://github.com/alvinwan/tex2py)
 3. [parsimonius](https://github.com/erikrose/parsimonious)
@@ -131,6 +134,7 @@ Of these libraries, Lark was chosen as the library that fits SymPy's needs best.
 ## Why Lark?
 
 Numerous advantages to using Lark [were identified](https://github.com/sympy/sympy/issues/19528#issuecomment-662430318):
+
 1. Lark has active, receptive maintainers. When I found something in the documentation that wasn't being rendered correctly, I opened [an issue](https://github.com/lark-parser/lark/issues/1287) for it which was then promptly fixed.
 2. Lark has good documentation. [The documentation](https://lark-parser.readthedocs.io/en/latest/grammar.html) is detailed and filled with examples, which makes using the library a lot easier.
 3. Lark has no runtime dependencies beyond Python's standard library. This is important because, for example, Parsimonious still needs [regex](https://pypi.org/project/regex/).
@@ -142,7 +146,7 @@ Numerous advantages to using Lark [were identified](https://github.com/sympy/sym
    * or stored in one or more `.lark` files.
    * which has plugins for various editors. For example, there is a [VS Code extension](https://github.com/lark-parser/vscode-lark) and a [PyCharm plugin](https://github.com/lark-parser/intellij-syntax-highlighting) for syntax highlighting Lark files.
    * and can be used to generate parsers in other languages like Julia and Javascript (see the last point [here](https://lark-parser.readthedocs.io/en/latest/features.html#extra-features).)
-7. has a    "standard library" of useful tokens and expressions which can be imported into a grammar.
+7. has a "standard library" of useful tokens and expressions which can be imported into a grammar.
 8. Lark can generate an standalone `.py` file. In this case, this is not a big advantage since one of the reasons for moving away from ANTLR was to remove compiled components.
 
 # Prior Work
