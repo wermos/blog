@@ -23,10 +23,10 @@ Before starting on your GSoC journey, it makes sense to check if you are eligibl
 The [GSoC FAQ](https://developers.google.com/open-source/gsoc/rules) states that
 
 > * You must be at least 18 years of age when you register
-* You must be eligible to work in the country you will reside in during the program.
-* You must be an open source beginner or a student.
-* You have not been accepted as a GSoC Contributor/Student in GSoC more than once.
-* You must reside in a country that is not currently embargoed by the United States. See [Program Rules](https://developers.google.com/open-source/gsoc/rules) for more information.
+> * You must be eligible to work in the country you will reside in during the program.
+> * You must be an open source beginner or a student.
+> * You have not been accepted as a GSoC Contributor/Student in GSoC more than once.
+> * You must reside in a country that is not currently embargoed by the United States. See [Program Rules](https://developers.google.com/open-source/gsoc/rules) for more information.
 
 Like the excerpt says, you can refer to the [Program Rules](https://summerofcode.withgoogle.com/rules) for a full description of everything relating to the program, in lawyer-y language.
 
@@ -61,6 +61,7 @@ That being said, the CERN-HSF project I was most interested in had to do with SI
 The first step for applying to GSoC is to choose an Organization. To that end, the [official GSoC Student Guide](https://google.github.io/gsocguides/student/choosing-an-organization) does a great job explaining what to look for when choosing an organization.
 
 Apart from the points mentioned in the Student Guide, here are some alternative factors you might base your decision upon:
+
 * The programming languages they use. This is primarily for those who do not want a (programming) language barrier.
 * What they do. This is primarily for people who want a behind-the-scenes look on how people achieve a certain task. For example, if I wanted a behind-the-scenes look on how Linux kernel development works, I might want to apply to [The Linux Foundation](https://summerofcode.withgoogle.com/programs/2022/organizations/the-linux-foundation).
 * How interesting their projects are. This is for people for whom the organization does not matter too much.
@@ -90,6 +91,7 @@ These organizations primarily choose their GSoC students based on their prior wo
 Reviewers usually place a greater weightage on code PRs (i.e. PRs which actually make changes to the code) over documentation PRs (i.e. PRs which either fix typos in the documentation or add some documentation). That being said, documentation PRs are a great way to start contributing to an organization, as it can be less daunting than modifying the code.
 
 Examples of popular PR-based organizations include
+
 * [SymPy](https://github.com/sympy/sympy/wiki/GSoC-Student-Instructions)
 * [SciPy](https://github.com/scipy/scipy/wiki/GSoC-2022-project-ideas)
 
@@ -98,6 +100,7 @@ Examples of popular PR-based organizations include
 A question many people have is, "How do I get started with PRs if I have no prior experience?" The good news is that it's quite straightforward: Most projects have issues labeled "Easy to Fix" or "Good First Issue" or some variant of it. These are issues that the community has labeled as such for not requiring too much knowledge to fix.
 
 For example,
+
 1. [CPython](https://github.com/python/cpython) has the ["easy" tag](https://github.com/python/cpython/issues?q=is%3Aopen+is%3Aissue+label%3Aeasy)
 2. [SymPy](https://github.com/sympy/sympy) has the ["Easy to Fix" tag](https://github.com/sympy/sympy/issues?q=is%3Aopen+is%3Aissue+label%3A%22Easy+to+Fix%22).
 3. [SciPy](https://github.com/scipy/scipy) has the ["good first issue" tag](https://github.com/scipy/scipy/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22).
@@ -113,6 +116,7 @@ These types of organizations choose their GSoC Contributors on the basis of how 
 Sometimes (but not all the time), reviewers also take how long you take to the assignment into account. Because of this, it is best to turn in the qualification task as soon as possible, without sacrificing the quality of your work.
 
 Examples of qualification task-based organizations include
+
 * [CERN-HSF](https://summerofcode.withgoogle.com/programs/2022/organizations/cern-hsf)
 * [FFmpeg](https://summerofcode.withgoogle.com/programs/2022/organizations/ffmpeg)
 
@@ -131,9 +135,11 @@ So at this point, you probably have a specific organization in mind. (Or maybe n
 ## Changes Made in 2022
 
 In 2022, Google [made a couple of changes](https://opensource.googleblog.com/2021/11/expanding-google-summer-of-code-in-2022.html) to the way projects work:
+
 * Two project formats were introduced: medium length projects, which are expected to take approximately 175 hours of work, and long projects, which are expected to take approximately 350 hours of work. Long projects have a stipend that is twice that of the medium length projects.
 * Project timeframes were made flexible:
-> You can spread the project out over a longer period of time and you can even switch to a longer timeframe mid-program if life happens. Rather than a mandatory 12-week program that runs from June – August with everyone required to finish their projects by the end of the 12th week, we are opening it up so mentors and their GSoC Contributors can decide together if they want to extend the deadline for the project up to 22 weeks.
+
+  > You can spread the project out over a longer period of time and you can even switch to a longer timeframe mid-program if life happens. Rather than a mandatory 12-week program that runs from June – August with everyone required to finish their projects by the end of the 12th week, we are opening it up so mentors and their GSoC Contributors can decide together if they want to extend the deadline for the project up to 22 weeks.
 
 ## How Do I Choose?
 
@@ -159,7 +165,6 @@ However, if the application you are applying to does not have such a template, y
 
 In all seriousness, however, apart from the big things like a section on your previous experience and a proposed list of the GSoC timeline and the milestones you plan on hitting, the format of a GSoC proposal is quite flexible (assuming that your organization doesn't have a template).
 
-
 ## When To Write The Proposal?
 
 Ideally, it would be best to have a proposal (for each project you are applying to) ready right before the student application period starts. That way, you can contact the project mentors for each project of interest with your proposal, get some feedback, and incorporate those changes in your proposal.
@@ -168,7 +173,7 @@ The only thing to remember is to make sure to get mentor feedback while writing 
 
 ## My Experience
 
-I started writing my proposal for the Vectorized Linear Algebra backend project on April 13<sup>th</sup>. For reference, GSoC application window for 2022 was from April 4<sup>th</sup> to April 19<sup>th</sup>. This was quite a bit later than the timeframe I am recommending :see_no_evil:
+I started writing my proposal for the Vectorized Linear Algebra backend project on April 13^th^. For reference, GSoC application window for 2022 was from April 4^th^ to April 19^th^. This was quite a bit later than the timeframe I am recommending :see_no_evil:
 
 However, I made sure to get feedback from the mentors and incorporated those changes. I remember that I was asked to fix some grammar mistakes, and add a section explaining my reasoning for some of the ideas that I was proposing.
 
@@ -181,15 +186,17 @@ Finally, what is the timeline at which a newcomer should do things?
 The first thing to look at is the [published GSoC timeline](https://developers.google.com/open-source/gsoc/timeline) for the next year.
 
 The three dates of interest are:
-* the date that the accepted GSoC organizations are announced ([February 22<sup>nd</sup>, 2023](https://developers.google.com/open-source/gsoc/timeline#february_22_-_1800_utc) for next year). This is the day you can start contacting qualification-task based organizations if they were accepted.
-* the date that GSoC application period starts ([March 20<sup>th</sup>, 2023](https://developers.google.com/open-source/gsoc/timeline#march_20_-_1800_utc) for next year). This is the day you should ideally have a first draft of your proposal ready, and start asking for mentor feedback.
-* the date that the GSoC application period ends ([April 4<sup>th</sup>, 2023](https://developers.google.com/open-source/gsoc/timeline#april_4_-_1800_utc) for the next year). This is the day by which you should have submitted all your proposals on the portal, and overall be done with everything. **This is a hard deadline.**
+
+* the date that the accepted GSoC organizations are announced ([February 22^nd^, 2023](https://developers.google.com/open-source/gsoc/timeline#february_22_-_1800_utc) for next year). This is the day you can start contacting qualification-task based organizations if they were accepted.
+* the date that GSoC application period starts ([March 20^th^, 2023](https://developers.google.com/open-source/gsoc/timeline#march_20_-_1800_utc) for next year). This is the day you should ideally have a first draft of your proposal ready, and start asking for mentor feedback.
+* the date that the GSoC application period ends ([April 4^th^, 2023](https://developers.google.com/open-source/gsoc/timeline#april_4_-_1800_utc) for the next year). This is the day by which you should have submitted all your proposals on the portal, and overall be done with everything. **This is a hard deadline.**
 
 ## When Should I Start?
 
 There is no hard and fast date by which you should start. That being said, there are still some tips I can share.
 
 If it is your first time applying to GSoC and contributing to Open Source, the earlier you start, the better. There is no "too early" when it comes to Open Source contributions. In fact, starting early has many advantages:
+
 * It allows you to learn Git and GitHub, and possibly a new language, with less pressure as the GSoC deadline is still very far away.
 * It allows you to get used to the process and cadence of fixing bugs, opening PRs, and dealing with code reviews.
 * It gives you a lot of time to get lots of PRs merged, which will increase your chances of getting accepted for GSoC.
