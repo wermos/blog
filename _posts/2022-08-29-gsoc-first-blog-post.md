@@ -58,10 +58,12 @@ One thing to keep in mind is that in the real world, we do not (and cannot) have
 One of the ways to do this kind of track fitting, is to make use of a statistical technique known as [Kalman Filtering](https://en.wikipedia.org/wiki/Kalman_filter).
 
 #### How are Kalman Filters Used Here?
+
 Wikipedia describes a Kalman Filter as follows:
 > Kalman filtering, also known as linear quadratic estimation (LQE), is an algorithm that uses a series of measurements observed over time, including statistical noise and other inaccuracies, and produces estimates of unknown variables that tend to be more accurate than those based on a single measurement alone, by estimating a joint probability distribution over the variables for each timeframe.
 
 ACTS uses Kalman Filters for track finding by breaking up the task into three steps as described in the [ACTS documentation](https://acts.readthedocs.io/en/latest/tracking.html#kalman-formalism-and-kalman-track-fitter):
+
 1. Prediction, where the next state vector is calculated using the prior knowledge available,
 2. Filtering, which refines the prediction of the previous step by using the knowledge of the new measurement, and finally
 3. Smoothing, which smooths the state vector by walking back the steps and using information for the subsequent step to improve the estimate at the current step.
