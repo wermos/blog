@@ -17,6 +17,7 @@ My very first laptop was an entry-level gaming laptop: it was a Dell Inspiron 55
 Since the laptop is so old, I can't find a picture of it to put on the blog post. However, I found [a review of the more expensive version on Medium](https://medium.com/matrixpc/dell-inspiron-5577-a-great-laptop-if-you-get-it-cheap-b67811d19e62). Before I read the review, I had actually forgotten all about the more expensive version! :joy:
 
 The specs are:
+
 - Processor: Intel 7th Gen [i5-7300HQ](https://www.intel.in/content/www/in/en/products/sku/97456/intel-core-i57300hq-processor-6m-cache-up-to-3-50-ghz/specifications.html), 4 cores, 4 threads
 - RAM: 8 GB RAM
 - Storage: 1 TB HDD
@@ -46,6 +47,7 @@ However, during this time, I was having online classes, and the final exams were
 The minute I laid eyes on this laptop, I had nothing but disdain for the specs. After all, my previous laptop was so much better :triumph:
 
 The specs are:
+
 - Processor: Intel 11th Gen [i5-1135G7](https://ark.intel.com/content/www/us/en/ark/products/208658/intel-core-i51135g7-processor-8m-cache-up-to-4-20-ghz.html), 4 cores, 8 threads
 - RAM: 8 GB DDR4 RAM
 - Storage: 1 TB HDD
@@ -73,6 +75,7 @@ Overall, I am very happy with the purchase due to the sheer power of the laptop 
 The laptop was quite expensive: with Diwali discounts and a bit of bargaining, I got the price down to ₹147 490. It still cost an arm and a leg, as you can see :smiling_face_with_tear:
 
 However, the specs are amazing:
+
 - Processor: Intel 12th Gen [i7-12700H](https://ark.intel.com/content/www/us/en/ark/products/132228/intel-core-i712700h-processor-24m-cache-up-to-4-70-ghz.html), 8 Efficiency and 6 Performance Cores, 20 threads
 - RAM: 16 GB DDR5 4800MHz RAM
 - Storage: 1 TB SSD
