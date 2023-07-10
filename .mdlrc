@@ -7,4 +7,5 @@ exclude_rule "MD041"
 
 rule "MD026", :punctuation => ".,;:"
 rule "MD029", :style => :ordered
-rule "MD033", :allowed_elements => 'img'
+rule "MD046", :style => :consistent
+# rule "MD033", :allowed_elements => "div, img, br, p, iframe" # Not working for some reason
