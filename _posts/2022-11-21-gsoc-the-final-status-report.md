@@ -16,7 +16,7 @@ As I mentioned in the previous post, the next step was for me to fully integrate
 
 ## `algebra-plugins` Architecture
 
-Integrating Fastor into `algebra-plugins` was not an easy feat. The architecture of `algebra-plugins` is quite complicated and very C++ template-heavy (in order to minimize code duplication). Moreover, there are many things which do not make sense to a beginner. For example, it is not immediately obvious to the newcomer why we need to write code both in the [`math` subdirectory](https://github.com/wermos/algebra-plugins/tree/9b3f0fe50d4be688ca99bd33e64e8837f6efa8f9/math) as well as the [`frontend` subdirectory](https://github.com/wermos/algebra-plugins/tree/9b3f0fe50d4be688ca99bd33e64e8837f6efa8f9/frontend). Moreover, the frontend names like `eigen_eigen` and `eigen_cmath` are not the most illuminating either. 
+Integrating Fastor into `algebra-plugins` was not an easy feat. The architecture of `algebra-plugins` is quite complicated and very C++ template-heavy (in order to minimize code duplication). Moreover, there are many things which do not make sense to a beginner. For example, it is not immediately obvious to the newcomer why we need to write code both in the [`math` subdirectory](https://github.com/wermos/algebra-plugins/tree/9b3f0fe50d4be688ca99bd33e64e8837f6efa8f9/math) as well as the [`frontend` subdirectory](https://github.com/wermos/algebra-plugins/tree/9b3f0fe50d4be688ca99bd33e64e8837f6efa8f9/frontend). Moreover, the frontend names like `eigen_eigen` and `eigen_cmath` are not the most illuminating either.
 
 ### Uniform Function Names
 
@@ -35,6 +35,7 @@ As I spent time mucking around in the `algebra-plugins` repository and writing c
 In order to understand how to write the code for Fastor in `algebra-plugins`, I spent time looking at how the code for the other backends was written. An important optimization that many math libraries use is [expression templates](https://en.wikipedia.org/wiki/Expression_templates). This is important because C++ is a eager evaluation language (as opposed to, say, Haskell, which uses lazy evaluation).
 
 Imagine we have the line of code `auto result = 3 * v1 + 5 * v2;`, where `v1` and `v2` are vectors. If the expression were to be lazily evaluated, then every element of the resultant vector would not be computed until the whole expression had been read. In C++ (and other eager evaluation languages) what happens is as follows:
+
 1. The subexpression `3 * v1` is read. Since this is something that can be computed, C++ computes it and puts it in temporary storage, say `temp1`.
 2. The subexpression `5 * v2` is read. Once again, since this is something that can be computed, C++ computes it and puts it in temporary storage, say `temp2`.
 3. The result of adding `temp1` and `temp2` is stored in `result`.
