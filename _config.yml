@@ -78,7 +78,7 @@ social:
 # Site Author
 author:
   name             : "Tirthankar Mazumder"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/avatar.png" # path of avatar image
   bio              : "I don't know what to write here so I'll keep it blank for now."
   location         : "Maharasthra, India"
   email            : mztirthankar@gmail.com
