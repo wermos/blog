@@ -16,8 +16,6 @@ gem "minimal-mistakes-jekyll"
 gem "faraday-retry" # Required for retrying network requests if they fail
 # Network requests are used to query the GitHub API, among other things
 
-gem "mdl"
-
 # The plugins required for the blog
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.17"
