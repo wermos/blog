@@ -193,6 +193,7 @@ for (int i = 0; i < SIZE; i++) {
 }
 {% endhighlight %}
 I rewrote the matrix generation code using the random number generators in the `<random>` header, and mimicked `Eigen`'s `Random()` implementation, which generates a random float in the range $[-1, 1]$:
+<!-- markdownlint-disable MD033 MD018 -->
 {% highlight cpp %}
 // random.hpp
 #include <random>
@@ -220,6 +221,7 @@ for (int i = 0; i < SIZE; i++) {
     }
 }
 {% endhighlight %}
+<!-- markdownlint-enable MD033 MD018 -->
 
 This change was made in [`ff821df`](https://github.com/wermos/Fast5x5/commit/ff821df8906a226749408e24b40e627d21fa3894).
 
@@ -242,6 +244,6 @@ After gathering the data, my mentors and I analyzed the performance of each back
 That's it for the status report of the work so far! The next steps for me and my GSoC project are to
 
 1. integrate Fastor into `algebra-plugins`, and
-2. write the front-end for it so that we can see Fastor in action in a more realistic setting.
+2. write the frontend for it so that we can see Fastor in action in a more realistic setting.
 
-To that end, I already integrated Fastor to the repository in [PR #77](https://github.com/acts-project/algebra-plugins/pull/77), and am currently working on writing the front-end.
+To that end, I already integrated Fastor to the repository in [PR #77](https://github.com/acts-project/algebra-plugins/pull/77), and am currently working on writing the frontend.
