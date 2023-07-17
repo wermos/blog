@@ -45,6 +45,7 @@ Track reconstruction consists of two parts: track finding, which groups measurem
 
 {% figure [caption:"A diagram demonstrating the idea behind track fitting and finding. Picture Credits: [ACTS Docs](https://github.com/acts-project/acts/blob/4e2c89078fab78e28f1e9f7a03118823c50b0119/docs/figures/tracking/tracking.svg)"] %}
 <div style="display: block; margin: auto; transform: scale(1.3);">
+<!-- markdown-link-check-disable-next-line -->
 <img src="{{ "assets/images/gsoc/tracking.svg" | relative_url }}" alt="picture demonstrating track finding and fitting">
 </div>
 {% endfigure %}
