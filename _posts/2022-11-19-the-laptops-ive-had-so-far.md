@@ -54,7 +54,7 @@ The specs are:
 - Screen: 1920×1080p, 60 Hz refresh rate
 - GPU: None.
 
-Due to the lack of a GPU, I could not play most games I was playing/wanted to play. During this time, I got into the game [Genshin Impact](https://genshin.hoyoverse.com/en/), but I had to play the game at Lowest settings. Yes, they really had a setting below Low, called Lowest, for people with potato PCs like me. Even then, the loading screens took forever to load.
+Due to the lack of a GPU, I could not play most games I was playing/wanted to play. During this time, I got into the game [Genshin Impact](https://genshin.hoyoverse.com/en/home), but I had to play the game at Lowest settings. Yes, they really had a setting below Low, called Lowest, for people with potato PCs like me. Even then, the loading screens took forever to load.
 
 ## My Technical Knowledge
 
