@@ -20,7 +20,7 @@ Even though I came up with the team comp myself, it is highly unlikely that I am
 
 Because of this, there was a long period of time during which other players would have most likely arrived at the same conclusions I did.
 
-However, since this team comp is not explicitly mentioned on the [Keqing Mains page for Xiao](https://keqingmains.com/xiao/#Team_Comps), I decided to take the opportunity to talk about a personal favorite team comp of mine.
+However, since this team comp is not explicitly mentioned on the [Keqing Mains page for Xiao](https://keqingmains.com/xiao/#Example_Team_Comps), I decided to take the opportunity to talk about a personal favorite team comp of mine.
 
 # Why Is It Called "_Postmodern_ Xiao"?
 
@@ -108,7 +108,7 @@ The 4-piece set bonus grants a +20% ATK bonus when the wearer's Elemental Skill 
 
 Strictly speaking, Xiao here will have the same build he would have in the _Classic Xiao_ team comp. This means that any artifact set whose 2-piece grants an ATK boost works, and farming for Vermillion Hereafter (VH), his Best in Slot (BiS) is not really required.
 
-Accounting for average substat rolls, VH offers a 5-10% damage increase over 2x 2-piece combinations. For a full-fledged discussion on what artifacts to use on Xiao, refer to [Keqing Mains' Xiao guide](https://keqingmains.com/xiao/#Artifacts).
+Accounting for average substat rolls, VH offers a 5-10% damage increase over 2x 2-piece combinations. For a full-fledged discussion on what artifacts to use on Xiao, refer to [Keqing Mains' Xiao guide](https://keqingmains.com/xiao/#Recommended_Artifact_Sets).
 
 ## Albedo
 
