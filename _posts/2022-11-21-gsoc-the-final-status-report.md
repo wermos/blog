@@ -20,19 +20,13 @@ Integrating Fastor into `algebra-plugins` was not an easy feat. The architecture
 
 ### Uniform Function Names
 
-<!-- markdown-link-check-disable -->
 Regardless, I got to work in the `math` subdirectory first. Inside this directory, all the functions used by the other projects and the rest of the repository are defined in terms of the math backend functions. A specific library might call the function `dot()`, [as Eigen does](https://eigen.tuxfamily.org/dox/classEigen_1_1MatrixBase.html#adfd32bf5fcf6ee603c924dde9bf7bc39), or it might call it `inner()` (short for [inner product](https://en.wikipedia.org/wiki/Dot_product)), [as Fastor does](https://github.com/romeric/Fastor/wiki/Linear-algebra-functions#inner-product-inner).
-<!-- markdown-link-check-enable -->
-<!-- The Eigen webpage seems to be down, so this is temporarily done to appease the link checker. -->
 
 `algebra-plugins` uses the functions defined in the `math` directory to provide an uniform API, regardless of the backend. The name that was decided upon for `algebra-plugins` for this function was `dot()`.
 
 ### Uniform Type Names
 
-<!-- markdown-link-check-disable -->
-Type names are another thing which have a lot of variation from library to library. Eigen calls their type as simply [`Matrix`](https://eigen.tuxfamily.org/dox/group__TutorialMatrixClass.html), whereas `SMatrix`, for example, calls their matrix type [`SMatrix`](https://root.cern.ch/doc/master/classROOT_1_1Math_1_1SMatrix.html) (unsurprisingly). For this reason, we have to define types such as `matrix_type` and `vector3` in the [`storage` directory](https://github.com/wermos/algebra-plugins/blob/9b3f0fe50d4be688ca99bd33e64e8837f6efa8f9/storage/fastor/include/algebra/storage/fastor.hpp).
-<!-- markdown-link-check-enable -->
-<!-- The Eigen webpage seems to be down, so this is temporarily done to appease the link checker. -->
+Type names are another thing which have a lot of variation from library to library. Eigen calls their type as simply [`Matrix`](https://eigen.tuxfamily.org/dox/group__TutorialMatrixClass.html), whereas `SMatrix`, for example, calls their matrix type [`SMatrix`](https://root.cern.ch/doc/master/classROOT_1_1Math_1_1SMatrix.html) (unsurprisingly). For this reason, we have to define types such as `matrix_type` and `vector3` in the [`storage` directory](https://github.com/wermos/algebra-plugins/blob/9b3f0fe50d4be688ca99bd33e64e8837f6efa8f9/storage/fastor/include/algebra/storage/fastor.hpp).s
 
 As I spent time mucking around in the `algebra-plugins` repository and writing code, these little things started to make more and more sense to me.
 
