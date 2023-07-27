@@ -87,7 +87,7 @@ Here is a snippet from the [documentation for the LaTeX parser](https://docs.sym
 
 > $\mathrm{\LaTeX}$ parsing was ported from [latex2sympy](https://github.com/augustt198/latex2sympy). While functional and its API should remain stable, the parsing behavior or backend may change in future releases.
 
-If we look at the GitHub repository in the link, we see that the project was originally started in January 2016 by [augustt198](https://github.com/augustt198).
+If we look at the linked GitHub repository, we see that the project was originally started in January 2016 by [augustt198](https://github.com/augustt198).
 
 This repository solved a long-standing feature request that people had asked for, as can be seen in this [SymPy mailing list email thread](https://groups.google.com/g/sympy/c/JxtvnWeRC7s) and [this](https://github.com/sympy/sympy/issues/5418) old SymPy issue.
 
