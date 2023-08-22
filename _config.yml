@@ -129,6 +129,7 @@ exclude:
   - /test # ignore Minimal Mistakes /test
   - /env
   - /wordlists
+  - push.sh
 keep_files:
   - .git
   - .svn
