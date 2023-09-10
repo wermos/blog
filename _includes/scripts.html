@@ -65,6 +65,22 @@ Here is an explanation of the short form: usecodehl = use code hl = use code hig
 </script>
 {% endif %}
 
+{% if page.usemermaid %}
+
+<!-- Mermaid-related stuff -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+    mermaid.initialize({
+      startOnLoad:true,
+      theme: "default",
+    });
+    window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+  });
+</script>
+{% endif %}
+
 <!-- Scroll to Top Button -->
 <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
 <script>addBackToTop({
