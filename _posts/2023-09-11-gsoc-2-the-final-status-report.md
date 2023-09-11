@@ -1,6 +1,6 @@
 ---
 layout: single 
-title:  "GSoC 2 --- The Final Status Report (WIP)"
+title:  "GSoC 2 --- The Final Status Report"
 date:   2023-09-11 21:57:13 +0530
 classes: wide
 toc: true
