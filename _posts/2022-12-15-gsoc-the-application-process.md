@@ -173,7 +173,7 @@ The only thing to remember is to make sure to get mentor feedback while writing 
 
 ## My Experience
 
-I started writing my proposal for the Vectorized Linear Algebra backend project on April 13^th^. For reference, GSoC application window for 2022 was from April 4^th^ to April 19^th^. This was quite a bit later than the timeframe I am recommending :see_no_evil:
+I started writing my proposal for the Vectorized Linear Algebra backend project on April 13<sup>th</sup>. For reference, GSoC application window for 2022 was from April 4<sup>th</sup> to April 19<sup>th</sup>. This was quite a bit later than the timeframe I am recommending :see_no_evil:
 
 However, I made sure to get feedback from the mentors and incorporated those changes. I remember that I was asked to fix some grammar mistakes, and add a section explaining my reasoning for some of the ideas that I was proposing.
 
@@ -187,9 +187,9 @@ The first thing to look at is the [published GSoC timeline](https://developers.g
 
 The three dates of interest are:
 
-* the date that the accepted GSoC organizations are announced ([February 22^nd^, 2023](https://developers.google.com/open-source/gsoc/timeline#february_22_-_1800_utc) for next year). This is the day you can start contacting qualification-task based organizations if they were accepted.
-* the date that GSoC application period starts ([March 20^th^, 2023](https://developers.google.com/open-source/gsoc/timeline#march_20_-_1800_utc) for next year). This is the day you should ideally have a first draft of your proposal ready, and start asking for mentor feedback.
-* the date that the GSoC application period ends ([April 4^th^, 2023](https://developers.google.com/open-source/gsoc/timeline#april_4_-_1800_utc) for the next year). This is the day by which you should have submitted all your proposals on the portal, and overall be done with everything. **This is a hard deadline.**
+* the date that the accepted GSoC organizations are announced ([February 22<sup>nd</sup>, 2023](https://developers.google.com/open-source/gsoc/timeline#february_22_-_1800_utc) for next year). This is the day you can start contacting qualification-task based organizations if they were accepted.
+* the date that GSoC application period starts ([March 20<sup>th</sup>, 2023](https://developers.google.com/open-source/gsoc/timeline#march_20_-_1800_utc) for next year). This is the day you should ideally have a first draft of your proposal ready, and start asking for mentor feedback.
+* the date that the GSoC application period ends ([April 4<sup>th</sup>, 2023](https://developers.google.com/open-source/gsoc/timeline#april_4_-_1800_utc) for the next year). This is the day by which you should have submitted all your proposals on the portal, and overall be done with everything. **This is a hard deadline.**
 
 ## When Should I Start?
 
