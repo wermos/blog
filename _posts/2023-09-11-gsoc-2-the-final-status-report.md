@@ -94,7 +94,7 @@ I was initially opposed to the idea, but I slowly came to see its merits. After 
 
 ## Hierarchy of Expressions
 
-I soon ran into another issue: Rules for things like addition must be defined recursively. However, we were using the Earley parser, which tries all the possibilties and returns parse trees which match every possible interpretation of the grammar rules, when multiple such intepretations exist. This lead to many parse trees for simple things like addition and multiplication, even though all of them would return the same result ultimately.
+I soon ran into another issue: Rules for things like addition must be defined recursively. However, we were using the Earley parser, which tries all the possibilities and returns parse trees which match every possible interpretation of the grammar rules, when multiple such interpretations exist. This lead to many parse trees for simple things like addition and multiplication, even though all of them would return the same result ultimately.
 
 My rule for addition was something like `add: expression ADD expression`. With an input expression like $a + b + c$, the parse trees will be something like
 
@@ -122,7 +122,7 @@ In general, in an expression with $n$ applications of a binary operator (like $+
 
 The way to handle this is well-known within the parsing community, but when my mentor first demonstrated the idea, it blew my mind. The solution is so simple, and yet so profound: Use a hierarchy of expressions.
 
-In essence, you first choose whether you want the expression to be left- or right-associative. Once you have made your choice, you make the other side of the expression somethign of higher priority.
+In essence, you first choose whether you want the expression to be left- or right-associative. Once you have made your choice, you make the other side of the expression something of higher priority.
 
 For example, I wanted addition to be left-associative in the $\mathrm{\LaTeX}$ parser, which is a reasonable choice. After that, You make the right side of the `add` rule to have something like `expression_mul`, where `expression_mul` can only bind to things with a priority equal to or greater than that of multiplication.
 
@@ -278,7 +278,7 @@ This section lists all the PRs that I made which had no direct relevance to the 
 
 ### Breakdown
 
-The first PR was something I found while going through old codegen related issues, and noticed that it was already fixed in `master`. I left a comment on the corresponding [issue](https://github.com/sympy/sympy/issues/16689), and was told that we could close the issue after I wrote a regression test to prevent this issue from reoccuring in the future, which is what I did in [#25189](https://github.com/sympy/sympy/pull/25189).
+The first PR was something I found while going through old codegen related issues, and noticed that it was already fixed in `master`. I left a comment on the corresponding [issue](https://github.com/sympy/sympy/issues/16689), and was told that we could close the issue after I wrote a regression test to prevent this issue from reoccurring in the future, which is what I did in [#25189](https://github.com/sympy/sympy/pull/25189).
 
 I was still looking at codegen issues at the time because I had enjoyed working on [#24954](https://github.com/sympy/sympy/pull/24954), and wanted to contribute to the codegen submodule a bit more.
 
@@ -416,6 +416,6 @@ There have been solutions suggested, such as making $\mathrm{\LaTeX}$ parsing a 
 
 # Future Work
 
-I think that any future work mostly be directed towards handling the two issues I pointed out above. Another viable area which would benefit from futher work is adding as much user customizability to the parser as possible, in a sensible fashion.
+I think that any future work mostly be directed towards handling the two issues I pointed out above. Another viable area which would benefit from further work is adding as much user customizability to the parser as possible, in a sensible fashion.
 
 That's it for this blog post. Stay tuned for the next blog post, which will act as the developer documentation for the Lark-based $\mathrm{\LaTeX}$ parser.
