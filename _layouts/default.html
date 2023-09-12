@@ -12,6 +12,13 @@ layout: compress
 <html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
   <head>
     {% include head.html %}
+
+    {% if page.custom_css %}
+      {% for stylesheet in page.custom_css %}
+      <link rel="stylesheet" href="/blog/assets/css/{{ stylesheet }}.css">
+      {% endfor %}
+    {% endif %}
+
     {% include head/custom.html %}
   </head>
 
@@ -37,11 +44,5 @@ layout: compress
     </div>
 
     {% include scripts.html %}
-
-    {% if page.custom_css %}
-      {% for stylesheet in page.custom_css %}
-      <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ stylesheet }}.css">
-      {% endfor %}
-    {% endif %}
   </body>
 </html>
