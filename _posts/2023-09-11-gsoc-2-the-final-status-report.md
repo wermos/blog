@@ -37,7 +37,7 @@ There were three issues:
 
 I started my GSoC off with [#25210](https://github.com/sympy/sympy/pull/25210), where I simply took the original PR, [#19825](https://github.com/sympy/sympy/pull/19825), and rebased the current `master` on top of the 3 year old branch.
 
-Unfortunately, there were many _many_ merge conflicts when I rebased `master` on top of the branch. Fixing them took around an hour for me, and I am fairly certain that I had made a few mistakes while fixing merge conflicts, so this would attempt have been a non-starter anyways.
+Unfortunately, there were many _many_ merge conflicts when I rebased `master` on top of the branch. Fixing them took around an hour for me, and I am fairly certain that I had made a few mistakes while fixing merge conflicts, so this attempt would have been a non-starter anyways.
 
 When my GSoC mentor [Francesco Bonazzi](https://github.com/Upabjojr) looked over the work I had done in the first week during a meet, he noticed that the PR removed all the ANTLR-based parser support. He stressed that we should not remove what already works until we have a well-tested and feature-complete alternative. I mentioned that the original PR, [#19825](https://github.com/sympy/sympy/pull/19825), already removed all the ANTLR-based $\mathrm{\LaTeX}$ parser stuff, and I had not made this change; I was simply building off of the previous work.
 
@@ -124,7 +124,7 @@ The way to handle this is well-known within the parsing community, but when my m
 
 In essence, you first choose whether you want the expression to be left- or right-associative. Once you have made your choice, you make the other side of the expression something of higher priority.
 
-For example, I wanted addition to be left-associative in the $\mathrm{\LaTeX}$ parser, which is a reasonable choice. After that, You make the right side of the `add` rule to have something like `expression_mul`, where `expression_mul` can only bind to things with a priority equal to or greater than that of multiplication.
+For example, I wanted addition to be left-associative in the $\mathrm{\LaTeX}$ parser, which is a reasonable choice. After that, you make the right side of the `add` rule to have something like `expression_mul`, where `expression_mul` can only bind to things with a priority equal to or greater than that of multiplication.
 
 This is an important idea to understand, because this idea was used liberally in the Lark-based $\mathrm{\LaTeX}$ parser. I will explore the idea in more detail in the upcoming blog post for the Lark-based $\mathrm{\LaTeX}$ parser's developer documentation. In that blog post, I will explain all the design choices I made while working on the parser, and share the rationale behind each choice.
 
