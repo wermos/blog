@@ -4,7 +4,7 @@ title:  "GSoC --- First Blog Post"
 date:   2022-08-29 02:54:55 +0530
 toc: true
 toc_sticky: true
-categories: gsoc
+categories: gsoc cern-hsf
 ---
 
 This is my first GSoC blog post, where I talk about what GSoC is, what organization I am working with, and what the software project I am working on actually does.

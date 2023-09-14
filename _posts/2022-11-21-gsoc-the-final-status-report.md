@@ -5,7 +5,7 @@ date:   2022-11-21 20:19:56 +0530
 toc: true
 classes: wide
 usecodehl: true
-categories: gsoc
+categories: gsoc cern-hsf
 ---
 
 In this blog post, I will describe the work I have done after the midterm evaluation.

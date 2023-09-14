@@ -6,7 +6,6 @@ toc: true
 classes: wide
 usecodehl: true
 usemathjax: true
-categories: gsoc
 gallery1:
   - url: /assets/images/gsoc/gemm_plot_float.png
     image_path: /assets/images/gsoc/gemm_plot_float.png
@@ -42,6 +41,7 @@ gallery5:
   - url: /assets/images/gsoc/boundToFree_plot_double.png
     image_path: /assets/images/gsoc/boundToFree_plot_double.png
     title: "Benchmark plot for bound coordinates to free coordinates with <code>double</code> matrices."
+categories: gsoc cern-hsf
 ---
 
 In this blog post, I will discuss the work I have done so far, and what our future direction will be.
