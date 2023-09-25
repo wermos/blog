@@ -34,7 +34,7 @@ If we take a look at the [README.md](https://github.com/acts-project/acts/blob/m
 When CERN conducts experiments at the [Large Hadron Collider](https://home.cern/science/accelerators/large-hadron-collider) (LHC), the 8 detectors present record certain types of data. Of the 8, there are 4 main detectors are the [ATLAS detector](https://atlas.cern/), the [CMS detector](https://cms.cern/detector), [ALICE](https://home.cern/science/experiments/alice), and [LHCb](https://home.cern/science/experiments/lhcb). The other 4 detectors are for very specialized research.
 
 {% figure  [caption:"A diagram of the LHC and the 8 detectors. Picture Credits: [Wikipedia](https://en.wikipedia.org/wiki/Large_Hadron_Collider#/media/File:LHC.svg)"] %}
-![diagram of the LHC and the 8 detectors](https://upload.wikimedia.org/wikipedia/commons/7/74/LHC.svg)
+![diagram of the LHC and the 8 detectors]({{ "assets/images/gsoc/LHC.svg" | relative_url }})
 {% endfigure %}
 
 ### What is Track Reconstruction?
