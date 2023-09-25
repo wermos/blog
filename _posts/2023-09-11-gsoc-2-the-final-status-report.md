@@ -37,7 +37,7 @@ There were three issues:
 
 I started my GSoC off with [#25210](https://github.com/sympy/sympy/pull/25210), where I simply took the original PR, [#19825](https://github.com/sympy/sympy/pull/19825), and rebased the current `master` on top of the 3 year old branch.
 
-Unfortunately, there were many _many_ merge conflicts when I rebased `master` on top of the branch. Fixing them took around an hour for me, and I am fairly certain that I had made a few mistakes while fixing merge conflicts, so this attempt would have been a non-starter anyways.
+Unfortunately, there were many _many_ merge conflicts when I rebased `master` on top of the branch. Fixing them took around an hour for me, and I ended up made a few mistakes while fixing merge conflicts. For example, I noticed that after my rebase, there was a `.travis.yml` file in the repo, which had previously been deleted in [#24239](https://github.com/sympy/sympy/pull/24239). So, this attempt was a non-starter.
 
 When my GSoC mentor [Francesco Bonazzi](https://github.com/Upabjojr) looked over the work I had done in the first week during a meet, he noticed that the PR removed all the ANTLR-based parser support. He stressed that we should not remove what already works until we have a well-tested and feature-complete alternative. I mentioned that the original PR, [#19825](https://github.com/sympy/sympy/pull/19825), already removed all the ANTLR-based $\mathrm{\LaTeX}$ parser stuff, and I had not made this change; I was simply building off of the previous work.
 
