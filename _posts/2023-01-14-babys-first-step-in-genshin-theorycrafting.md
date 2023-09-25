@@ -7,14 +7,14 @@ toc: true
 usemathjax: true
 categories: genshin-impact theory-crafting
 gallery1:
-  - url: /assets/images/genshin/raiden-stats.png
-    image_path: /assets/images/genshin/raiden-stats.png
+  - url: /assets/images/genshin/stats-cards/raiden-stats.png
+    image_path: /assets/images/genshin/stats-cards/raiden-stats.png
     title: "My Raiden Shogun character stats."
-  - url: /assets/images/genshin/albedo-stats.png
-    image_path: /assets/images/genshin/albedo-stats.png
+  - url: /assets/images/genshin/stats-cards/albedo-stats.png
+    image_path: /assets/images/genshin/stats-cards/albedo-stats.png
     title: "My Albedo character stats."
-  - url: /assets/images/genshin/zhongli-stats.png
-    image_path: /assets/images/genshin/zhongli-stats.png
+  - url: /assets/images/genshin/stats-cards/zhongli-stats.png
+    image_path: /assets/images/genshin/stats-cards/zhongli-stats.png
     title: "My Zhongli character stats."
 ---
 
@@ -129,7 +129,7 @@ $$
 
 Let's calculate Raiden's ATK using the ATK formula. For ease of reference, I have put her character card below.
 
-![Raiden Shogun's character card]({{ "/assets/images/genshin/raiden-stats.png" | relative_url }})
+![Raiden Shogun's character card]({{ "/assets/images/genshin/stats-cards/raiden-stats.png" | relative_url }})
 
 Substituting the formula with the numbers, we get
 
@@ -147,7 +147,7 @@ As we can see, our calculated value checks out with the ATK given in the charact
 
 Now, let’s calculate Albedo’s DEF using the DEF formula. Once again, for ease of reference, I have put his character card below.
 
-![Albedo's character card]({{ "/assets/images/genshin/albedo-stats.png" | relative_url }})
+![Albedo's character card]({{ "/assets/images/genshin/stats-cards/albedo-stats.png" | relative_url }})
 
 Substituting the formula with the numbers, we get
 
@@ -178,7 +178,7 @@ This is consistent with the numbers which show up in the game.
 
 Now, let’s calculate Zhongli’s Max HP using the formula. Once again, for ease of reference, I have put his character card below.
 
-![Zhongli's character card]({{ "/assets/images/genshin/zhongli-stats.png" | relative_url }})
+![Zhongli's character card]({{ "/assets/images/genshin/stats-cards/zhongli-stats.png" | relative_url }})
 
 Note that the fact that he is using a level 70 weapon is okay because ATK has no bearing on Max HP.
 
