@@ -161,9 +161,9 @@ defaults:
 
 markdown: kramdown
 kramdown:
+  input: GFM
   syntax_highlighter_opts:
     disable: true
-  input: GFM
   hard_wrap: false
   auto_ids: true
   footnote_nr: 1
