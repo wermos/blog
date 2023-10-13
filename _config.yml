@@ -130,6 +130,7 @@ exclude:
   - /env
   - /wordlists
   - push.sh
+  - dictionary.dic
 keep_files:
   - .git
   - .svn
