@@ -33,7 +33,9 @@ Not everyone uses the summoned animals for fighting. Jiraiya and Naruto both use
 ## So What About These Summons?
 
 One thing you will notice is that whenever people use a summoning jutsu, the summon results in some seal marks being written on the ground:
-<div style='position:relative; padding-bottom:calc(76.67% + 44px)'><iframe src='https://gfycat.com/ifr/search/AnimatedFewAnhinga?controls=0&hd=1' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div><br/>
+<!-- markdownlint-disable MD033 -->
+<div class="tenor-gif-embed" data-postid="12217932" data-share-method="host" data-aspect-ratio="1.305" data-width="100%"><a href="https://tenor.com/view/kakashi-hatake-summoning-jutsu-naruto-gif-12217932">Kakashi Hatake GIF</a>from <a href="https://tenor.com/search/kakashi-gifs">Kakashi GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script><br/>
+<!-- markdownlint-enable MD033 -->
 This little detail stays constant throughout: the marks show up when the Legendary Sannin do a Summoning Jutsu, when Tobi summons the nine tails, and also when Pain does his (their?) summons.
 
 That is to say, the marks are not a result of a "skill issue". They show up regardless of who is performing the summon.
@@ -41,7 +43,9 @@ That is to say, the marks are not a result of a "skill issue". They show up rega
 ## Minato vs. Nine-Tailed Fox
 
 Think back to when Minato fought the nine tails, and it unleashed a Tailed Beast Bomb at him. What did he do? Since a picture is worth a thousand words, I won't describe it, but rather show it:
-<div style='position:relative; padding-bottom:calc(56.25% + 44px)'><iframe src='https://gfycat.com/ifr/search/SpryWeightyGoosefish?controls=0&hd=1' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div><br/>
+<!-- markdownlint-disable MD033 -->
+<div class="tenor-gif-embed" data-postid="25695047" data-share-method="host" data-aspect-ratio="1.89349" data-width="100%"><a href="https://tenor.com/view/kurama-minato-namikaze-minato-hokage-flying-raijin-gif-25695047">Kurama Minato Namikaze GIF</a>from <a href="https://tenor.com/search/kurama-gifs">Kurama GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script><br/>
+<!-- markdownlint-enable MD033 -->
 The key thing to note is that the seal marks are being written and drawn in the air itself. _In the air_. No other ninja in the show ever achieves a similar feat.
 
 ## How Does Minato Know How To Do It?
