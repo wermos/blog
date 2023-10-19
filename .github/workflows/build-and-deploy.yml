@@ -1,4 +1,4 @@
-name: Build (and optinally Deploy) the Blog
+name: Build (and optionally Deploy) the Blog Website
 
 on:
   push:
@@ -7,6 +7,7 @@ on:
     branches: main
 
 jobs:
+  # Build the website
   build:
     runs-on: ubuntu-latest
     env:
@@ -16,15 +17,35 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1'
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
 
-      # Use GitHub Actions' cache to cache dependencies on servers
-      - uses: actions/cache@v3
-        with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-gems-
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v1
       
-      - name: Build
-        uses: jerryjvl/jekyll-build-action@v1
+      - name: Build Site
+        run: |
+          bundle exec jekyll build # defaults output to './_site'
+
+      # This will automatically upload an artifact from the './_site' directory
+      - name: Upload artifact
+        if: ${{ success() }}
+        uses: actions/upload-pages-artifact@v2
+  
+  # Deployment job
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
     
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+    
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    
+    steps:
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v2
