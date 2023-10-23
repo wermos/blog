@@ -1,0 +1,3 @@
+[submodule "blog-assets"]
+	path = blog-assets
+	url = https://github.com/wermos/blog-assets.git
