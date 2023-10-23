@@ -1,6 +1,4 @@
-[submodule "blog-assets"]
-	path = assets
-	url = https://github.com/wermos/blog-assets.git
 [submodule "assets"]
 	path = assets
 	url = https://github.com/wermos/blog-assets.git
+	branch = main
