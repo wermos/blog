@@ -12,7 +12,7 @@ header:
 categories: gsoc sympy
 ---
 
-In this blog post, I will discuss what my 2nd GSoC project is about.
+In this blog post, I will discuss what my 2<sup>nd</sup> GSoC project is about.
 
 # GSoC with SymPy
 
