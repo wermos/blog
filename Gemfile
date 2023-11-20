@@ -27,7 +27,6 @@ group :jekyll_plugins do
   gem "jekyll-algolia" # search plugin
   gem "jekyll-paginate-v2"
   gem "jemoji" # GitHub-style Markdown emojis
-  gem "jekyll-sass-converter", "~> 3.0.0"
   gem "jekyll-last-modified-at"
 end
 

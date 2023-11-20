@@ -197,7 +197,6 @@ DEPENDENCIES
   jekyll-figure
   jekyll-last-modified-at
   jekyll-paginate-v2
-  jekyll-sass-converter (~> 3.0.0)
   jekyll-seo-tag
   jekyll-sitemap
   jekyll-target-blank
