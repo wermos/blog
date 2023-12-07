@@ -37,6 +37,7 @@ In this simple example, using SIMD instructions gave us an approximately 4× spe
 
 However, it is not as simple as that. There are many SIMD ISAs, for example [SSE](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions), [SSE2](https://en.wikipedia.org/wiki/SSE2), [SSE3](https://en.wikipedia.org/wiki/SSE3), [SSSE3](https://en.wikipedia.org/wiki/SSSE3) (note the one extra "S"!), [SSE4](https://en.wikipedia.org/wiki/SSE4), [AVX](https://en.wikipedia.org/wiki/Advanced_Vector_Extensions), AVX2, [AVX512](https://en.wikipedia.org/wiki/AVX-512), and more.
 
+<!-- markdown-link-check-disable-next-line -->
 A given CPU may not support all of these ISAs. (For example, the processor I have at the time of writing, an [i7-12700H](https://ark.intel.com/content/www/us/en/ark/products/132228/intel-core-i712700h-processor-24m-cache-up-to-4-70-ghz.html) does not support AVX512.)
 
 Code that is optimized for one ISA may not necessarily be optimized for other ISAs. For this reason, most people prefer to outsource their SIMD code to an external library dedicated to figuring out these headaches. Many such libraries exist, and they broadly fall into two categories:
