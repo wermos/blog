@@ -34,7 +34,7 @@ jobs:
       # This will automatically upload an artifact from the './_site' directory
       - name: Upload artifact
         if: ${{ success() }}
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
   
   # Deployment job
   deploy:
