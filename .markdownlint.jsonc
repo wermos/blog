@@ -106,7 +106,7 @@
       // Only check sibling headings
       "allow_different_nesting": true,
       // Only check sibling headings
-      "siblings_only": false
+      "siblings_only": true
     },
   
     // MD025/single-title/single-h1 - Multiple top-level headings in the same document
@@ -154,8 +154,8 @@
     // MD033/no-inline-html - Inline HTML
     "MD033": {
       // Allowed elements
-      // "allowed_elements": []
       "allowed_elements": ["br", "div", "iframe", "img", "sup"]
+      // "allowed_elements": ["br", "div", "iframe", "img", "sup", "span"]
     },
   
     // MD034/no-bare-urls - Bare URL used

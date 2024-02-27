@@ -223,7 +223,7 @@ In 2022, a highly qualified GSoC SymPy applicant was unable to find a mentor for
 
 Before applying to an Organization, make sure to read their application guideline closely.
 
-Many GSoC Organizations require a prospective applicant to have an accepted PR before applying. For example, the [Python Software Foundation](https://python-gsoc.org/psf_ideas.html) guidelines say
+Many GSoC Organizations require a prospective applicant to have an accepted PR before applying. For example, the [Python Software Foundation](https://web.archive.org/web/20231001162241/https://python-gsoc.org/psf_ideas.html) guidelines say
 
 > dont [sic] forget to be accepted all students must make at least 1 pull request!
 
