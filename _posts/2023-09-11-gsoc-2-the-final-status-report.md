@@ -225,6 +225,7 @@ While working on the `evaluate=False` PR, there was a small issue which was poin
 
 After that, I shifted my focus to adding new features to the Lark-based $\mathrm{\LaTeX}$ parser because most of the architectural changes had already been done, and things like the testing framework were decent for the time being. I added support for `Min`, `Max`, `Bra` and `Ket`. While the ANTLR parser already supported the latter two features, there was an issue [here](https://github.com/sympy/sympy/issues/19127) which asked for `Min` and `Max`. Since, in the Lark-based parser `Min` and `Max` could use the same scaffolding that applied functions (i.e. expressions like `f(x, y, z)`) use, I decided to add the feature.
 
+<!-- markdown-link-check-disable-next-line -->
 Solving existing issues that were opened for the ANTLR-based parser in the Lark-based was a recurring theme in my GSoC journey, which I'll talk about in an [upcoming section](#list-of-issues-addressed).
 
 After that PR, I noticed that many things which I was using in the tests were duplicated, so I opened [#25569](https://github.com/sympy/sympy/pull/25569) to minimize the amount of code duplication.
