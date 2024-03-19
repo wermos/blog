@@ -28,7 +28,7 @@ group :jekyll_plugins do
   gem "jekyll-paginate-v2"
   gem "jemoji" # GitHub-style Markdown emojis
   gem "jekyll-last-modified-at"
-  gem "sass-embedded", "~> 1.71.1"
+  gem "sass-embedded", "~> 1.72.0"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
